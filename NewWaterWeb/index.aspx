@@ -1,5 +1,7 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="NewWaterWeb.index" %>
-<%@ Register src="TopNews.ascx" tagname="TopNews" tagprefix="uc1" %>
+
+<%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
+<%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -438,9 +440,8 @@
             </td>
             <td align="center" valign="top" background="images/bg/ding.gif" bgcolor="#FFFFFF"
                 class="kk">
-                
                 <!-- 顶条新闻栏-->
-                <uc1:TopNews ID="TopNews1" runat="server" style='height:100%;width:100%;' />
+                <uc1:TopNews ID="TopNews1" runat="server" style='height: 100%; width: 100%;' />
             </td>
             <td width="250" align="center" valign="top" class="kk">
                 <!-- 这里开始通知通告栏-->
@@ -458,7 +459,7 @@
                     </tr>
                 </table>
                 <marquee scrollamount="2" width="240" height="150" direction="up" onmouseover="stop()"
-                    onmouseout="start()"  id='noticemaquess'  >
+                    onmouseout="start()" id='noticemaquess'>
                     <div  runat=server id='notice_wrap'></div></marquee>
                 <table height="6" border="0" cellpadding="0" cellspacing="0">
                     <tr>
@@ -489,37 +490,8 @@
                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="center" valign="top">
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    山东省农业良种工程重大课题及项目
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list_news.asp?id=668&sort_id=657">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5638" target="_blank" title="标题：红头文件测试看看中央文件红头文件">红头文件测试看看中央文件红头文件</a>
-                                                    <font class="red">★</font>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc2:baseuserctrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=85"
+                                ClassID="85" Title="山东省农业良种工程重大课题及项目" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
@@ -528,36 +500,8 @@
                             </table>
                         </td>
                         <td align="center" valign="top">
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    山东省科学技术发展计划项目
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="/">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5619" target="_blank" title="标题：工业和信息化部在黑龙江召开石墨产业发展座谈会">工业和信息化部在黑龙江召开石墨产业发展座</a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl3" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=87"
+                                ClassID="87" Title="山东省科学技术发展计划项目" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
@@ -568,36 +512,8 @@
                     </tr>
                     <tr>
                         <td align="center" valign="top">
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="280" align="left" class="white14B">
-                                                    省财政支持农业重大应用技术创新资金...
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list_news.asp?id=670&sort_id=657">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5537" target="_blank" title="标题：全国最实用的单位建站软件研究院品牌大家都用">全国最实用的单位建站软件研究院品牌大家都用</a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl4" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=89"
+                                ClassID="89" Title="省财政支持农业重大应用技术创新资金..." runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
@@ -606,41 +522,11 @@
                             </table>
                         </td>
                         <td align="center" valign="top">
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    农业部公益性行业科研专项
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list_news.asp?id=671&sort_id=657">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5623" target="_blank" title="标题：图文并用功能强大大家演示看效果">图文并用功能强大大家演示看效果</a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=91"
+                                ClassID="91" Title="农业部公益性行业科研专项..." runat="server" />
                         </td>
                     </tr>
-                    <tr>
-                    </tr>
-                </table>
+                    </table>
                 <!--<table width="99%" border="0" cellpadding="0" cellspacing="1" bgcolor="#333333">
         <tr>
           <td><a href="http://www.sdfwi.cn/demo/zt1"><img src="flash/ad2/ad2.gif" alt="横幅标语" width="100%" height="60" border="0" /></a></td>
@@ -655,36 +541,8 @@
                                     </td>
                                 </tr>
                             </table>
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    山东省突出贡献的青年专家
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list.asp?sort_id=660">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5547" target="_blank" title="标题：外汇局开展培训促党员领导干部作风纯洁清正廉洁">外汇局开展培训促党员领导干部作风纯洁清正</a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl5" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=93"
+                                ClassID="93" Title="山东省突出贡献的青年专家" runat="server" />
                         </td>
                         <td align="center" valign="top">
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
@@ -693,37 +551,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    享受国务院特殊津贴
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list.asp?sort_id=661">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5549" target="_blank" title="标题：辽宁微博问政开辟政务公开新平台 接受网友问政">辽宁微博问政开辟政务公开新平台
-                                                        接受网友</a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                           <uc2:BaseUserCtrl ID="BaseUserCtrl6" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=102" ClassID="102" Title="享受国务院特殊津贴" runat="server" />
                         </td>
                     </tr>
                     <tr>
@@ -734,37 +562,8 @@
                                     </td>
                                 </tr>
                             </table>
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    研究生培养
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list.asp?sort_id=662">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5635" target="_blank" title="标题：中华人民共和国刑事诉讼法"><font
-                                                        color="#FF0000">中华人民共和国刑事诉讼法</font></a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                             <uc2:BaseUserCtrl ID="BaseUserCtrl7" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=104" ClassID="104" Title="研究生培养" runat="server" />
+ 
                         </td>
                         <td align="center" valign="top">
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
@@ -773,41 +572,10 @@
                                     </td>
                                 </tr>
                             </table>
-                            <table height="210" width="363" width="363" border="0" cellpadding="0" cellspacing="0"
-                                class="kk">
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
-                                            <tr>
-                                                <td width="25" height="29" align="center" class="white12B">
-                                                    <img src="images/nzcms/nzcms_bh.gif" alt="标识" />
-                                                </td>
-                                                <td width="250" align="left" class="white14B">
-                                                    国家海洋公益性行业科研专项
-                                                </td>
-                                                <td align="right" class="p12">
-                                                    <a href="nzcms_list.asp?sort_id=663">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table width="99%" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td height="25" align="left" valign="middle">
-                                                    &nbsp;·&nbsp;<a href="nzcms_show_news.asp?id=5629" target="_blank" title="标题：单位宣传视频支持FLV格式">单位宣传视频支持FLV格式</a>
-                                                </td>
-                                                <td width="70" align="center" valign="middle">
-                                                    7月21日
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl8" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=83" ClassID="83" Title="国家海洋公益性行业科研专项" runat="server" />
                         </td>
                     </tr>
-                    <tr>
-                    </tr>
-                </table>
+                    </table>
             </td>
             <!-- 这里左栏开始-->
             <td width="250" align="center" valign="top" class="kk">
@@ -914,7 +682,6 @@
                                                     <td align="left" valign="top" id="demo1">
                                                         <table border="0" cellpadding="0" cellspacing="0">
                                                             <tr>
-                                                         
                                                                 <td align="center">
                                                                     <table width="90" border="0" cellpadding="0" cellspacing="0">
                                                                         <tr>
@@ -1622,9 +1389,9 @@
 <!--
         function openpopup() {
 
-//            var url6
-//            url6 = "ad/ad_tc.asp?id=6"
-//            window.open(url6, "nzmi6", "width=600,height=450,left=100,top=50,toolbar=NO,menubar=NO,scrollbars=yes,resizable=yes")
+            //            var url6
+            //            url6 = "ad/ad_tc.asp?id=6"
+            //            window.open(url6, "nzmi6", "width=600,height=450,left=100,top=50,toolbar=NO,menubar=NO,scrollbars=yes,resizable=yes")
 
         }
         function get_cookie(Name) {
@@ -1854,20 +1621,18 @@
                 <table border="0" cellpadding="3" cellspacing="0">
                     <tr>
                         <td align="center" bgcolor="#009900">
-                            &nbsp;&nbsp;&nbsp;<a href="http://www.sdfwi.cn" target="_blank"><font color="#FFFFFF" style='font-family:微软雅黑;'> 本站由：XXXX建站系统搭建</font></a>&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;<a href="http://www.sdfwi.cn" target="_blank"><font color="#FFFFFF"
+                                style='font-family: 微软雅黑;'> 本站由：XXXX建站系统搭建</font></a>&nbsp;&nbsp;&nbsp;
                         </td>
-                         <td align="center" bgcolor="#006600">
-                            &nbsp;&nbsp;&nbsp;<a href="http://www.sdfwi.cn" target="_blank"><font color="#FFFFFF" style='font-family:微软雅黑;' >进入后台管理</font></a>&nbsp;&nbsp;&nbsp;
+                        <td align="center" bgcolor="#006600">
+                            &nbsp;&nbsp;&nbsp;<a href="http://www.sdfwi.cn" target="_blank"><font color="#FFFFFF"
+                                style='font-family: 微软雅黑;'>进入后台管理</font></a>&nbsp;&nbsp;&nbsp;
                         </td>
- 
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
-  
-    
- 
     </form>
 </body>
 </html>

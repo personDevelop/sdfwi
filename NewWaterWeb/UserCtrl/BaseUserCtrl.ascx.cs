@@ -61,7 +61,7 @@ namespace NewWaterWeb.UserCtrl
 
         public void GenerSpeciInfo()
         {
-           
+
             List<news> list = new newsManager().GetClassID(ClassID);
 
             StringBuilder sb = new StringBuilder(string.Format(@"<table height='210' width='363' width='363' border='0' cellpadding='0' cellspacing='0'
@@ -84,15 +84,20 @@ namespace NewWaterWeb.UserCtrl
                                         <table width='99%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>", Title, MoreUrl));
             foreach (news item in list)
             {
+                string temTitle = item.title;
+                if (item.title.Length > 20)
+                {
+                    temTitle = item.title.Substring(0, 20) + "...";
+                }
                 sb.AppendFormat(@"<tr>
                                                 <td height='25' align='left' valign='middle'>
-                                                    &nbsp;·&nbsp;<a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'>{1}</a>
+                                                    &nbsp;·&nbsp;<a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'>{3}</a>
                                                     <font class='red'>★</font>
                                                 </td>
                                                 <td width='70' align='center' valign='middle'>
                                                     {2}
                                                 </td>
-                                            </tr>", item.id, item.title, item.addtime.Value.ToString("MM月:dd日"));
+                                            </tr>", item.id, item.title, item.addtime.Value.ToString("MM月:dd日"), temTitle);
             }
             sb.Append("</table> </td> </tr>  </table>");
             OutStr = sb.ToString();
