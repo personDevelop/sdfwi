@@ -88,6 +88,17 @@ namespace sdfwi.Logic
         }
 
         /// <summary>
+        /// 获取链接信息集合
+        /// </summary>
+        /// <returns></returns> 
+        public List<website> GetLinkList()
+        {
+            List<website> tem = new List<website>();
+            tem = Dal.From<website>().Where(website._.sitename != "主站").ToDataTable().ToList<website>();
+            return tem;
+        }
+
+        /// <summary>
         /// 获取站点信息datatable
         /// </summary>
         /// <returns></returns>

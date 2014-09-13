@@ -40,7 +40,7 @@ namespace NewWaterWeb.UserCtrl
 
                 linksManager mgr = new linksManager();
                 string result = string.Empty;
-                lst = mgr.GetLinkList();
+                lst = mgr.GetList();
                 int i = 0;
                 foreach (links model in lst)
                 {

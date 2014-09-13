@@ -32,7 +32,7 @@ namespace NewWaterWeb.UserCtrl
 
                 siteManager mgr = new siteManager();
                 string result = string.Empty;
-                lst = mgr.GetwebsiteList();
+                lst = mgr.GetLinkList();
                 int i = 0;
                 foreach (website model in lst)
                 {
