@@ -15,19 +15,25 @@ namespace NewWaterWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<news> lst = new List<news>();
-            newsManager mgr = new newsManager();
-            string tmpl = @" 
+            if (!IsPostBack)
+            {
+                List<news> lst = new List<news>();
+                newsManager mgr = new newsManager();
+                string tmpl = @" 
             <a href='{0}' target='_blank'>
                 <img src='ImgUpload\{1}' alt='{2}' width='355'height='235' />
             </a>";
-            string result = string.Empty;
-            lst = mgr.GetnewsListImage();
-            foreach (news model in lst)
-            {
-                result += string.Format(tmpl, model.id, model.fimgurl, model.title);
+                string result = string.Empty;
+                lst = mgr.GetnewsListImage();
+                foreach (news model in lst)
+                {
+                    result += string.Format(tmpl, model.id, model.fimgurl, model.title);
+                }
+                KinSlideshow.InnerHtml = result;
+
+                
+
             }
-            KinSlideshow.InnerHtml = result;
         }
     }
 }

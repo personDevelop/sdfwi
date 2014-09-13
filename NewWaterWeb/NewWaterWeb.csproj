@@ -912,42 +912,49 @@
     </Compile>
     <Compile Include="UserCtrl\ChildSiteUserCtrl.ascx.cs">
       <DependentUpon>ChildSiteUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\ChildSiteUserCtrl.ascx.designer.cs">
       <DependentUpon>ChildSiteUserCtrl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\ColumnUserCtrl.ascx.cs">
       <DependentUpon>ColumnUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\ColumnUserCtrl.ascx.designer.cs">
       <DependentUpon>ColumnUserCtrl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\ExpertUserCtrl.ascx.cs">
       <DependentUpon>ExpertUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\ExpertUserCtrl.ascx.designer.cs">
       <DependentUpon>ExpertUserCtrl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\LinkSite.ascx.cs">
       <DependentUpon>LinkSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\LinkSite.ascx.designer.cs">
       <DependentUpon>LinkSite.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\VideoUserCtrl.ascx.cs">
       <DependentUpon>VideoUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\VideoUserCtrl.ascx.designer.cs">
       <DependentUpon>VideoUserCtrl.ascx</DependentUpon>

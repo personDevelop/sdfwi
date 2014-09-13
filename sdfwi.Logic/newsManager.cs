@@ -96,6 +96,19 @@ namespace sdfwi.Logic
             return tem;
         }
 
+
+        /// <summary>
+        /// 获取信息内容集合
+        /// </summary>
+        /// <returns></returns> 
+        public List<news> GetTopNews(int top = 1)
+        {
+            List<news> tem = new List<news>();
+            tem = Dal.From<news>().Where(news._.topz == "1").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
+
+            return tem;
+        }
+
         /// <summary>
         /// 获取信息内容datatable
         /// </summary>

@@ -1,4 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="NewWaterWeb.index" %>
+<%@ Register src="TopNews.ascx" tagname="TopNews" tagprefix="uc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -437,113 +438,9 @@
             </td>
             <td align="center" valign="top" background="images/bg/ding.gif" bgcolor="#FFFFFF"
                 class="kk">
+                
                 <!-- 顶条新闻栏-->
-                <table height="6" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="90%" border="0" cellspacing="0" cellpadding="0" id='topnews'>
-                    <!-- 顶条新闻栏-->
-                    <tr>
-                        <td height="35" align="center">
-                            <a href="nzcms_show_news.asp?id=5651" target="_blank" title="标题：一个研究院公司办公厅发文"><font
-                                class="red18">顶条:山东省鱼类产业技术创新 </font></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <a href="nzcms_show_news.asp?id=5651" target="_blank" title="标题：一个研究院公司办公厅发文  点击：35 次">
-                                3月28日，山东省现代农业产业技术体系鱼类产业创新团队2014工作会议在济南召开。创新团队首席专家付佩胜研究员... </a>
-                        </td>
-                    </tr>
-                </table>
-                <table height="8" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="93%" height="2" border="0" cellpadding="0" cellspacing="0" class="kk_dx">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table height="5" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" id='topnews_list'>
-                    <!-- 新闻列表六条-->
-                    <tr>
-                        <td width="6%" height="25" align="center" valign="top" background="images/123.gif">
-                            &nbsp;
-                        </td>
-                        <td width="94%" align="center" valign="top">
-                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td height="25" align="left" valign="middle">
-                                        <a href="nzcms_show_news.asp?id=5673" target="_blank" title="标题：123  浏览次数：2">123
-                                        </a>
-                                    </td>
-                                    <td width="60" align="right" valign="middle">
-                                        11月21日
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="25" align="left" valign="middle">
-                                        <a href="nzcms_show_news.asp?id=5638" target="_blank" title="标题：红头文件测试看看中央文件红头文件  浏览次数：20">
-                                            红头文件测试看看中央文件红头文件 </a>
-                                    </td>
-                                    <td width="60" align="right" valign="middle">
-                                        7月21日
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="25" align="left" valign="middle">
-                                        <a href="nzcms_show_news.asp?id=5619" target="_blank" title="标题：工业和信息化部在黑龙江召开石墨产业发展座谈会  浏览次数：3">
-                                            工业和信息化部在黑龙江召开石墨产业发展座 </a>
-                                    </td>
-                                    <td width="60" align="right" valign="middle">
-                                        7月21日
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="25" align="left" valign="middle">
-                                        <a href="nzcms_show_news.asp?id=5618" target="_blank" title="标题：中国疾控中心慢性病防控媒体交流论坛在京举行  浏览次数：1">
-                                            中国疾控中心慢性病防控媒体交流论坛在京举 </a>
-                                    </td>
-                                    <td width="60" align="right" valign="middle">
-                                        7月21日
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="25" align="left" valign="middle">
-                                        <a href="nzcms_show_news.asp?id=5617" target="_blank" title="标题：外交部发言人洪磊就纳卡地区总统选举答记者问  浏览次数：2">
-                                            外交部发言人洪磊就纳卡地区总统选举答记者 </a>
-                                    </td>
-                                    <td width="60" align="right" valign="middle">
-                                        7月21日
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="25" align="left" valign="middle">
-                                        <a href="nzcms_show_news.asp?id=5616" target="_blank" title="标题：国务院关于印发“十二五”国家战略性新兴产业发展规划的通知  浏览次数：4">
-                                            国务院关于印发“十二五”国家战略性新兴产 </a>
-                                    </td>
-                                    <td width="60" align="right" valign="middle">
-                                        7月21日
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!-- 顶条新闻栏-->
+                <uc1:TopNews ID="TopNews1" runat="server" style='height:100%;width:100%;' />
             </td>
             <td width="250" align="center" valign="top" class="kk">
                 <!-- 这里开始通知通告栏-->
@@ -562,9 +459,7 @@
                 </table>
                 <marquee scrollamount="2" width="240" height="150" direction="up" onmouseover="stop()"
                     onmouseout="start()"  id='noticemaquess'  >
-                    <div  runat=server id='notice_wrap'></div>
-                   
-                </marquee>
+                    <div  runat=server id='notice_wrap'></div></marquee>
                 <table height="6" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td>
