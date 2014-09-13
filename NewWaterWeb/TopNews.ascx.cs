@@ -21,7 +21,7 @@ namespace NewWaterWeb
                         <a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'>{1}
                         </a>
                     </td>
-                    <td width='60' align='right' valign='middle'>
+                    <td width='80' align='center' valign='middle'>
                         {2}
                     </td>
                 </tr>
@@ -39,7 +39,7 @@ namespace NewWaterWeb
                     if (model.title.Length > 20) {
                         model.title = model.title.Substring(0, 20);
                     }
-                    result += string.Format(tmpl, model.id, model.title, "11年5月");
+                    result += string.Format(tmpl, model.id, model.title, Convert.ToDateTime(model.addtime).ToString("yyyy-MM-dd"));
                 }
                 result = "<table width='100%' border=0 align='center' cellpadding='0' cellspacing='0'>" + result + " </table>";
                 news_wrap.InnerHtml = result;
