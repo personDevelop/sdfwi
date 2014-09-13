@@ -849,7 +849,15 @@
     <Content Include="nzcms_nzweb\UpLoad_Class.asp" />
     <Content Include="nzcms_nzweb\upload_json.asp" />
     <Content Include="test.aspx" />
+    <Content Include="TopNews.ascx" />
     <Content Include="UserCtrl\BaseUserCtrl.ascx" />
+    <Content Include="UserCtrl\ChildSiteUserCtrl.ascx" />
+    <Content Include="UserCtrl\ColumnUserCtrl.ascx" />
+    <Content Include="UserCtrl\ExpertUserCtrl.ascx" />
+    <Content Include="UserCtrl\Footer.ascx" />
+    <Content Include="UserCtrl\Header.ascx" />
+    <Content Include="UserCtrl\LinkSite.ascx" />
+    <Content Include="UserCtrl\VideoUserCtrl.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -888,12 +896,61 @@
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TopNews.ascx.cs">
+      <DependentUpon>TopNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TopNews.ascx.designer.cs">
+      <DependentUpon>TopNews.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserCtrl\BaseUserCtrl.ascx.cs">
       <DependentUpon>BaseUserCtrl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserCtrl\BaseUserCtrl.ascx.designer.cs">
       <DependentUpon>BaseUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ChildSiteUserCtrl.ascx.cs">
+      <DependentUpon>ChildSiteUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ChildSiteUserCtrl.ascx.designer.cs">
+      <DependentUpon>ChildSiteUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ColumnUserCtrl.ascx.cs">
+      <DependentUpon>ColumnUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ColumnUserCtrl.ascx.designer.cs">
+      <DependentUpon>ColumnUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ExpertUserCtrl.ascx.cs">
+      <DependentUpon>ExpertUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ExpertUserCtrl.ascx.designer.cs">
+      <DependentUpon>ExpertUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\LinkSite.ascx.cs">
+      <DependentUpon>LinkSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\LinkSite.ascx.designer.cs">
+      <DependentUpon>LinkSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\VideoUserCtrl.ascx.cs">
+      <DependentUpon>VideoUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\VideoUserCtrl.ascx.designer.cs">
+      <DependentUpon>VideoUserCtrl.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

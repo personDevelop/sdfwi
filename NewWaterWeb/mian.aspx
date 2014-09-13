@@ -1,23 +1,10 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mian.aspx.cs" Inherits="NewWaterWeb.mian" %>
-
-<!-- IP-->
-<!-- DATA-->
-<!-- BOOK-->
-<!-- TP-->
-<!-- ZB-->
-<!-- RZ-->
-<!-- qs-->
-<!-- bm-->
-<!-- zq-->
-<!-- cj-->
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <link href="css/css.css" rel="stylesheet" type="text/css">
 <link href="css/css_2.css" rel="stylesheet" type="text/css">
 <script src="ad/js/jquery-1.4a2.min.js" type="text/javascript"></script>
 <script src="ad/js/jquery.KinSlideshow-1.2.1.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-    //打开页面随机选择 切换方式（方向）,怕增大KinSlideshow.js文件 就没把随机切换写到里面。
-    //使用时如有需要随机自己写在前面是一样的。而且还可以只固定随机切换哪几种。
     var moveStyle
     var rand = parseInt(Math.random() * 4)
     switch (rand) {
