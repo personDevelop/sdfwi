@@ -3,6 +3,7 @@
 <%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
 <%@ Register src="UserCtrl/ChildSiteUserCtrl.ascx" tagname="ChildSiteUserCtrl" tagprefix="uc3" %>
+<%@ Register src="UserCtrl/LinkSite.ascx" tagname="LinkSite" tagprefix="uc4" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -1020,144 +1021,43 @@
                         </td>
                     </tr>
                 </table>
-                <div id='scroll_div'>
-                <div id='scroll_begin'>
-                <table id='' border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.gov.cn" target="_blank">
-                                            <img src="nzcms_nzweb/nzcms_up/nz_pic/nz_pic.jpg" alt="中国政府网" width="150" height="50"
-                                                border="0" /></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table width="165" height="5" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.mps.gov.cn" target="_blank">
-                                            <img src="nzcms_nzweb/nzcms_up/nz_pic/nz_pic2.jpg" alt="中国公安网" width="150" height="50"
-                                                border="0" /></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table width="165" height="5" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.moa.gov.cn/" target="_blank">
-                                            <img src="nzcms_nzweb/nzcms_up/nz_pic/nz_pic3.jpg" alt="中国农业部" width="150" height="50"
-                                                border="0" /></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table width="165" height="5" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.aqsiq.gov.cn/" target="_blank">
-                                            <img src="nzcms_nzweb/nzcms_up/nz_pic/nz_pic4.jpg" alt="中国质监网" width="150" height="50"
-                                                border="0" /></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table width="165" height="5" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.moe.gov.cn/" target="_blank">
-                                            <img src="nzcms_nzweb/nzcms_up/nz_pic/nz_pic5.jpg" alt="中国教育部" width="150" height="50"
-                                                border="0" /></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table width="165" height="5" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td align="center">
-                            <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
-                                <tr>
-                                    <td align="center">
-                                        <a href="http://www.saic.gov.cn/" target="_blank">
-                                            <img src="nzcms_nzweb/nzcms_up/nz_pic/nz_pic6.jpg" alt="中国工商网" width="150" height="50"
-                                                border="0" /></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table width="165" height="5" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                    </tr>
+                <div id='www_qpsh_com' style='width:990px;overflow:hidden;'>
+                <table>
+                <tr>
+                 <td id='www_qpsh_com1'>
+              
+                
+                     <uc4:LinkSite ID="LinkSite1" runat="server" />
+              
+                
+                </td>
+                <td id='www_qpsh_com2'></td>
+                </tr>
                 </table>
                 
-                </div>
-                <div id='scroll_end'></div>
+               
                 </div>
             </td>
         </tr>
-        <style>
-       #scroll_begin, #scroll_end{display:inline} </style>
     </table>
     <script>
-        function ScrollImgLeft() {
-            var speed = 50;
-            var scroll_begin = document.getElementById("scroll_begin");
-            var scroll_end = document.getElementById("scroll_end");
-            var scroll_div = document.getElementById("scroll_div");
-            scroll_end.innerHTML = scroll_begin.innerHTML;
-            function Marquee() {
-                if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0)
-                    scroll_div.scrollLeft -= scroll_begin.offsetWidth;
-                else
-                    scroll_div.scrollLeft++;
+        var www_qpsh_com2 = document.getElementById("www_qpsh_com2");
+        var www_qpsh_com1 = document.getElementById("www_qpsh_com1");
+        var www_qpsh_com = document.getElementById("www_qpsh_com");
+        var speed = 30//速度数值越大速度越慢
+        www_qpsh_com2.innerHTML = www_qpsh_com1.innerHTML;
+        function Marquee() {
+           
+            if (www_qpsh_com2.offsetWidth - www_qpsh_com.scrollLeft <= 0)
+                www_qpsh_com.scrollLeft -= www_qpsh_com1.offsetWidth;
+            else {
+                www_qpsh_com.scrollLeft++;
             }
-            var MyMar = setInterval(Marquee, speed);
-            scroll_div.onmouseover = function () { clearInterval(MyMar); }
-            scroll_div.onmouseout = function () { MyMar = setInterval(Marquee, speed); }
         }
-
-        ScrollImgLeft();
+        var MyMar = setInterval(Marquee, speed);
+        www_qpsh_com.onmouseover = function () { clearInterval(MyMar) };
+        www_qpsh_com.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+        
     </script>
     <script language="JavaScript">
         suspendcode = "<DIV id=lovexin1 style='Z-INDEX: 10; LEFT: 6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank'><img src='nzcms_nzweb/nzcms_up/nz_pic/ad_100x300.jpg' width='100' height='300' border='0' alt='对联左边'></a><br><img src='ad_duilian/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='关闭对联广告' class='hand'></DIV>"

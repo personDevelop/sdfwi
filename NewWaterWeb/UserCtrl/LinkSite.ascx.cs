@@ -12,16 +12,18 @@ namespace NewWaterWeb.UserCtrl
 {
     public partial class LinkSite : System.Web.UI.UserControl
     {
+        public string OutStr { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
 
             string tmpl = @"
             <td align='center'>
                 <table border='0' cellpadding=0 cellspacing='0' bordercolor='#FFFFFF'>
-                    <tbody><tr>
+                    <tbody>
+                        <tr>
                                     <td align='center'>
-                                        <a href='http://www.gov.cn' target='_blank'>
-                                            <img src='nzcms_nzweb/nzcms_up/nz_pic/nz_pic.jpg' alt='中国政府网' width='150' height='50' border='0'></a>
+                                        <a href='{0}' target='_blank'>
+                                            <img src='{1}' alt='{2}' width='150' height='50' border='0'></a>
                                     </td>
                                 </tr>
                             </tbody></table>
@@ -32,7 +34,25 @@ namespace NewWaterWeb.UserCtrl
                                 </tr>
                             </tbody></table>
                         </td>";
+            if (!IsPostBack)
+            {
+                List<links> lst = new List<links>();
 
+                linksManager mgr = new linksManager();
+                string result = string.Empty;
+                lst = mgr.GetLinkList();
+                int i = 0;
+                foreach (links model in lst)
+                {
+                  
+                   
+                    result += string.Format(tmpl, model.siteurl, model.imgurl,model.sitename);
+
+                }
+                result = "<table border=0 cellpadding=0 cellspacing=0 bordercolor='#FFFFFF'><tr>" + result + " </tr></table>";
+
+                OutStr = result.ToString();
+            }
         }
     }
 }
