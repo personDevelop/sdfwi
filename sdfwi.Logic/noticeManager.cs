@@ -33,7 +33,16 @@ namespace sdfwi.Logic
             tem = Dal.From<notice>().List<notice>();
             return tem;
         }
-
+        /// <summary>
+        /// 获取通知信息集合
+        /// </summary>
+        /// <returns></returns> 
+        public List<notice> GetTopList(int top = 5)
+        {
+            List<notice> tem = new List<notice>();
+            tem = Dal.From<notice>().ToDataTable(top).ToList<notice>();
+            return tem;
+        }
         /// <summary>
         /// 获取通知信息datatable
         /// </summary>
