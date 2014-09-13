@@ -1727,9 +1727,9 @@
 <!--
         function openpopup() {
 
-            var url6
-            url6 = "ad/ad_tc.asp?id=6"
-            window.open(url6, "nzmi6", "width=600,height=450,left=100,top=50,toolbar=NO,menubar=NO,scrollbars=yes,resizable=yes")
+//            var url6
+//            url6 = "ad/ad_tc.asp?id=6"
+//            window.open(url6, "nzmi6", "width=600,height=450,left=100,top=50,toolbar=NO,menubar=NO,scrollbars=yes,resizable=yes")
 
         }
         function get_cookie(Name) {
