@@ -37,6 +37,10 @@ namespace NewWaterWeb.UserCtrl
                     GenerExperts();
 
                     break;
+                case "video":
+                    GenerVideo();
+                    break;
+
                 default:
                     break;
             }
@@ -63,7 +67,7 @@ namespace NewWaterWeb.UserCtrl
             OutStr = sb.ToString();
         }
 
-        public void GenerSpeciInfo()
+        private void GenerSpeciInfo()
         {
 
             List<news> list = new newsManager().GetClassID(ClassID);
@@ -111,7 +115,7 @@ namespace NewWaterWeb.UserCtrl
         }
 
 
-        public void GenerExperts()
+        private void GenerExperts()
         {
 
             List<experts> list = new expertsManager().GetList();
@@ -151,6 +155,45 @@ namespace NewWaterWeb.UserCtrl
 
         }
 
+        private void GenerVideo()
+        {
 
+            List<video> list = new videoManager().GetvideoList();
+
+            StringBuilder sb = new StringBuilder(@"<table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/right_bg2.gif'>
+                    <tr>
+                        <td height='30' align='center' class='white12B'>
+                            ::&nbsp;&nbsp;视频频道&nbsp;&nbsp;::
+                        </td>
+                    </tr>
+                </table>");
+            foreach (video item in list)
+            {
+
+                sb.AppendFormat(@"  <object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0'
+                    width='250' height='140'>
+                    <param name='movie' value='nzcms_flv.swf' />
+                    <param name='quality' value='High' />
+                    <param name='allowFullScreen' value='true' />
+                    <param name='wmode' value='transparent' />
+                    <param name='FlashVars' value='vcastr_file={2}&IsAutoPlay=0' />
+                    <embed src='{3}' allowfullscreen='true' flashvars='vcastr_file={2}&IsAutoPlay=0'
+                        quality='High' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash'
+                        width='250' height='140'></embed>
+                </object>
+                <table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/left2.gif'>
+                    <tr>
+                        <td height='30' align='center' class='white12b'>
+                            <a href='nzcms_show_news.asp?id={0}'>{1}</a>
+                        </td>
+                    </tr>
+                </table>", item.id, item.title, item.vpic,item.vurl);
+            }
+            //sb.Append("  </tr>  </table>");
+            OutStr = sb.ToString();
+
+
+
+        }
     }
 }

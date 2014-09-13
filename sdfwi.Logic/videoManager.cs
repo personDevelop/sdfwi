@@ -73,7 +73,7 @@ namespace sdfwi.Logic
         {
             return Dal.Find<videoclass>(where);
         }
-  
+
 
 
 
@@ -81,10 +81,10 @@ namespace sdfwi.Logic
         /// 获取视频信息集合
         /// </summary>
         /// <returns></returns> 
-        public List<video> GetvideoList()
+        public List<video> GetvideoList(int top = 2)
         {
             List<video> tem = new List<video>();
-            tem = Dal.From<video>().List<video>();
+            tem = Dal.From<video>().OrderBy(video._.addtime.Desc).ToDataTable(top).ToList<video>();
             return tem;
         }
 

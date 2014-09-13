@@ -461,7 +461,7 @@
                 </table>
                 <marquee scrollamount="2" width="240" height="150" direction="up" onmouseover="stop()"
                     onmouseout="start()" id='noticemaquess'>
-                    <div  runat=server id='notice_wrap'></div></marquee>
+                   <uc2:BaseUserCtrl ID="BaseUserCtrl11" CtrlType="notice" runat="server" /></marquee>
                 <table height="6" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td>
@@ -582,49 +582,8 @@
             </td>
             <!-- 这里左栏开始-->
             <td width="250" align="center" valign="top" class="kk">
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/right_bg2.gif">
-                    <tr>
-                        <td height="30" align="center" class="white12B">
-                            ::&nbsp;&nbsp;视频频道&nbsp;&nbsp;::
-                        </td>
-                    </tr>
-                </table>
-                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
-                    width="250" height="140">
-                    <param name="movie" value="nzcms_flv.swf" />
-                    <param name="quality" value="High" />
-                    <param name="allowFullScreen" value="true" />
-                    <param name="wmode" value="transparent" />
-                    <param name="FlashVars" value="vcastr_file=nzcms_nzweb/nzcms_up/flv/nzcms.flv&IsAutoPlay=0" />
-                    <embed src="nzcms_flv.swf" allowfullscreen="true" flashvars="vcastr_file=nzcms_nzweb/nzcms_up/flv/nzcms.flv&IsAutoPlay=0"
-                        quality="High" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"
-                        width="250" height="140"></embed>
-                </object>
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/left2.gif">
-                    <tr>
-                        <td height="30" align="center" class="white12b">
-                            <a href="nzcms_show_news.asp?id=5629">单位宣传视频支持FLV格式</a>
-                        </td>
-                    </tr>
-                </table>
-                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
-                    width="250" height="140">
-                    <param name="movie" value="nzcms_flv.swf" />
-                    <param name="quality" value="High" />
-                    <param name="allowFullScreen" value="true" />
-                    <param name="wmode" value="transparent" />
-                    <param name="FlashVars" value="vcastr_file=nzcms_nzweb/nzcms_up/flv/nzcms.flv&IsAutoPlay=0" />
-                    <embed src="nzcms_flv.swf" allowfullscreen="true" flashvars="vcastr_file=nzcms_nzweb/nzcms_up/flv/nzcms.flv&IsAutoPlay=0"
-                        quality="High" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"
-                        width="250" height="140"></embed>
-                </object>
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/left2.gif">
-                    <tr>
-                        <td height="30" align="center" class="white12b">
-                            <a href="nzcms_show_news.asp?id=5629">单位宣传视频支持FLV格式</a>
-                        </td>
-                    </tr>
-                </table>
+                <uc2:BaseUserCtrl ID="BaseUserCtrl10" CtrlType="video" MoreUrl="list_news.aspx?sort_id=93"
+                    runat="server" />
                 <!-- 这里结束视频栏-->
                 <!-- 这里专题图片开始-->
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/right_bg2.gif">
