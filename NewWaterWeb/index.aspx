@@ -2,6 +2,7 @@
 
 <%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
+<%@ Register src="UserCtrl/ChildSiteUserCtrl.ascx" tagname="ChildSiteUserCtrl" tagprefix="uc3" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -756,62 +757,11 @@
                             <table height="10" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
+                                       
                                     </td>
                                 </tr>
                             </table>
-                            <table width="96%" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td align="center">
-                                        <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
-                                            <tr>
-                                                <td width="210" height="25" align="center" valign="middle" onmouseover='this. background="images/nzcms.44.gif"'
-                                                    onmouseout='this. background="images/nzcms.39.gif"'>
-                                                    </a><a href="http://www.sdfwi.cn/yqjk/index.aspx" target="_blank">水生动物疫情监控研究中心</a><a
-                                                        href="nzcms_list_news.asp?id=690&amp;sort_id=659" title="栏目名称" class="left_index"></a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table height="15" border="0" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td align="center">
-                                        <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
-                                            <tr>
-                                                <td width="210" height="25" align="center" valign="middle" onmouseover='this. background="images/nzcms.44.gif"'
-                                                    onmouseout='this. background="images/nzcms.39.gif"'>
-                                                    <a href="jczx/index.aspx" target="_blank">山东省海洋经济监测与评估中心</a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table height="15" border="0" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td align="center">
-                                        <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
-                                            <tr>
-                                                <td width="210" height="25" align="center" valign="middle" onmouseover='this. background="images/nzcms.44.gif"'
-                                                    onmouseout='this. background="images/nzcms.39.gif"'>
-                                                    <a href="jczx/index.aspx" target="_blank">资源与环境室</a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table height="15" border="0" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <uc3:ChildSiteUserCtrl ID="ChildSiteUserCtrl1" runat="server" />
                         </td>
                     </tr>
                 </table>
@@ -1111,7 +1061,9 @@
                         </td>
                     </tr>
                 </table>
-                <table border="0" cellpadding="0" cellspacing="0">
+                <div id='scroll_div'>
+                <div id='scroll_begin'>
+                <table id='' border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="center">
                             <table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
@@ -1219,9 +1171,35 @@
                     <tr>
                     </tr>
                 </table>
+                
+                </div>
+                <div id='scroll_end'></div>
+                </div>
             </td>
         </tr>
+        <style>
+       #scroll_begin, #scroll_end{display:inline} </style>
     </table>
+    <script>
+        function ScrollImgLeft() {
+            var speed = 50;
+            var scroll_begin = document.getElementById("scroll_begin");
+            var scroll_end = document.getElementById("scroll_end");
+            var scroll_div = document.getElementById("scroll_div");
+            scroll_end.innerHTML = scroll_begin.innerHTML;
+            function Marquee() {
+                if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0)
+                    scroll_div.scrollLeft -= scroll_begin.offsetWidth;
+                else
+                    scroll_div.scrollLeft++;
+            }
+            var MyMar = setInterval(Marquee, speed);
+            scroll_div.onmouseover = function () { clearInterval(MyMar); }
+            scroll_div.onmouseout = function () { MyMar = setInterval(Marquee, speed); }
+        }
+
+        ScrollImgLeft();
+    </script>
     <script language="JavaScript">
         suspendcode = "<DIV id=lovexin1 style='Z-INDEX: 10; LEFT: 6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank'><img src='nzcms_nzweb/nzcms_up/nz_pic/ad_100x300.jpg' width='100' height='300' border='0' alt='对联左边'></a><br><img src='ad_duilian/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='关闭对联广告' class='hand'></DIV>"
         document.write(suspendcode);
