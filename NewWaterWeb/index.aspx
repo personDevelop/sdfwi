@@ -490,7 +490,7 @@
                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="center" valign="top">
-                            <uc2:baseuserctrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=85"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=85"
                                 ClassID="85" Title="山东省农业良种工程重大课题及项目" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
@@ -526,7 +526,7 @@
                                 ClassID="91" Title="农业部公益性行业科研专项..." runat="server" />
                         </td>
                     </tr>
-                    </table>
+                </table>
                 <!--<table width="99%" border="0" cellpadding="0" cellspacing="1" bgcolor="#333333">
         <tr>
           <td><a href="http://www.sdfwi.cn/demo/zt1"><img src="flash/ad2/ad2.gif" alt="横幅标语" width="100%" height="60" border="0" /></a></td>
@@ -551,7 +551,8 @@
                                     </td>
                                 </tr>
                             </table>
-                           <uc2:BaseUserCtrl ID="BaseUserCtrl6" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=102" ClassID="102" Title="享受国务院特殊津贴" runat="server" />
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl6" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=102"
+                                ClassID="102" Title="享受国务院特殊津贴" runat="server" />
                         </td>
                     </tr>
                     <tr>
@@ -562,8 +563,8 @@
                                     </td>
                                 </tr>
                             </table>
-                             <uc2:BaseUserCtrl ID="BaseUserCtrl7" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=104" ClassID="104" Title="研究生培养" runat="server" />
- 
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl7" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=104"
+                                ClassID="104" Title="研究生培养" runat="server" />
                         </td>
                         <td align="center" valign="top">
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
@@ -572,10 +573,11 @@
                                     </td>
                                 </tr>
                             </table>
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl8" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=83" ClassID="83" Title="国家海洋公益性行业科研专项" runat="server" />
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl8" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=83"
+                                ClassID="83" Title="国家海洋公益性行业科研专项" runat="server" />
                         </td>
                     </tr>
-                    </table>
+                </table>
             </td>
             <!-- 这里左栏开始-->
             <td width="250" align="center" valign="top" class="kk">
@@ -680,148 +682,8 @@
                                             <table width="950" border="0" align="center" cellpadding="0" cellspace="0">
                                                 <tr>
                                                     <td align="left" valign="top" id="demo1">
-                                                        <table border="0" cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td align="center">
-                                                                    <table width="90" border="0" cellpadding="0" cellspacing="0">
-                                                                        <tr>
-                                                                            <td align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="5" class="bg_qc">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="middle" class="product">
-                                                                                            <a href="nzcms_show_news.asp?id=5642" target="_blank">
-                                                                                                <img src="nzcms_nzweb\nzcms_up\20111017114645.jpg" alt="朱永安" width="70" height="100"
-                                                                                                    border="0" />
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="25" align="center">
-                                                                                <a href="nzcms_show_news.asp?id=5642" target="_blank" title="朱永安">朱永安 </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td align="center">
-                                                                    <table width="90" border="0" cellpadding="0" cellspacing="0">
-                                                                        <tr>
-                                                                            <td align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="5" class="bg_qc">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="middle" class="product">
-                                                                                            <a href="nzcms_show_news.asp?id=5629" target="_blank">
-                                                                                                <img src="nzcms_nzweb/nzcms_up/20120510041143.jpg" alt="段登选" width="70" height="100"
-                                                                                                    border="0" />
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="25" align="center">
-                                                                                <a href="nzcms_show_news.asp?id=5629" target="_blank" title="标题：段登选">段登选 </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td align="center">
-                                                                    <table width="90" border="0" cellpadding="0" cellspacing="0">
-                                                                        <tr>
-                                                                            <td align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="5" class="bg_qc">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="middle" class="product">
-                                                                                            <a href="nzcms_show_news.asp?id=5623" target="_blank">
-                                                                                                <img src="nzcms_nzweb\nzcms_up\20111025015229.jpg" alt="王老师" width="70" height="100"
-                                                                                                    border="0" />
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="25" align="center">
-                                                                                <a href="nzcms_show_news.asp?id=5623" target="_blank" title="王老师">王老师 </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td align="center">
-                                                                    <table width="90" border="0" cellpadding="0" cellspacing="0">
-                                                                        <tr>
-                                                                            <td align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="5" class="bg_qc">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="middle" class="product">
-                                                                                            <a href="nzcms_show_news.asp?id=5622" target="_blank">
-                                                                                                <img src="nzcms_nzweb\nzcms_up\20111025015116.jpg" alt="谢老师" width="70" height="100"
-                                                                                                    border="0" />
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="25" align="center">
-                                                                                <a href="nzcms_show_news.asp?id=5622" target="_blank">谢老师 </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td align="center">
-                                                                    <table width="90" border="0" cellpadding="0" cellspacing="0">
-                                                                        <tr>
-                                                                            <td align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="5" class="bg_qc">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="middle" class="product">
-                                                                                            <a href="nzcms_show_news.asp?id=5619" target="_blank">
-                                                                                                <img src="nzcms_nzweb/nzcms_up/20111025014805.jpg" alt="方老师" width="70" height="100"
-                                                                                                    border="0" />
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="25" align="center">
-                                                                                <a href="nzcms_show_news.asp?id=5619" target="_blank" title="方老师">方老师 </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td align="center">
-                                                                    <table width="90" border="0" cellpadding="0" cellspacing="0">
-                                                                        <tr>
-                                                                            <td align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="5" class="bg_qc">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="middle" class="product">
-                                                                                            <a href="nzcms_show_news.asp?id=5618" target="_blank">
-                                                                                                <img src="nzcms_nzweb/nzcms_up/20111025015313.jpg" alt="秦老师" width="70" height="100"
-                                                                                                    border="0" />
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="25" align="center">
-                                                                                <a href="nzcms_show_news.asp?id=5618" target="_blank" title="秦老师">秦老师 </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
+                                                        <uc2:BaseUserCtrl ID="BaseUserCtrl9" CtrlType="experts" runat="server" />
+                                                       
                                                     </td>
                                                     <td id="demo2" valign="top">
                                                     </td>
