@@ -1,0 +1,9 @@
+<div style="DISPLAY:none">
+<%= nzcms_bq_nzcms %><br>
+<%= nzcms_bq_by %><br>
+<%= nzcms_bq_51tj %><br>
+<%= nzcms_a_userid %><br>
+<%= nzcms_a_cdid %>
+</div>
+
+
