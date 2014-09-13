@@ -88,11 +88,11 @@ namespace sdfwi.Logic
         /// 获取信息内容集合
         /// </summary>
         /// <returns></returns> 
-        public List<news> GetnewsListImage(int top=5)
+        public List<news> GetnewsListImage(int top = 5)
         {
             List<news> tem = new List<news>();
             tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
- 
+
             return tem;
         }
 
@@ -151,6 +151,11 @@ namespace sdfwi.Logic
 
 
 
+
+        public List<news> GetClassID(string classid, int top = 7)
+        {
+            return Dal.From<news>().Where(news._.sid == classid).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
+        }
     }
 
 

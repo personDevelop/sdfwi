@@ -40,7 +40,7 @@ namespace sdfwi.Logic
         public List<notice> GetTopList(int top = 5)
         {
             List<notice> tem = new List<notice>();
-            tem = Dal.From<notice>().ToDataTable(top).ToList<notice>();
+            tem = Dal.From<notice>().OrderBy(notice._.addtime.Desc).ToDataTable(top).ToList<notice>();
             return tem;
         }
         /// <summary>

@@ -29,5 +29,32 @@ namespace NewWaterWeb {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::NewWaterWeb.UserCtrl.BaseUserCtrl BaseUserCtrl1;
+        
+        /// <summary>
+        /// BaseUserCtrl2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::NewWaterWeb.UserCtrl.BaseUserCtrl BaseUserCtrl2;
+        
+        /// <summary>
+        /// BaseUserCtrl3 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::NewWaterWeb.UserCtrl.BaseUserCtrl BaseUserCtrl3;
+        
+        /// <summary>
+        /// BaseUserCtrl4 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::NewWaterWeb.UserCtrl.BaseUserCtrl BaseUserCtrl4;
     }
 }

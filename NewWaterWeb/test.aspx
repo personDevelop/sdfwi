@@ -11,6 +11,14 @@
     <div>
         通知公告用户控件测试
         <uc1:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="notice" runat="server" />
+
+         	山东省农业良种工程重大课题及项目
+        <uc1:BaseUserCtrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl=""  ClassID="85" Title="山东省农业良种工程重大课题及项目" runat="server" />
+         山东省科学技术发展计划项目
+         
+        <uc1:BaseUserCtrl ID="BaseUserCtrl3" CtrlType="specil" MoreUrl="" ClassID="87" Title="山东省科学技术发展计划项目" runat="server" />
+         省财政支持农业重大应用技术创新资金.
+        <uc1:BaseUserCtrl ID="BaseUserCtrl4" CtrlType="specil" MoreUrl="" ClassID="89" Title="省财政支持农业重大应用技术创新资金" runat="server" />
     </div>
     </form>
 </body>
