@@ -1025,6 +1025,7 @@
     <Content Include="UserCtrl\ExpertUserCtrl.ascx" />
     <Content Include="UserCtrl\Footer.ascx" />
     <Content Include="UserCtrl\Header.ascx" />
+    <Content Include="UserCtrl\LeftNavUserCtrl.ascx" />
     <Content Include="UserCtrl\LinkSite.ascx" />
     <Content Include="UserCtrl\NewsListUserCtrl.ascx" />
     <Content Include="UserCtrl\SiteMapUserCtrl.ascx" />
@@ -1137,6 +1138,13 @@
     </Compile>
     <Compile Include="UserCtrl\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\LeftNavUserCtrl.ascx.cs">
+      <DependentUpon>LeftNavUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\LeftNavUserCtrl.ascx.designer.cs">
+      <DependentUpon>LeftNavUserCtrl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\LinkSite.ascx.cs">
       <DependentUpon>LinkSite.ascx</DependentUpon>
