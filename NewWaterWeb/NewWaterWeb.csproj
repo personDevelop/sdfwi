@@ -1026,6 +1026,8 @@
     <Content Include="UserCtrl\Footer.ascx" />
     <Content Include="UserCtrl\Header.ascx" />
     <Content Include="UserCtrl\LinkSite.ascx" />
+    <Content Include="UserCtrl\NewsListUserCtrl.ascx" />
+    <Content Include="UserCtrl\SiteMapUserCtrl.ascx" />
     <Content Include="UserCtrl\VideoUserCtrl.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -1142,6 +1144,20 @@
     </Compile>
     <Compile Include="UserCtrl\LinkSite.ascx.designer.cs">
       <DependentUpon>LinkSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\NewsListUserCtrl.ascx.cs">
+      <DependentUpon>NewsListUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\NewsListUserCtrl.ascx.designer.cs">
+      <DependentUpon>NewsListUserCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SiteMapUserCtrl.ascx.cs">
+      <DependentUpon>SiteMapUserCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SiteMapUserCtrl.ascx.designer.cs">
+      <DependentUpon>SiteMapUserCtrl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserCtrl\VideoUserCtrl.ascx.cs">
       <DependentUpon>VideoUserCtrl.ascx</DependentUpon>
