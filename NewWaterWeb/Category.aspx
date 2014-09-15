@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
     CodeBehind="Category.aspx.cs" Inherits="NewWaterWeb.Category" %>
 
+<%@ Register src="UserCtrl/SiteMapUserCtrl.ascx" tagname="SiteMapUserCtrl" tagprefix="uc1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -201,20 +203,11 @@
                 <!--左侧推荐文章 -->
             </td>
             <td align="center">
-                <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F5F5F5" class="bg_qc">
-                    <tr>
-                        <td width="25" height="20" align="center">
-                            <img src="images/nzcms.xinxin.gif" alt="标" />
-                        </td>
-                        <td align="left" class="p12">
-                            您的位置：<a href="index.asp">首页</a>&nbsp;&gt;&nbsp;&nbsp;<a href="nzcms_list.asp?sort_id=656">部门介绍</a>&nbsp;&gt;&nbsp;&nbsp;<a
-                                href="nzcms_list_news.asp?id=665&amp;sort_id=656">单位简介</a>
-                        </td>
-                    </tr>
-                </table>
+                <uc1:SiteMapUserCtrl ID="SiteMapUserCtrl1" runat="server" />
                 <table height="10" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td>
+
                         </td>
                     </tr>
                 </table>

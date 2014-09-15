@@ -12,7 +12,7 @@ using System.Data;
 using Sharp.Common;
 using sdfwi.Entity;
 
-namespace OAManager
+namespace sdfwi.Logic
 {
     /// <summary>
     /// 下载信息的逻辑层
