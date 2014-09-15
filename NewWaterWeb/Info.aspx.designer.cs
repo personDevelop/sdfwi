@@ -10,6 +10,6 @@
 namespace NewWaterWeb {
     
     
-    public partial class Category {
+    public partial class Info {
     }
 }

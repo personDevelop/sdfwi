@@ -370,6 +370,7 @@
     <Content Include="ImgUpload\s_201432145749.JPG" />
     <Content Include="ImgUpload\s_2014369491.JPG" />
     <Content Include="index.aspx" />
+    <Content Include="Info.aspx" />
     <Content Include="js\main.js" />
     <Content Include="link.aspx" />
     <Content Include="mian.aspx" />
@@ -1050,6 +1051,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="IndexBuilder.cs" />
+    <Compile Include="Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="link.aspx.cs">
       <DependentUpon>link.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
