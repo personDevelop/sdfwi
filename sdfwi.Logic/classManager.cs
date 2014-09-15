@@ -33,7 +33,16 @@ namespace sdfwi.Logic
             tem = Dal.From<oneclass>().List<oneclass>();
             return tem;
         }
+        /// <summary>
+        /// 获取一级分类集合
+        /// </summary>
+        /// <returns></returns> 
+        public List<oneclass> GetList(int parentid)
+        {
 
+            return Dal.From<oneclass>().Where(oneclass._.pid == parentid).OrderBy(oneclass._.id).List<oneclass>();
+
+        }
         /// <summary>
         /// 获取一级分类datatable
         /// </summary>
@@ -42,6 +51,7 @@ namespace sdfwi.Logic
         {
             return Dal.From<oneclass>().ToDataTable();
         }
+
 
         /// <summary>
         /// 分页获取获取一级分类datatable
@@ -179,9 +189,15 @@ namespace sdfwi.Logic
         {
             return Dal.Find<sclass>(where);
         }
-  
 
-  
+
+
+
+
+        public List<sclass> GetsclassList(int p)
+        {
+            return Dal.From<sclass>().Where(sclass._.pid == p).OrderBy(sclass._.id).List<sclass>();
+        }
     }
 
 

@@ -31,7 +31,15 @@ namespace sdfwi.Logic
             tem = Dal.From<newclass>().List<newclass>();
             return tem;
         }
+        /// <summary>
+        /// 获取新闻分类集合
+        /// </summary>
+        /// <returns></returns> 
+        public List<newclass> GetList(int parentid)
+        {
+            return Dal.From<newclass>().Where(newclass._.pid == parentid).OrderBy(newclass._.id).List<newclass>();
 
+        }
         /// <summary>
         /// 获取新闻分类datatable
         /// </summary>
@@ -91,7 +99,7 @@ namespace sdfwi.Logic
         public List<news> GetnewsListImage(int top = 5)
         {
             List<news> tem = new List<news>();
-            int pageCount=0;
+            int pageCount = 0;
             tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top, 10, ref pageCount, ref pageCount).ToList<news>();
 
             return tem;
