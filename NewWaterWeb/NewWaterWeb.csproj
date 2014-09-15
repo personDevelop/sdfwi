@@ -91,6 +91,7 @@
     <Content Include="ad\sql_2014.asp" />
     <Content Include="ad\sql_ningzhi.net.asp" />
     <Content Include="ad\下拉站群链接.asp" />
+    <Content Include="Category.aspx" />
     <Content Include="Config\System\DataBaseConnect.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1034,6 +1035,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1057,6 +1065,13 @@
       <DependentUpon>mian.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
     <Compile Include="test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1148,6 +1163,7 @@
     <None Include="nzcms_nzweb\nzcms_up\flv\Desktop.ini" />
     <None Include="nzcms_nzweb\nzcms_up\flv\nzcms.flv" />
     <None Include="nzcms_nzweb\nzcms_up\nz_pic\Desktop.ini" />
+    <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="nzcms_nzweb\nzcms_up\attached\media\" />
