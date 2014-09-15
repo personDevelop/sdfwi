@@ -889,7 +889,8 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="ad/nzcms_zq_linka.asp" name="sina_roll" width="100%" marginwidth="0"
+                                        
+                                        <iframe src="html/linka.htm" name="sina_roll" width="100%" marginwidth="0"
                                             height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe2" border="0">
                                         </iframe>
                                     </td>
@@ -905,7 +906,7 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="ad/nzcms_zq_linkb.asp" name="sina_roll" width="100%" marginwidth="0"
+                                        <iframe src="html/linkb.htm" name="sina_roll" width="100%" marginwidth="0"
                                             height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe3" border="0">
                                         </iframe>
                                     </td>
@@ -921,7 +922,7 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="ad/nzcms_zq_linkc.asp" name="sina_roll" width="100%" marginwidth="0"
+                                        <iframe src="html/linkc.htm" name="sina_roll" width="100%" marginwidth="0"
                                             height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe4" border="0">
                                         </iframe>
                                     </td>
@@ -937,7 +938,7 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="ad/nzcms_zq_linkd.asp" name="sina_roll" width="100%" marginwidth="0"
+                                        <iframe src="html/linkd.htm" name="sina_roll" width="100%" marginwidth="0"
                                             height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe5" border="0">
                                         </iframe>
                                     </td>
@@ -953,7 +954,7 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="ad/nzcms_zq_linkf.asp" name="sina_roll" width="100%" marginwidth="0"
+                                        <iframe src="html/linkf.htm" name="sina_roll" width="100%" marginwidth="0"
                                             height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe6" border="0">
                                         </iframe>
                                     </td>
