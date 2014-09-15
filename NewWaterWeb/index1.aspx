@@ -2,12 +2,11 @@
 
 <%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
-<%@ Register src="UserCtrl/ChildSiteUserCtrl.ascx" tagname="ChildSiteUserCtrl" tagprefix="uc3" %>
-<%@ Register src="UserCtrl/LinkSite.ascx" tagname="LinkSite" tagprefix="uc4" %>
+<%@ Register Src="UserCtrl/ChildSiteUserCtrl.ascx" TagName="ChildSiteUserCtrl" TagPrefix="uc3" %>
+<%@ Register Src="UserCtrl/LinkSite.ascx" TagName="LinkSite" TagPrefix="uc4" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  
 </head>
 <link rel="shortcut icon" href="nz.ico" />
 <link href="css/css.css" rel="stylesheet" type="text/css">
@@ -642,7 +641,6 @@
                                                 <tr>
                                                     <td align="left" valign="top" id="demo1">
                                                         <uc2:BaseUserCtrl ID="BaseUserCtrl9" CtrlType="experts" runat="server" />
-                                                       
                                                     </td>
                                                     <td id="demo2" valign="top">
                                                     </td>
@@ -715,7 +713,6 @@
                             <table height="10" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
-                                       
                                     </td>
                                 </tr>
                             </table>
@@ -887,10 +884,8 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        
-                                        <iframe src="html/linka.htm" name="sina_roll" width="100%" marginwidth="0"
-                                            height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe2" border="0">
-                                        </iframe>
+                                        <iframe src="html/linka.htm" name="sina_roll" width="100%" marginwidth="0" height="150"
+                                            marginheight="0" scrolling="yes" frameborder="No" id="Iframe2" border="0"></iframe>
                                     </td>
                                 </tr>
                             </table>
@@ -904,9 +899,8 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="html/linkb.htm" name="sina_roll" width="100%" marginwidth="0"
-                                            height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe3" border="0">
-                                        </iframe>
+                                        <iframe src="html/linkb.htm" name="sina_roll" width="100%" marginwidth="0" height="150"
+                                            marginheight="0" scrolling="yes" frameborder="No" id="Iframe3" border="0"></iframe>
                                     </td>
                                 </tr>
                             </table>
@@ -920,9 +914,8 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="html/linkc.htm" name="sina_roll" width="100%" marginwidth="0"
-                                            height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe4" border="0">
-                                        </iframe>
+                                        <iframe src="html/linkc.htm" name="sina_roll" width="100%" marginwidth="0" height="150"
+                                            marginheight="0" scrolling="yes" frameborder="No" id="Iframe4" border="0"></iframe>
                                     </td>
                                 </tr>
                             </table>
@@ -936,9 +929,8 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="html/linkd.htm" name="sina_roll" width="100%" marginwidth="0"
-                                            height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe5" border="0">
-                                        </iframe>
+                                        <iframe src="html/linkd.htm" name="sina_roll" width="100%" marginwidth="0" height="150"
+                                            marginheight="0" scrolling="yes" frameborder="No" id="Iframe5" border="0"></iframe>
                                     </td>
                                 </tr>
                             </table>
@@ -952,9 +944,8 @@
                                 </tr>
                                 <tr>
                                     <td height="26" align="center">
-                                        <iframe src="html/linkf.htm" name="sina_roll" width="100%" marginwidth="0"
-                                            height="150" marginheight="0" scrolling="yes" frameborder="No" id="Iframe6" border="0">
-                                        </iframe>
+                                        <iframe src="html/linkf.htm" name="sina_roll" width="100%" marginwidth="0" height="150"
+                                            marginheight="0" scrolling="yes" frameborder="No" id="Iframe6" border="0"></iframe>
                                     </td>
                                 </tr>
                             </table>
@@ -1020,21 +1011,16 @@
                         </td>
                     </tr>
                 </table>
-                <div id='www_qpsh_com' style='width:990px;overflow:hidden;'>
-                <table>
-                <tr>
-                 <td id='www_qpsh_com1'>
-              
-                
-                     <uc4:LinkSite ID="LinkSite1" runat="server" />
-              
-                
-                </td>
-                <td id='www_qpsh_com2'></td>
-                </tr>
-                </table>
-                
-               
+                <div id='www_qpsh_com' style='width: 990px; overflow: hidden;'>
+                    <table>
+                        <tr>
+                            <td id='www_qpsh_com1'>
+                                <uc4:LinkSite ID="LinkSite1" runat="server" />
+                            </td>
+                            <td id='www_qpsh_com2'>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </td>
         </tr>
@@ -1046,7 +1032,7 @@
         var speed = 30//速度数值越大速度越慢
         www_qpsh_com2.innerHTML = www_qpsh_com1.innerHTML;
         function Marquee() {
-           
+
             if (www_qpsh_com2.offsetWidth - www_qpsh_com.scrollLeft <= 0)
                 www_qpsh_com.scrollLeft -= www_qpsh_com1.offsetWidth;
             else {
