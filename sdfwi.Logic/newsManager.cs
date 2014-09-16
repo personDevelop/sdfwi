@@ -177,7 +177,7 @@ namespace sdfwi.Logic
         /// <param name="pageCount">总页数</param>
         /// <param name="recordCount">总记录数</param>
         /// <returns></returns>
-        public List<ViewAllInfo> GetList(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
+        public List<ViewAllInfo> GetViewAllInfoList(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
         {
 
 
@@ -193,7 +193,7 @@ namespace sdfwi.Logic
         /// <param name="pageCount">总页数</param>
         /// <param name="recordCount">总记录数</param>
         /// <returns></returns>
-        public DataTable GetDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
+        public DataTable GetViewAllInfoDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
         {
 
 
