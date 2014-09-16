@@ -48,7 +48,12 @@ body{	margin-left: 0px;
 
 
 
-
+.righth2 {
+font-size: 18px;
+color: #f3760f;
+font-family: "宋体";
+font-weight: bold;
+}
 
 .top {
 	border-top-width: 1px;

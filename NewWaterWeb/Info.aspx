@@ -124,32 +124,15 @@
                     </tr>
                 </table>
                 <!--文章显示 -->
-                <table width="98%" border="0" cellpadding="0" cellspacing="0" background="images/list_news_bg.gif">
-                    <tr>
-                        <td width="190" height="33" align="center" class="title14b">
-                            <%=TitleName %>
-                        </td>
-                        <td align="right">
-                            &nbsp;&nbsp;
-                        </td>
-                        <td>
-                            &nbsp;
-                        </td>
-                    </tr>
-                </table>
-                <table height="20" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
+                <%=TitleName %>
+                 
                 <!--图片格式显示 -->
-                <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+                
                 <!--内容显示 -->
-                <table width="97%" height="19" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
+                <table width="97%" height="19" border="0" cellpadding="0" cellspacing="0"  style="border-top: #7fadd1 dotted 1px">
+                    <tr >
                         <td height="40" colspan="3" align="center" class="righth2">
-                             <%=Title%>
+                             <%=InfoTitle%>
                         </td>
                     </tr>
                     <tr>
