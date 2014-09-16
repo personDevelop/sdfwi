@@ -58,7 +58,7 @@ namespace NewWaterWeb.UserCtrl
             {
                 sb.AppendFormat(@"<tr>
                             <td height='25' align='left' valign='middle'>
-                                &nbsp;<img src='images/biao.gif' /><a href='newsdetail.aspx?id={0}' target='_blank'
+                                &nbsp;<img src='images/biao.gif' /><a href='info.aspx?type=notice&id={0}' target='_blank'
                                     title='标题：{1}'>{1}</a> &nbsp;
                             </td>
                         </tr>", item.id, item.title);
@@ -89,7 +89,7 @@ namespace NewWaterWeb.UserCtrl
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table width='99%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>", Title, MoreUrl));
+                                        <table width='99%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>", Title, "Category.aspx?type=news&sid="+ClassID));
             foreach (news item in list)
             {
                 string temTitle = item.title;
@@ -99,7 +99,7 @@ namespace NewWaterWeb.UserCtrl
                 }
                 sb.AppendFormat(@"<tr>
                                                 <td height='25' align='left' valign='middle'>
-                                                    &nbsp;·&nbsp;<a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'>{3}</a>
+                                                    &nbsp;·&nbsp;<a href='Info.aspx?type=news&id={0}' target='_blank' title='标题：{1}'>{3}</a>
                                                     <font class='red'>★</font>
                                                 </td>
                                                 <td width='70' align='center' valign='middle'>
@@ -131,7 +131,7 @@ namespace NewWaterWeb.UserCtrl
                                                                                 <table border='0' cellpadding='0' cellspacing='5' class='bg_qc'>
                                                                                     <tr>
                                                                                         <td align='center' valign='middle' class='product'>
-                                                                                            <a href='nzcms_show_news.asp?id={0}' target='_blank'>
+                                                                                            <a href='Info.aspx?type=experts&id={0}' target='_blank'>
                                                                                                 <img src='{1}' alt='{2}' width='70' height='100'
                                                                                                     border='0' />
                                                                                             </a>
@@ -175,7 +175,7 @@ namespace NewWaterWeb.UserCtrl
                 <table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/left2.gif'>
                     <tr>
                         <td height='30' align='center' class='white12b'>
-                            <a href='nzcms_show_news.asp?id={0}'>{1}</a>
+                            <a href='Info.aspx?type=video&id={0}'>{1}</a>
                         </td>
                     </tr>
                 </table>", item.id, item.title,  item.vpic);

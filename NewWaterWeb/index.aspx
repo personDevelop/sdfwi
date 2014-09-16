@@ -34,7 +34,7 @@
                             通知通告
                         </td>
                         <td align="right" background="images/nzcms/left2.gif" class="p12">
-                            <a href="nzcms_list.asp?sort_id=664" target="_blank">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
+                            <a href="Category.aspx?type=notice" target="_blank">更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
                         </td>
                     </tr>
                 </table>

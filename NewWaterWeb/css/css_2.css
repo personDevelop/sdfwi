@@ -17,8 +17,10 @@ body{	margin-left: 0px;
 
 }
 */
-.nzcms_left_bg {/*  分类导航*/
-	background-image: url(../images/nzcms/list_bg.gif);}
+ /*  分类导航*/
+
+.left_bg { 
+	background-image:url(../images/list_bg.gif);}
 
 .kk {
 	border: 1px solid #B7DEFF;

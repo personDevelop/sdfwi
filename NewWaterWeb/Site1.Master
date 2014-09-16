@@ -66,7 +66,7 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="index.asp" class="left">首页</a>
+                                            <a href="index.aspx" class="left">首页</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -83,7 +83,7 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="nzcms_list_news.asp?id=665&sort_id=656" class="left" onmouseover="mopen('m656')"
+                                            <a href="Category.aspx?type=oneclass&sid=1" class="left" onmouseover="mopen('m656')"
                                                 onmouseout="mclosetime()">机构概况</a>
                                         </td>
                                     </tr>
@@ -95,7 +95,7 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=665&sort_id=656"><font class="p14">
+                                                            <a href="Category.aspx?type=oneclass&sid=3"><font class="p14">
                                                                 <img src="images/biao.gif" alt="图标" border="0">&nbsp;单位简介</font></a>
                                                         </td>
                                                     </tr>
@@ -105,8 +105,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=666&sort_id=656"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;机构组织</font></a>
+                                                            <a href="Category.aspx?type=oneclass&sid=5"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;机构设置</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -115,8 +115,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="http://www.sdfwi.cn"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;领导班子</font></a>
+                                                            <a href="Category.aspx?type=oneclass&sid=4"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;领导致辞</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -126,8 +126,8 @@
                                             <table width="100" height="35" border="0" cellpadding="0">
                                                 <tr>
                                                     <td align="left">
-                                                        <a href="nzcms_list_news.asp?id=706&sort_id=656"><font class="p14">
-                                                            <img src="images/biao.gif" alt="图标" border="0">&nbsp;单位风采</font></a>
+                                                        <a href="Category.aspx?type=oneclass&sid=6"><font class="p14">
+                                                            <img src="images/biao.gif" alt="图标" border="0">&nbsp;荣誉资质</font></a>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -142,8 +142,8 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="nzcms_list.asp?sort_id=657" class="left" onmouseover="mopen('m657')" onmouseout="mclosetime()">
-                                                新闻动态</a>
+                                            <a href="Category.aspx?type=news&sid=1" class="left" onmouseover="mopen('m657')"
+                                                onmouseout="mclosetime()">新闻动态</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -154,8 +154,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=668&sort_id=657"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;国内新闻</font></a>
+                                                            <a href="Category.aspx?type=news&sid=2"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;所内新闻</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -164,33 +164,13 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="/"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;市区新闻</font></a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td align="left">
-                                                <table width="100" height="35" border="0" cellpadding="0">
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=670&sort_id=657"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;本站新闻</font></a>
+                                                            <a href="Category.aspx?type=news&sid=3"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;行业新闻</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
-                                        <td align="left">
-                                            <table width="100" height="35" border="0" cellpadding="0">
-                                                <tr>
-                                                    <td align="left">
-                                                        <a href="nzcms_list_news.asp?id=671&sort_id=657"><font class="p14">
-                                                            <img src="images/biao.gif" alt="图标" border="0">&nbsp;图片新闻</font></a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
                                     </table>
                                 </div>
                             </li>
@@ -201,7 +181,7 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="nzcms_list_news.asp?id=674&sort_id=658" class="left" onmouseover="mopen('m658')"
+                                            <a href="Category.aspx?type=news&sid=4" class="left" onmouseover="mopen('m658')"
                                                 onmouseout="mclosetime()">成果展示</a>
                                         </td>
                                     </tr>
@@ -213,8 +193,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=674&sort_id=658"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;基地建设</font></a>
+                                                            <a href="Category.aspx?type=news&sid=5"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;单位建设</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -223,33 +203,13 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=673&sort_id=658"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;对外合作</font></a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td align="left">
-                                                <table width="100" height="35" border="0" cellpadding="0">
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=675&sort_id=658"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;公开报告</font></a>
+                                                            <a href="Category.aspx?type=news&sid=6"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;科研成果</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
-                                        <td align="left">
-                                            <table width="100" height="35" border="0" cellpadding="0">
-                                                <tr>
-                                                    <td align="left">
-                                                        <a href="nzcms_list.asp?sort_id=672"><font class="p14">
-                                                            <img src="images/biao.gif" alt="图标" border="0">&nbsp;公开栏目</font></a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
                                     </table>
                                 </div>
                             </li>
@@ -260,8 +220,8 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="nzcms_list.asp?sort_id=660" class="left" onmouseover="mopen('m660')" onmouseout="mclosetime()">
-                                                对外合作</a>
+                                            <a href="Category.aspx?type=oneclass&sid=2" class="left" onmouseover="mopen('m660')"
+                                                onmouseout="mclosetime()">基地建设</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -272,8 +232,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=691&sort_id=660"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;栏目名称</font></a>
+                                                            <a href="Category.aspx?type=oneclass&sid=7"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;基地概况</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -282,18 +242,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=692&sort_id=660"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;栏目名称</font></a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td align="left">
-                                                <table width="100" height="35" border="0" cellpadding="0">
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=694&sort_id=660"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;栏目名称</font></a>
+                                                            <a href="Category.aspx?type=news&sid=8"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;基地新闻</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -309,8 +259,47 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="nzcms_list.asp?sort_id=661" class="left" onmouseover="mopen('m661')" onmouseout="mclosetime()">
-                                                下载中心</a>
+                                            <a href="Category.aspx?type=news&sid=9" class="left" onmouseover="mopen('m660')"
+                                                onmouseout="mclosetime()">对外合作</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id="Div1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="top01" background="images/BG/01.gif">
+                                        <tr>
+                                            <td align="left">
+                                                <table width="100" height="35" border="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <a href="Category.aspx?type=news&sid=10"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;国内合作</font></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left">
+                                                <table width="100" height="35" border="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <a href="Category.aspx?type=news&sid=11"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;国外合作</font></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+                            <!--导航 -->
+                        </td>
+                        <td align="left">
+                            <li>
+                                <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
+                                    <tr>
+                                        <td height="38" align="center">
+                                            <a href="Category.aspx?type=download&sid=1" class="left" onmouseover="mopen('m661')"
+                                                onmouseout="mclosetime()">下载中心</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -321,8 +310,8 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=695&sort_id=661"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;栏目名称</font></a>
+                                                            <a href="Category.aspx?type=download&sid=2"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;软件下载</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -331,12 +320,35 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=696&sort_id=661"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;栏目名称</font></a>
+                                                            <a href="Category.aspx?type=download&sid=3"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;学习资料</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">
+                                                <table width="100" height="35" border="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <a href="Category.aspx?type=download&sid=4"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;模板下载</font></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left">
+                                                <table width="100" height="35" border="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <a href="Category.aspx?type=download&sid=5"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;所内表格</font></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
                             </li>
@@ -385,8 +397,8 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="nzcms_list.asp?sort_id=663" class="left" onmouseover="mopen('m663')" onmouseout="mclosetime()">
-                                                联系我们</a>
+                                            <a href="Category.aspx?type=oneclass&sid=34" class="left" onmouseover="mopen('m663')"
+                                                onmouseout="mclosetime()">联系我们</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -397,22 +409,13 @@
                                                 <table width="100" height="35" border="0" cellpadding="0">
                                                     <tr>
                                                         <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=699&sort_id=663"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;本站视频</font></a>
+                                                            <a href="Category.aspx?type=oneclass&sid=35"><font class="p14">
+                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;联系我们</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td align="left">
-                                                <table width="100" height="35" border="0" cellpadding="0">
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a href="nzcms_list_news.asp?id=700&sort_id=663"><font class="p14">
-                                                                <img src="images/biao.gif" alt="图标" border="0">&nbsp;其它视频</font></a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
                             </li>
@@ -423,70 +426,68 @@
         </tr>
     </table>
     <!--滚动栏插件 -->
- 
-<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td>
-    
-    <table width="1004" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#000000" style="border: 5px solid #000000;">
-  <tr>
-    <td width="120" height="60" align="center" background="images/timebg.gif" class="white18">
-	
-<span id=localtime></span>
-<script type="text/javascript">
-    function showLocale(objD) {
-        var str, colorhead, colorfoot;
-        var yy = objD.getYear();
-        if (yy < 1900) yy = yy + 1900;
-        var MM = objD.getMonth() + 1;
-        if (MM < 10) MM = '0' + MM;
-        var dd = objD.getDate();
-        if (dd < 10) dd = '0' + dd;
-        var hh = objD.getHours();
-        if (hh < 10) hh = '0' + hh;
-        var mm = objD.getMinutes();
-        if (mm < 10) mm = '0' + mm;
-        var ss = objD.getSeconds();
-        if (ss < 10) ss = '0' + ss;
-        var ww = objD.getDay();
-        if (ww == 0) colorhead = "<font color=\"#FF5300\">";
-        if (ww > 0 && ww < 6) colorhead = "<font color=\"#FF5300\">";
-        if (ww == 6) colorhead = "<font color=\"#FF5300\">";
-        if (ww == 0) ww = "星期日";
-        if (ww == 1) ww = "星期一";
-        if (ww == 2) ww = "星期二";
-        if (ww == 3) ww = "星期三";
-        if (ww == 4) ww = "星期四";
-        if (ww == 5) ww = "星期五";
-        if (ww == 6) ww = "星期六";
-        colorfoot = "</font>"
-        str = colorhead + hh + ":" + mm + ":" + ss + "<br><font style='font-size: 24px':font-family: '微软雅黑';>" + ww + colorfoot;
-        return (str);
-    }
-    function tick() {
-        var today;
-        today = new Date();
-        document.getElementById("localtime").innerHTML = showLocale(today);
-        window.setTimeout("tick()", 1000);
-    }
-    tick();
-</script>
-	
-	</td>
-    <td align="left" valign="top" background="images/timebg.gif"><table height="8" border="0" cellpadding="0" cellspacing="0">
-      <tr>
-        <td></td>
-      </tr>
+    <table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table width="1004" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#000000"
+                    style="border: 5px solid #000000;">
+                    <tr>
+                        <td width="120" height="60" align="center" background="images/timebg.gif" class="white18">
+                            <span id="localtime"></span>
+                            <script type="text/javascript">
+                                function showLocale(objD) {
+                                    var str, colorhead, colorfoot;
+                                    var yy = objD.getYear();
+                                    if (yy < 1900) yy = yy + 1900;
+                                    var MM = objD.getMonth() + 1;
+                                    if (MM < 10) MM = '0' + MM;
+                                    var dd = objD.getDate();
+                                    if (dd < 10) dd = '0' + dd;
+                                    var hh = objD.getHours();
+                                    if (hh < 10) hh = '0' + hh;
+                                    var mm = objD.getMinutes();
+                                    if (mm < 10) mm = '0' + mm;
+                                    var ss = objD.getSeconds();
+                                    if (ss < 10) ss = '0' + ss;
+                                    var ww = objD.getDay();
+                                    if (ww == 0) colorhead = "<font color=\"#FF5300\">";
+                                    if (ww > 0 && ww < 6) colorhead = "<font color=\"#FF5300\">";
+                                    if (ww == 6) colorhead = "<font color=\"#FF5300\">";
+                                    if (ww == 0) ww = "星期日";
+                                    if (ww == 1) ww = "星期一";
+                                    if (ww == 2) ww = "星期二";
+                                    if (ww == 3) ww = "星期三";
+                                    if (ww == 4) ww = "星期四";
+                                    if (ww == 5) ww = "星期五";
+                                    if (ww == 6) ww = "星期六";
+                                    colorfoot = "</font>"
+                                    str = colorhead + hh + ":" + mm + ":" + ss + "<br><font style='font-size: 24px':font-family: '微软雅黑';>" + ww + colorfoot;
+                                    return (str);
+                                }
+                                function tick() {
+                                    var today;
+                                    today = new Date();
+                                    document.getElementById("localtime").innerHTML = showLocale(today);
+                                    window.setTimeout("tick()", 1000);
+                                }
+                                tick();
+                            </script>
+                        </td>
+                        <td align="left" valign="top" background="images/timebg.gif">
+                            <table height="8" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                            <marquee scrollamount="5" width="870" height="50" onmouseover="stop()" onmouseout="start()"><span style="font-family:Microsoft YaHei;color:#ffff00;font-size:24px;">山东省淡水渔业研究院五一放假通知:2014年5月1日至3日为法定节假日，5月1日正常上班，请大家做好工作安排，恭祝大家节日快乐！</span></marquee>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
     </table>
-      <marquee scrollamount=5 width=870 height="50"onmouseover=stop() onmouseout=start()><span style="font-family:Microsoft YaHei;color:#ffff00;font-size:24px;">山东省淡水渔业研究院五一放假通知:2014年5月1日至3日为法定节假日，5月1日正常上班，请大家做好工作安排，恭祝大家节日快乐！</span></marquee></td>
-  </tr>
-</table>
-    
-    </td>
-  </tr>
-</table>
- 
-<!--滚动栏插件 -->
+    <!--滚动栏插件 -->
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
     <table width="1004" height="30" border="0" align="center" cellpadding="0" cellspacing="0"

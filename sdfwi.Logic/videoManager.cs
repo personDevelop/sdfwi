@@ -130,6 +130,12 @@ namespace sdfwi.Logic
 
 
 
+
+        public List<videoclass> GetList(int parentid)
+        {
+            return Dal.From<videoclass>().Where(videoclass._.pid == parentid).OrderBy(videoclass._.id).List<videoclass>();
+    
+        }
     }
 
 

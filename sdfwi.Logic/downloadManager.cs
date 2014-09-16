@@ -31,6 +31,10 @@ namespace sdfwi.Logic
             return tem;
         }
 
+        public List<downclass> GetList(int parentid)
+        {
+            return Dal.From<downclass>().Where(downclass._.pid==parentid).OrderBy(downclass._.id).List<downclass>();
+        }
         /// <summary>
         /// 获取下载分类datatable
         /// </summary>
@@ -127,6 +131,7 @@ namespace sdfwi.Logic
         {
             return Dal.Find<download>(where);
         }
+
 
 
 

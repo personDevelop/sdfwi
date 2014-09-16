@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
     CodeBehind="Category.aspx.cs" Inherits="NewWaterWeb.Category" %>
 
-<%@ Register src="UserCtrl/SiteMapUserCtrl.ascx" tagname="SiteMapUserCtrl" tagprefix="uc1" %>
-
+<%@ Register Src="UserCtrl/SiteMapUserCtrl.ascx" TagName="SiteMapUserCtrl" TagPrefix="uc1" %>
+<%@ Register Src="UserCtrl/LeftNavUserCtrl.ascx" TagName="LeftNavUserCtrl" TagPrefix="uc2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,94 +11,7 @@
         <tr valign="top">
             <td width="260" align="center" valign="top" background="/images/left_bg.gif">
                 <!--左侧栏目 -->
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="left_bg">
-                    <tr>
-                        <td width="35" height="35" align="center">
-                            <img src="images/word.gif" alt="分类" width="16" height="16" />
-                        </td>
-                        <td align="left">
-                            <span class="white14B">[&nbsp;部门介绍&nbsp;]&nbsp;信息导航 </span>
-                        </td>
-                    </tr>
-                </table>
-                <table height="10" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="96%" border="0" cellpadding="0" cellspacing="0" onmouseover='this. background="images/left_bg2.jpg"'
-                    onmouseout='this. background="images/left_bg1.jpg"' background="images/left_bg2.jpg"
-                    class="kk22">
-                    <tr>
-                        <td width="40" height="35" align="center">
-                            <img src="images/news_14.gif" alt="nzcms" border="0" />
-                        </td>
-                        <td align="left">
-                            <a href="nzcms_list_news.asp?id=665&sort_id=656" class="left2">单位简介</a>
-                        </td>
-                    </tr>
-                </table>
-                <table height="10" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="96%" border="0" cellpadding="0" cellspacing="0" onmouseover='this. background="images/left_bg2.jpg"'
-                    onmouseout='this. background="images/left_bg1.jpg"' background="images/left_bg1.jpg"
-                    class="kk22">
-                    <tr>
-                        <td width="40" height="35" align="center">
-                            <img src="images/news_14.gif" alt="nzcms" border="0" />
-                        </td>
-                        <td align="left">
-                            <a href="nzcms_list_news.asp?id=666&sort_id=656" class="left2">机构组织</a>
-                        </td>
-                    </tr>
-                </table>
-                <table height="10" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="96%" border="0" cellpadding="0" cellspacing="0" onmouseover='this. background="images/left_bg2.jpg"'
-                    onmouseout='this. background="images/left_bg1.jpg"' background="images/left_bg1.jpg"
-                    class="kk22">
-                    <tr>
-                        <td width="40" height="35" align="center">
-                            <img src="images/news_14.gif" alt="nzcms" border="0" />
-                        </td>
-                        <td align="left">
-                            <a href="http://www.sdfwi.cn" class="left2">领导班子</a>
-                        </td>
-                    </tr>
-                </table>
-                <table height="10" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
-                <table width="96%" border="0" cellpadding="0" cellspacing="0" onmouseover='this. background="images/left_bg2.jpg"'
-                    onmouseout='this. background="images/left_bg1.jpg"' background="images/left_bg1.jpg"
-                    class="kk22">
-                    <tr>
-                        <td width="40" height="35" align="center">
-                            <img src="images/news_14.gif" alt="nzcms" border="0" />
-                        </td>
-                        <td align="left">
-                            <a href="nzcms_list_news.asp?id=706&sort_id=656" class="left2">单位风采</a>
-                        </td>
-                    </tr>
-                </table>
-                <table height="10" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
-                        </td>
-                    </tr>
-                </table>
+                <uc2:LeftNavUserCtrl ID="LeftNavUserCtrl1" runat="server" />
                 <!--左侧栏目 -->
                 <!--左侧推荐文章 -->
                 <table width="96%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="kk22">
@@ -207,7 +120,6 @@
                 <table height="10" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td>
-
                         </td>
                     </tr>
                 </table>
