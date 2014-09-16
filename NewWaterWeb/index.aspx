@@ -5,36 +5,36 @@
 <%@ Register src="UserCtrl/ChildSiteUserCtrl.ascx" tagname="ChildSiteUserCtrl" tagprefix="uc3" %>
 <%@ Register src="UserCtrl/LinkSite.ascx" tagname="LinkSite" tagprefix="uc4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>ÑĞ¾¿ÔºÍøÕ¾¹ÜÀíÏµÍ³</title>
-    <meta name="Keywords" content="ÑĞ¾¿Ôº,À¶É«Ä£°å,Öµ°àÏµÍ³,Ç©ÊÕÏµÍ³" />
+    <title>ç ”ç©¶é™¢ç½‘ç«™ç®¡ç†ç³»ç»Ÿ</title>
+    <meta name="Keywords" content="ç ”ç©¶é™¢,è“è‰²æ¨¡æ¿,å€¼ç­ç³»ç»Ÿ,ç­¾æ”¶ç³»ç»Ÿ" />
     <meta name="Description" content="" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <table width="1004" border="0" align="center" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF">
         <tr>
             <td width="355" align="center" valign="top" bgcolor="#FFFFFF" class="kk">
-                <!-- Í¼Æ¬À¸µ÷ÓÃ-->
+                <!-- å›¾ç‰‡æ è°ƒç”¨-->
                 <iframe src="mian.aspx" name="sina_roll" width="100%" marginwidth="0" height="235"
                     marginheight="0" scrolling="No" frameborder="No" id="sina_roll" border="0"></iframe>
-                <!-- Í¼Æ¬À¸µ÷ÓÃ-->
+                <!-- å›¾ç‰‡æ è°ƒç”¨-->
             </td>
             <td align="center" valign="top" background="images/bg/ding.gif" bgcolor="#FFFFFF"
                 class="kk">
-                <!-- ¶¥ÌõĞÂÎÅÀ¸-->
+                <!-- é¡¶æ¡æ–°é—»æ -->
                 <uc1:TopNews ID="TopNews1" runat="server" style='height: 100%; width: 100%;' />
             </td>
             <td width="250" align="center" valign="top" class="kk">
-                <!-- ÕâÀï¿ªÊ¼Í¨ÖªÍ¨¸æÀ¸-->
+                <!-- è¿™é‡Œå¼€å§‹é€šçŸ¥é€šå‘Šæ -->
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="right_kq">
                     <tr>
                         <td width="30" height="27" align="center" background="images/nzcms/left.gif">
                             <img src="images/laba.gif" alt="BY:127.0.0.1" />
                         </td>
                         <td width="80" align="left" background="images/nzcms/left.gif" class="title12b">
-                            Í¨ÖªÍ¨¸æ
+                            é€šçŸ¥é€šå‘Š
                         </td>
                         <td align="right" background="images/nzcms/left2.gif" class="p12">
-                            <a href="Category.aspx?type=notice" target="_blank">¸ü¶à&gt;&gt;&gt;</a>&nbsp;&nbsp;
+                            <a href="Category.aspx?type=notice" target="_blank">æ›´å¤š&gt;&gt;&gt;</a>&nbsp;&nbsp;
                         </td>
                     </tr>
                 </table>
@@ -49,20 +49,20 @@
                 </table>
                 <a href="book.asp">
                     <img src="images/nzcms/nzcms.book.gif" border="0" /></a>
-                <!-- ÕâÀï½áÊøÍ¨ÖªÍ¨¸æÀ¸-->
+                <!-- è¿™é‡Œç»“æŸé€šçŸ¥é€šå‘Šæ -->
             </td>
         </tr>
     </table>
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="4" bgcolor="#FFFFFF">
         <tr>
             <td height="50" colspan="2" align="right" background="images/nzcms/bannan2.gif">
-                ±ã½İÁ´½Ó£º &nbsp;|&nbsp; <a href="nzcms_list_news.asp?id=668&sort_id=657">É½¶«Ê¡Å©ÒµÁ¼ÖÖ¹¤³ÌÖØ´ó¿ÎÌâ¼°ÏîÄ¿</a>
-                &nbsp;|&nbsp; <a href="/">É½¶«Ê¡¿ÆÑ§¼¼Êõ·¢Õ¹¼Æ»®ÏîÄ¿</a> &nbsp;|&nbsp; <a href="nzcms_list_news.asp?id=670&sort_id=657">
-                    Ê¡²ÆÕşÖ§³ÖÅ©ÒµÖØ´óÓ¦ÓÃ¼¼Êõ´´ĞÂ×Ê½ğÏîÄ¿</a>&nbsp;|&nbsp;<br />
-                <a href="nzcms_list_news.asp?id=671&sort_id=657">Å©Òµ²¿¹«ÒæĞÔĞĞÒµ¿ÆÑĞ×¨Ïî</a> &nbsp;|&nbsp;
-                <a href="nzcms_list.asp?sort_id=660">É½¶«Ê¡Í»³ö¹±Ï×µÄÇàÄê×¨¼Ò</a> &nbsp;|&nbsp; <a href="nzcms_list.asp?sort_id=661">
-                    ÏíÊÜ¹úÎñÔºÌØÊâ½òÌù</a> &nbsp;|&nbsp; <a href="nzcms_list.asp?sort_id=662">ÑĞ¾¿ÉúÅàÑø</a> &nbsp;|&nbsp;
-                <a href="nzcms_list.asp?sort_id=663">¹ú¼Òº£Ñó¹«ÒæĞÔĞĞÒµ¿ÆÑĞ×¨Ïî</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                ä¾¿æ·é“¾æ¥ï¼š &nbsp;|&nbsp; <a href="nzcms_list_news.asp?id=668&sort_id=657">å±±ä¸œçœå†œä¸šè‰¯ç§å·¥ç¨‹é‡å¤§è¯¾é¢˜åŠé¡¹ç›®</a>
+                &nbsp;|&nbsp; <a href="/">å±±ä¸œçœç§‘å­¦æŠ€æœ¯å‘å±•è®¡åˆ’é¡¹ç›®</a> &nbsp;|&nbsp; <a href="nzcms_list_news.asp?id=670&sort_id=657">
+                    çœè´¢æ”¿æ”¯æŒå†œä¸šé‡å¤§åº”ç”¨æŠ€æœ¯åˆ›æ–°èµ„é‡‘é¡¹ç›®</a>&nbsp;|&nbsp;<br />
+                <a href="nzcms_list_news.asp?id=671&sort_id=657">å†œä¸šéƒ¨å…¬ç›Šæ€§è¡Œä¸šç§‘ç ”ä¸“é¡¹</a> &nbsp;|&nbsp;
+                <a href="nzcms_list.asp?sort_id=660">å±±ä¸œçœçªå‡ºè´¡çŒ®çš„é’å¹´ä¸“å®¶</a> &nbsp;|&nbsp; <a href="nzcms_list.asp?sort_id=661">
+                    äº«å—å›½åŠ¡é™¢ç‰¹æ®Šæ´¥è´´</a> &nbsp;|&nbsp; <a href="nzcms_list.asp?sort_id=662">ç ”ç©¶ç”ŸåŸ¹å…»</a> &nbsp;|&nbsp;
+                <a href="nzcms_list.asp?sort_id=663">å›½å®¶æµ·æ´‹å…¬ç›Šæ€§è¡Œä¸šç§‘ç ”ä¸“é¡¹</a> &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
         </tr>
         <tr>
@@ -71,7 +71,7 @@
                     <tr>
                         <td align="center" valign="top">
                             <uc2:BaseUserCtrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=85"
-                                ClassID="85" Title="É½¶«Ê¡Å©ÒµÁ¼ÖÖ¹¤³ÌÖØ´ó¿ÎÌâ¼°ÏîÄ¿" runat="server" />
+                                ClassID="85" Title="å±±ä¸œçœå†œä¸šè‰¯ç§å·¥ç¨‹é‡å¤§è¯¾é¢˜åŠé¡¹ç›®" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
@@ -81,7 +81,7 @@
                         </td>
                         <td align="center" valign="top">
                             <uc2:BaseUserCtrl ID="BaseUserCtrl3" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=87"
-                                ClassID="87" Title="É½¶«Ê¡¿ÆÑ§¼¼Êõ·¢Õ¹¼Æ»®ÏîÄ¿" runat="server" />
+                                ClassID="87" Title="å±±ä¸œçœç§‘å­¦æŠ€æœ¯å‘å±•è®¡åˆ’é¡¹ç›®" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
@@ -93,7 +93,7 @@
                     <tr>
                         <td align="center" valign="top">
                             <uc2:BaseUserCtrl ID="BaseUserCtrl4" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=89"
-                                ClassID="89" Title="Ê¡²ÆÕşÖ§³ÖÅ©ÒµÖØ´óÓ¦ÓÃ¼¼Êõ´´ĞÂ×Ê½ğ..." runat="server" />
+                                ClassID="89" Title="çœè´¢æ”¿æ”¯æŒå†œä¸šé‡å¤§åº”ç”¨æŠ€æœ¯åˆ›æ–°èµ„é‡‘..." runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
@@ -103,13 +103,13 @@
                         </td>
                         <td align="center" valign="top">
                             <uc2:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=91"
-                                ClassID="91" Title="Å©Òµ²¿¹«ÒæĞÔĞĞÒµ¿ÆÑĞ×¨Ïî..." runat="server" />
+                                ClassID="91" Title="å†œä¸šéƒ¨å…¬ç›Šæ€§è¡Œä¸šç§‘ç ”ä¸“é¡¹..." runat="server" />
                         </td>
                     </tr>
                 </table>
                 <!--<table width="99%" border="0" cellpadding="0" cellspacing="1" bgcolor="#333333">
         <tr>
-          <td><a href="http://www.sdfwi.cn/demo/zt1"><img src="flash/ad2/ad2.gif" alt="ºá·ù±êÓï" width="100%" height="60" border="0" /></a></td>
+          <td><a href="http://www.sdfwi.cn/demo/zt1"><img src="flash/ad2/ad2.gif" alt="æ¨ªå¹…æ ‡è¯­" width="100%" height="60" border="0" /></a></td>
         </tr>
       </table>-->
                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -122,7 +122,7 @@
                                 </tr>
                             </table>
                             <uc2:BaseUserCtrl ID="BaseUserCtrl5" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=93"
-                                ClassID="93" Title="É½¶«Ê¡Í»³ö¹±Ï×µÄÇàÄê×¨¼Ò" runat="server" />
+                                ClassID="93" Title="å±±ä¸œçœçªå‡ºè´¡çŒ®çš„é’å¹´ä¸“å®¶" runat="server" />
                         </td>
                         <td align="center" valign="top">
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
@@ -132,7 +132,7 @@
                                 </tr>
                             </table>
                             <uc2:BaseUserCtrl ID="BaseUserCtrl6" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=102"
-                                ClassID="102" Title="ÏíÊÜ¹úÎñÔºÌØÊâ½òÌù" runat="server" />
+                                ClassID="102" Title="äº«å—å›½åŠ¡é™¢ç‰¹æ®Šæ´¥è´´" runat="server" />
                         </td>
                     </tr>
                     <tr>
@@ -144,7 +144,7 @@
                                 </tr>
                             </table>
                             <uc2:BaseUserCtrl ID="BaseUserCtrl7" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=104"
-                                ClassID="104" Title="ÑĞ¾¿ÉúÅàÑø" runat="server" />
+                                ClassID="104" Title="ç ”ç©¶ç”ŸåŸ¹å…»" runat="server" />
                         </td>
                         <td align="center" valign="top">
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
@@ -154,21 +154,21 @@
                                 </tr>
                             </table>
                             <uc2:BaseUserCtrl ID="BaseUserCtrl8" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=83"
-                                ClassID="83" Title="¹ú¼Òº£Ñó¹«ÒæĞÔĞĞÒµ¿ÆÑĞ×¨Ïî" runat="server" />
+                                ClassID="83" Title="å›½å®¶æµ·æ´‹å…¬ç›Šæ€§è¡Œä¸šç§‘ç ”ä¸“é¡¹" runat="server" />
                         </td>
                     </tr>
                 </table>
             </td>
-            <!-- ÕâÀï×óÀ¸¿ªÊ¼-->
+            <!-- è¿™é‡Œå·¦æ å¼€å§‹-->
             <td width="250" align="center" valign="top" class="kk">
                 <uc2:BaseUserCtrl ID="BaseUserCtrl10" CtrlType="video" MoreUrl="list_news.aspx?sort_id=93"
                     runat="server" />
-                <!-- ÕâÀï½áÊøÊÓÆµÀ¸-->
-                <!-- ÕâÀï×¨ÌâÍ¼Æ¬¿ªÊ¼-->
+                <!-- è¿™é‡Œç»“æŸè§†é¢‘æ -->
+                <!-- è¿™é‡Œä¸“é¢˜å›¾ç‰‡å¼€å§‹-->
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/right_bg2.gif">
                     <tr>
                         <td height="30" align="center" class="white12B">
-                            ::&nbsp;&nbsp;»î¶¯×¨Ìâ&nbsp;&nbsp;::
+                            ::&nbsp;&nbsp;æ´»åŠ¨ä¸“é¢˜&nbsp;&nbsp;::
                         </td>
                     </tr>
                 </table>
@@ -188,19 +188,19 @@
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/02.jpg" alt="2" width="250" height="50" border="0" /></a>
                 <a href="/" target="_blank">
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/03.jpg" alt="3" width="250" height="50" border="0" /></a>
-                <!-- ÕâÀï×¨ÌâÍ¼Æ¬½áÊø-->
-                <!-- ÕâÀï¿ªÊ¼±ãÃñÁ´½ÓÀ¸-->
+                <!-- è¿™é‡Œä¸“é¢˜å›¾ç‰‡ç»“æŸ-->
+                <!-- è¿™é‡Œå¼€å§‹ä¾¿æ°‘é“¾æ¥æ -->
                 <table width="100%" height="27" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/right_bg2.gif">
                     <tr>
                         <td height="30" align="center" class="white12B">
-                            ::&nbsp;&nbsp;¹¤¾ßÁ´½Óµ¼º½&nbsp;&nbsp;::
+                            ::&nbsp;&nbsp;å·¥å…·é“¾æ¥å¯¼èˆª&nbsp;&nbsp;::
                         </td>
                     </tr>
                 </table>
                 <iframe src="link.aspx" name="sina_roll" width="100%" marginwidth="0" height="160"
                     marginheight="0" scrolling="Yes" frameborder="No" id="Iframe1" border="0"></iframe>
             </td>
-            <!-- ÕâÀï×óÀ¸¹Ø±Õ-->
+            <!-- è¿™é‡Œå·¦æ å…³é—­-->
         </tr>
     </table>
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
@@ -229,7 +229,7 @@
                                             </table>
                                         </div>
                                         <script>
-                                            var speed = 50//ËÙ¶ÈÊıÖµÔ½´óËÙ¶ÈÔ½Âı
+                                            var speed = 50//é€Ÿåº¦æ•°å€¼è¶Šå¤§é€Ÿåº¦è¶Šæ…¢
                                             demo2.innerHTML = demo1.innerHTML
                                             function Marquee() {
                                                 if (demo2.offsetWidth - demo.scrollLeft <= 0)
@@ -258,18 +258,18 @@
                     <form action="nzcms_list_so.asp" method="get" name="form1" id="form2" onsubmit="return Validator.Validate(this,3)">
                     <tr>
                         <td align="left">
-                            <strong>Õ¾ÄÚËÑË÷£º</strong>
-                            <input name="keyword" type="text" id="keyword" size="16" datatype="Require" msg="¹Ø¼ü×Ö²»ÄÜÎª¿Õ£¡" />
+                            <strong>ç«™å†…æœç´¢ï¼š</strong>
+                            <input name="keyword" type="text" id="keyword" size="16" datatype="Require" msg="å…³é”®å­—ä¸èƒ½ä¸ºç©ºï¼" />
                             <label>
                                 <select name="so" id="so">
-                                    <option value="1" selected="selected">±êÌâ</option>
-                                    <option value="2">ÄÚÈİ</option>
-                                    <option value="3">±êÌâÓëÄÚÈİ</option>
+                                    <option value="1" selected="selected">æ ‡é¢˜</option>
+                                    <option value="2">å†…å®¹</option>
+                                    <option value="3">æ ‡é¢˜ä¸å†…å®¹</option>
                                 </select>
                             </label>
                             <label for="select">
                             </label>
-                            <input name="Submit2" type="submit" value="ËÑË÷Ò»ÏÂ" />
+                            <input name="Submit2" type="submit" value="æœç´¢ä¸€ä¸‹" />
                         </td>
                     </tr>
                     </form>
@@ -281,10 +281,10 @@
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/news_bg.gif">
                     <tr>
                         <td width="90" height="27" align="center" background="images/nzcms/left.gif" class="title12b">
-                            ·şÎñµ¼º½
+                            æœåŠ¡å¯¼èˆª
                         </td>
                         <td align="right" background="images/nzcms/left2.gif" class="p12">
-                            <a href="nzcms_list.asp?sort_id=659">¸ü¶à&gt;&gt;&gt;</a>&nbsp;&nbsp;
+                            <a href="nzcms_list.asp?sort_id=659">æ›´å¤š&gt;&gt;&gt;</a>&nbsp;&nbsp;
                         </td>
                     </tr>
                 </table>
@@ -302,12 +302,12 @@
                     </tr>
                 </table>
             </td>
-            <!-- ÕâÀï¿ªÊ¼Ó¦ÓÃÆ½Ì¨À¸-->
+            <!-- è¿™é‡Œå¼€å§‹åº”ç”¨å¹³å°æ -->
             <td width="250" align="center" valign="top" class="kk">
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/right_bg2.gif">
                     <tr>
                         <td height="30" align="center" class="white12B">
-                            ::&nbsp;&nbsp;ÏÂÔØÖĞĞÄ&nbsp;&nbsp;::
+                            ::&nbsp;&nbsp;ä¸‹è½½ä¸­å¿ƒ&nbsp;&nbsp;::
                         </td>
                     </tr>
                 </table>
@@ -322,7 +322,7 @@
                         <tr>
                             <td align="center">
                                 <a href="/" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_01.gif" alt="²âÊÔ" width="110" height="40"
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_01.gif" alt="æµ‹è¯•" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
@@ -335,7 +335,7 @@
                             </td>
                             <td align="center">
                                 <a href="/" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_02.gif" alt="²âÊÔ" width="110" height="40"
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_02.gif" alt="æµ‹è¯•" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
@@ -350,7 +350,7 @@
                         <tr>
                             <td align="center">
                                 <a href="" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_03.gif" alt="²âÊÔ" width="110" height="40"
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_03.gif" alt="æµ‹è¯•" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
@@ -363,35 +363,7 @@
                             </td>
                             <td align="center">
                                 <a href="" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_04.gif" alt="²âÊÔ" width="110" height="40"
-                                        border="0"></a>
-                                <table height="3" border="0" cellpadding="0" cellspacing="0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a href="" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_05.gif" alt="²âÊÔ" width="110" height="40"
-                                        border="0"></a>
-                                <table height="3" border="0" cellpadding="0" cellspacing="0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td align="center">
-                                <a href="" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_06.gif" alt="²âÊÔ" width="110" height="40"
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_04.gif" alt="æµ‹è¯•" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
@@ -406,7 +378,7 @@
                         <tr>
                             <td align="center">
                                 <a href="" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_07.gif" alt="²âÊÔ" width="110" height="40"
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_05.gif" alt="æµ‹è¯•" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
@@ -419,7 +391,35 @@
                             </td>
                             <td align="center">
                                 <a href="" target="_blank">
-                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_08.gif" alt="²âÊÔ" width="110" height="40"
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_06.gif" alt="æµ‹è¯•" width="110" height="40"
+                                        border="0"></a>
+                                <table height="3" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <a href="" target="_blank">
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_07.gif" alt="æµ‹è¯•" width="110" height="40"
+                                        border="0"></a>
+                                <table height="3" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td align="center">
+                                <a href="" target="_blank">
+                                    <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_08.gif" alt="æµ‹è¯•" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
@@ -436,8 +436,8 @@
             </td>
         </tr>
     </table>
-    <!-- ÕâÀï½áÊøÁôÑÔ±¾À¸-->
-    <!-- ÕâÀïÕ¾ÈºÁ´½Ó¿ªÊ¼-->
+    <!-- è¿™é‡Œç»“æŸç•™è¨€æœ¬æ -->
+    <!-- è¿™é‡Œç«™ç¾¤é“¾æ¥å¼€å§‹-->
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
         <tr>
             <td align="center">
@@ -460,7 +460,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bg_qc">
                                 <tr>
                                     <td height="26" align="center" background="images/nzcms/left2.gif" class="p12B">
-                                        È«¹úÕ¾Èºµ¼º½
+                                        å…¨å›½ç«™ç¾¤å¯¼èˆª
                                     </td>
                                 </tr>
                                 <tr>
@@ -475,7 +475,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bg_qc">
                                 <tr>
                                     <td height="26" align="center" background="images/nzcms/left2.gif" class="p12B">
-                                        ¹ú¼Ò¼¶Õ¾Èºµ¼º½
+                                        å›½å®¶çº§ç«™ç¾¤å¯¼èˆª
                                     </td>
                                 </tr>
                                 <tr>
@@ -490,7 +490,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bg_qc">
                                 <tr>
                                     <td height="26" align="center" background="images/nzcms/left2.gif" class="p12B">
-                                        Ê¡¼¶Õ¾Èºµ¼º½
+                                        çœçº§ç«™ç¾¤å¯¼èˆª
                                     </td>
                                 </tr>
                                 <tr>
@@ -505,7 +505,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bg_qc">
                                 <tr>
                                     <td height="26" align="center" background="images/nzcms/left2.gif" class="p12B">
-                                        ÊĞ¼¶Õ¾Èºµ¼º½
+                                        å¸‚çº§ç«™ç¾¤å¯¼èˆª
                                     </td>
                                 </tr>
                                 <tr>
@@ -520,7 +520,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bg_qc">
                                 <tr>
                                     <td height="26" align="center" background="images/nzcms/left2.gif" class="p12B">
-                                        ³£ÓÃÕ¾Èºµ¼º½
+                                        å¸¸ç”¨ç«™ç¾¤å¯¼èˆª
                                     </td>
                                 </tr>
                                 <tr>
@@ -535,15 +535,15 @@
                 </table>
         </tr>
     </table>
-    <!-- ÕâÀï½áÊøÕ¾ÈºÁ´½ÓÀ¸-->
-    <!-- ÕâÀïÓÑÇéÁ´½Ó¿ªÊ¼-->
+    <!-- è¿™é‡Œç»“æŸç«™ç¾¤é“¾æ¥æ -->
+    <!-- è¿™é‡Œå‹æƒ…é“¾æ¥å¼€å§‹-->
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF">
         <tr>
             <td class="kk">
                 <table width="100%" height="27" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td width="90" align="center" background="images/nzcms/left.gif" class="title12b">
-                            ÓÑÇéÁ´½Ó
+                            å‹æƒ…é“¾æ¥
                         </td>
                         <td background="images/nzcms/left2.gif">
                             &nbsp;
@@ -559,27 +559,27 @@
                 <!--<table border="0" cellpadding="0" cellspacing="0">
           <tr>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.gov.cn" target="_blank">ÖĞ¹úÕş¸®ÍøÕ¾</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.gov.cn" target="_blank">ä¸­å›½æ”¿åºœç½‘ç«™</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.mfa.gov.cn/" target="_blank">ÖĞ¹úÍâ½»²¿Íø</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.mfa.gov.cn/" target="_blank">ä¸­å›½å¤–äº¤éƒ¨ç½‘</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.mod.gov.cn/" target="_blank">¹ú·À²¿ÍøÕ¾</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.mod.gov.cn/" target="_blank">å›½é˜²éƒ¨ç½‘ç«™</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.moe.gov.cn/" target="_blank">½ÌÓı²¿ÍøÕ¾</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.moe.gov.cn/" target="_blank">æ•™è‚²éƒ¨ç½‘ç«™</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.ndrc.gov.cn/" target="_blank">·¢¸ÄÎ¯ÍøÕ¾</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.ndrc.gov.cn/" target="_blank">å‘æ”¹å§”ç½‘ç«™</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.mlr.gov.cn/" target="_blank">¹úÍÁ×ÊÁÏ²¿</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.mlr.gov.cn/" target="_blank">å›½åœŸèµ„æ–™éƒ¨</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.moj.gov.cn/" target="_blank">¹úË¾·¨²¿</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.moj.gov.cn/" target="_blank">å›½å¸æ³•éƒ¨</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.miit.gov.cn/" target="_blank">¹¤ÒµºÍĞÅÏ¢»¯²¿</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.miit.gov.cn/" target="_blank">å·¥ä¸šå’Œä¿¡æ¯åŒ–éƒ¨</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.mps.gov.cn" target="_blank">¹«°²²¿ÍøÕ¾</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.mps.gov.cn" target="_blank">å…¬å®‰éƒ¨ç½‘ç«™</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.mca.gov.cn/" target="_blank">ÖĞ»ªÈËÃñ¹²ºÍ¹úÃñÕş²¿</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.mca.gov.cn/" target="_blank">ä¸­åäººæ°‘å…±å’Œå›½æ°‘æ”¿éƒ¨</a>&nbsp;|&nbsp;</td>
             
-            <td align="left" height="20">&nbsp;<a href="http://www.mwr.gov.cn/" target="_blank">ÖĞ¹úË®Àû²¿</a>&nbsp;|&nbsp;</td>
+            <td align="left" height="20">&nbsp;<a href="http://www.mwr.gov.cn/" target="_blank">ä¸­å›½æ°´åˆ©éƒ¨</a>&nbsp;|&nbsp;</td>
             
           </tr>
           <tr >
@@ -610,7 +610,7 @@
         var www_qpsh_com2 = document.getElementById("www_qpsh_com2");
         var www_qpsh_com1 = document.getElementById("www_qpsh_com1");
         var www_qpsh_com = document.getElementById("www_qpsh_com");
-        var speed = 30//ËÙ¶ÈÊıÖµÔ½´óËÙ¶ÈÔ½Âı
+        var speed = 30//é€Ÿåº¦æ•°å€¼è¶Šå¤§é€Ÿåº¦è¶Šæ…¢
         www_qpsh_com2.innerHTML = www_qpsh_com1.innerHTML;
         function Marquee() {
 
@@ -626,13 +626,13 @@
         
     </script>
     <script language="JavaScript">
-        suspendcode = "<DIV id=lovexin1 style='Z-INDEX: 10; LEFT: 6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank'><img src='nzcms_nzweb/nzcms_up/nz_pic/ad_100x300.jpg' width='100' height='300' border='0' alt='¶ÔÁª×ó±ß'></a><br><img src='images/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='¹Ø±Õ¶ÔÁª¹ã¸æ' class='hand'></DIV>"
+        suspendcode = "<DIV id=lovexin1 style='Z-INDEX: 10; LEFT: 6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank'><img src='nzcms_nzweb/nzcms_up/nz_pic/ad_100x300.jpg' width='100' height='300' border='0' alt='å¯¹è”å·¦è¾¹'></a><br><img src='images/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='å…³é—­å¯¹è”å¹¿å‘Š' class='hand'></DIV>"
         document.write(suspendcode);
 
-        suspendcode = "<DIV id=lovexin2 style='Z-INDEX: 10; right:6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank' ><img src='nzcms_nzweb/nzcms_up/nz_pic/ad2_100x300.jpg' width='100' height='300' border='0' alt='¶ÔÁªÓÒ±ß'></a><br><img src='images/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='¹Ø±Õ¶ÔÁª¹ã¸æ' class='hand'></DIV>"
+        suspendcode = "<DIV id=lovexin2 style='Z-INDEX: 10; right:6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank' ><img src='nzcms_nzweb/nzcms_up/nz_pic/ad2_100x300.jpg' width='100' height='300' border='0' alt='å¯¹è”å³è¾¹'></a><br><img src='images/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='å…³é—­å¯¹è”å¹¿å‘Š' class='hand'></DIV>"
         document.write(suspendcode);
 
-        //flash¸ñÊ½µ÷ÓÃ·½·¨
+        //flashæ ¼å¼è°ƒç”¨æ–¹æ³•
         //<EMBED src='flash.swf' quality=high  WIDTH=100 HEIGHT=300 TYPE='application/x-shockwave-flash' id=ad wmode=opaque></EMBED>
         lastScrollY = 0;
         function heartBeat() {
@@ -683,8 +683,8 @@
         helpor_net()
 //-->
     </script>
-    <!-- µ¯´°À¸-->
-    <!-- Æ®¸¡À¸-->
+    <!-- å¼¹çª—æ -->
+    <!-- é£˜æµ®æ -->
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <link href="../css/css.css" rel="stylesheet" type="text/css">
     <script language="JavaScript">
@@ -700,7 +700,7 @@
     </script>
     <script type="text/javascript">
  <!--
-        //¹«¹²½Å±¾ÎÄ¼ş main.js
+        //å…¬å…±è„šæœ¬æ–‡ä»¶ main.js
         function addEvent(obj, evtType, func, cap) {
             cap = cap || false;
             if (obj.addEventListener) {
@@ -774,7 +774,7 @@
         }
         // AdMove.js
         /*
-        Àı×Ó
+        ä¾‹å­
         <div id="Div2">
         ***** content ******
         </div>
@@ -832,7 +832,7 @@
                 if (y > H) { diry = -1; y = H; kx = Math.sin(rad); ky = Math.cos(rad); }
             }
             this.Run = function () {
-                var delay = 10; //  ÕâÀïÊÇÊ±¼ä²ÎÊı
+                var delay = 10; //  è¿™é‡Œæ˜¯æ—¶é—´å‚æ•°
                 interval = setInterval(obj.CustomMethod, delay);
                 obj.onmouseover = function () { clearInterval(interval); }
                 obj.onmouseout = function () { interval = setInterval(obj.CustomMethod, delay); }
@@ -844,13 +844,13 @@
         <table border="0" cellpadding="0" cellspacing="0" id="notes_nzcms2">
             <tr>
                 <td>
-                    <a href="²âÊÔ" target="_blank">
+                    <a href="æµ‹è¯•" target="_blank">
                         <img src="nzcms_nzweb/nzcms_up/nz_pic/201182622341532143.gif" border="0" /></a>
                 </td>
             </tr>
             <tr>
                 <td align="right" bgcolor="#FFFFFF" style="filter: alpha(opacity=80)">
-                    <a href="javascript:Display(notes_nzcms2)">¡¾¹Ø±Õ¡¿</a>&nbsp;
+                    <a href="javascript:Display(notes_nzcms2)">ã€å…³é—­ã€‘</a>&nbsp;
                 </td>
             </tr>
         </table>

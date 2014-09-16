@@ -20,7 +20,7 @@ namespace NewWaterWeb
                 List<news> lst = new List<news>();
                 newsManager mgr = new newsManager();
                 string tmpl = @" 
-            <a href='{0}' target='_blank'>
+            <a href='Info.aspx?type=news&id={0}' target='_blank'>
                 <img src='ImgUpload\{1}' alt='{2}' width='355'height='235' />
             </a>";
                 string result = string.Empty;

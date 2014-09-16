@@ -40,11 +40,121 @@ namespace NewWaterWeb.UserCtrl
                 case "video":
                     GenerVideo();
                     break;
+                case "hotnews":
+                    GenerHotNews();
+                    break;
+                case "leftnotice":
+                    GenertleftNotice();
+                    break;
 
                 default:
                     break;
             }
 
+        }
+
+        private void GenertleftNotice()
+        {
+            string temlate = @"
+           <table width='96%' height='160' border='0' cellpadding='0' cellspacing='0' bordercolor='#FFFFFF'
+                    background='images/bg/01.gif' class='kk22'>
+                    <tr>
+                        <td valign='top'>
+                            <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+                                <tr>
+                                    <td width='90' height='28' align='center' background='images/left.gif' class='title14b'>
+                                        {0}
+                                    </td>
+                                    <td align='right' background='images/left2.gif'>
+                                        <img src='images/HOT.gif' />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width='98%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>";
+            string listTeml = @" <tr>
+                                    <td height='27' align='left' valign='middle'>
+                                        &nbsp;<img src='images/HOT2.gif' width='7' height='7' />&nbsp;<a href='Info.aspx?type=notice&id={0}'
+                                            target='_blank' title='标题：{1}'>{2}</a>
+                                    </td>
+                                </tr> ";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat(temlate, "通知公告");
+            List<notice> list = new noticeManager().GetTopList();
+
+            foreach (notice item in list)
+            {
+                string title = item.title;
+                if (title.Length > 17)
+                {
+                    title = title.Substring(0, 17) + "...";
+                }
+                sb.AppendFormat(listTeml, item.id, item.title, title);
+            }
+
+
+            sb.Append(@"</table>
+                        </td>
+                    </tr>
+                </table>
+                <table height='5' border='0' cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </table>");
+            OutStr = sb.ToString();
+        }
+
+        private void GenerHotNews()
+        {
+
+            string temlate = @"
+           <table width='96%' height='250' border='0' cellpadding='0' cellspacing='0' bordercolor='#FFFFFF'
+                    background='images/bg/01.gif' class='kk22'>
+                    <tr>
+                        <td valign='top'>
+                            <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+                                <tr>
+                                    <td width='90' height='28' align='center' background='images/left.gif' class='title14b'>
+                                        {0}
+                                    </td>
+                                    <td align='right' background='images/left2.gif'>
+                                        <img src='images/HOT.gif' />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width='98%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>";
+            string listTeml = @" <tr>
+                                    <td height='27' align='left' valign='middle'>
+                                        &nbsp;<img src='images/HOT2.gif' width='7' height='7' />&nbsp;<a href='Info.aspx?type=news&id={0}'
+                                            target='_blank' title='标题：{1}'>{2}</a>
+                                    </td>
+                                </tr> ";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat(temlate, "热点文章");
+            List<news> list = new newsManager().GetHotNews();
+            foreach (news item in list)
+            {
+                string title = item.title;
+                if (title.Length > 17)
+                {
+                    title = title.Substring(0, 17) + "...";
+                }
+                sb.AppendFormat(listTeml, item.id, item.title, title);
+            }
+
+
+            sb.Append(@"</table>
+                        </td>
+                    </tr>
+                </table>
+                <table height='5' border='0' cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </table>");
+            OutStr = sb.ToString();
         }
 
         private void GenertNotice()
@@ -89,7 +199,7 @@ namespace NewWaterWeb.UserCtrl
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table width='99%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>", Title, "Category.aspx?type=news&sid="+ClassID));
+                                        <table width='99%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>", Title, "Category.aspx?type=news&sid=" + ClassID));
             foreach (news item in list)
             {
                 string temTitle = item.title;
@@ -178,7 +288,7 @@ namespace NewWaterWeb.UserCtrl
                             <a href='Info.aspx?type=video&id={0}'>{1}</a>
                         </td>
                     </tr>
-                </table>", item.id, item.title,  item.vpic);
+                </table>", item.id, item.title, item.vpic);
             }
             //sb.Append("  </tr>  </table>");
             OutStr = sb.ToString();

@@ -18,7 +18,7 @@ namespace NewWaterWeb
             string tmpl = @"
                 <tr>
                     <td height='25' align='left' valign='middle'>
-                        <a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'>{1}
+                        <a href='Info.aspx?type=news&id={0}' target='_blank' title='标题：{1}'>{1}
                         </a>
                     </td>
                     <td width='80' align='center' valign='middle'>
@@ -26,8 +26,8 @@ namespace NewWaterWeb
                     </td>
                 </tr>
            ";
-            string toptitle="<a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'><font class='red18'>顶条:{1}</font></a>";
-            string topdetail = "<a href='nzcms_show_news.asp?id={0}' target='_blank' title='标题：{1}'>{1} </a>";
+            string toptitle = "<a href='Info.aspx?type=news&id={0}' target='_blank' title='标题：{1}'><font class='red18'>顶条:{1}</font></a>";
+            string topdetail = "<a href='Info.aspx?type=news&id={0}' target='_blank' title='标题：{1}'>{1} </a>";
             if (!IsPostBack)
             {
                 List<news> lst = new List<news>();

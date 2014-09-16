@@ -104,7 +104,17 @@ namespace sdfwi.Logic
 
             return tem;
         }
+        /// <summary>
+        /// 获取信息内容集合
+        /// </summary>
+        /// <returns></returns> 
+        public List<news> GetHotNews(int top = 10)
+        {
+            List<news> tem = new List<news>();
+            tem = Dal.From<news>().Where(news._.wtop == 1).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
 
+            return tem;
+        }
 
         /// <summary>
         /// 获取信息内容集合
