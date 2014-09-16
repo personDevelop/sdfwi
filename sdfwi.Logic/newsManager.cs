@@ -165,6 +165,41 @@ namespace sdfwi.Logic
         {
             return Dal.From<news>().Where(news._.sid == classid).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
         }
+
+
+
+        /// <summary>
+        /// 分页获取获取ViewAllInfodatatable
+        /// </summary>
+        /// <param name="pageindex">当前页数</param>
+        /// <param name="pagesize">每页显示条数</param>
+        /// <param name="orderby">排序方式</param>
+        /// <param name="pageCount">总页数</param>
+        /// <param name="recordCount">总记录数</param>
+        /// <returns></returns>
+        public List<ViewAllInfo> GetList(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
+        {
+
+
+            return Dal.From<ViewAllInfo>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount).ToList<ViewAllInfo>();
+
+        }
+        /// <summary>
+        /// 分页获取获取ViewAllInfodatatable
+        /// </summary>
+        /// <param name="pageindex">当前页数</param>
+        /// <param name="pagesize">每页显示条数</param>
+        /// <param name="orderby">排序方式</param>
+        /// <param name="pageCount">总页数</param>
+        /// <param name="recordCount">总记录数</param>
+        /// <returns></returns>
+        public DataTable GetDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
+        {
+
+
+            return Dal.From<ViewAllInfo>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+
+        }
     }
 
 

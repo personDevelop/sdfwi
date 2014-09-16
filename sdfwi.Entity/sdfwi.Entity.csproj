@@ -60,6 +60,7 @@
     <Compile Include="spic.cs" />
     <Compile Include="video.cs" />
     <Compile Include="videoclass.cs" />
+    <Compile Include="ViewAllInfo.cs" />
     <Compile Include="website.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
