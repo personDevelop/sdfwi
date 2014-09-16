@@ -32,6 +32,7 @@ namespace NewWaterWeb
                 else
                 {
                     info = logic.GetViewAllInfo(ViewAllInfo._.id == id && ViewAllInfo._.contentType == typename);
+                  
                 }
                 InfoContent = info.contents;
             }

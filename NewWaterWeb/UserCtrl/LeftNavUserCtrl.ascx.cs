@@ -63,6 +63,11 @@ namespace NewWaterWeb.UserCtrl
             {
                 TableType = this.Request.QueryString["type"];
                 ClassID = this.Request.QueryString["sid"];
+                if (string.IsNullOrEmpty(ClassID))
+                {
+                    string infoid = this.Request.QueryString["id"];
+                    ClassID = newlogic.GetViewAllInfo(ViewAllInfo._.id == infoid && ViewAllInfo._.contentType == TableType).sid.Value.ToString();
+                }
                 List<BaseEntity> list = new List<BaseEntity>();
                 switch (TableType)
                 {

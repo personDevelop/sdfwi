@@ -148,37 +148,13 @@
                 <!--内容显示 -->
                 <table width="97%" height="19" border="0" cellpadding="0" cellspacing="0">
                     <tr>
+                        <td height="40" colspan="3" align="center" class="righth2">
+                             <%=Title%>
+                        </td>
+                    </tr>
+                    <tr>
                         <td align="left" valign="top" class="z">
-                        <%=InfoContent%>
-                            <p>
-                                <img border="0" hspace="10" alt="宁志" align="left" src="http://www.sdfwi.cn/images/about/201042713438421.jpg"
-                                    loaded="true" original="/images/about/201042713438421.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金华市宁志网络科技有限公司——是中国领先的/政府机关/公安机关/部队机关/学校机构/企业公司/电子商务办公平台建设技术与服务提供商。至今已有5年的互联网服务经验，公司致力于：国内各种机关单位网站建设服务，电子商务办公平台研发，外贸企业公司上网平台建设，应用软件的开发与行业信息化全面解决方案。
-                                公司总部办公地址驻入在浙江省高新科技园区内。公司拥有一批资深的专业技术人员、企业咨询顾问和项目管理专家，建立了规模化的产品研发、培训、咨询、营销和服务体系，并基于先进的项目管理、知识管理为客户提供优质的产品和服务。
-                            </p>
-                            <p jquery1342840482546="91">
-                                <strong><font color="#000000">公司服务项目：</font> </strong>
-                                <br>
-                                &gt;&nbsp;定做网站&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;网页设计&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;动画设计&nbsp;&nbsp;&nbsp;&nbsp;
-                                &gt;&nbsp;上传安装&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;网页设计&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;网站维护&nbsp;&nbsp;&nbsp;&nbsp;
-                                &gt;&nbsp;网站推广<br>
-                                &gt;&nbsp;域名注册&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;空间租用<a href="http://www.sdfwi.cn/nzcms"
-                                    jquery1342840482546="90"><img style="filter: ; zoom: 1; display: inline" border="0"
-                                        hspace="5" alt="宁志软件" align="right" src="http://www.sdfwi.cn/images/about/nzcms.gif"
-                                        width="180" jquery1342840482546="89" loaded="true" original="/images/about/nzcms.gif"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                &gt;&nbsp;主机托管&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;企业邮箱<br>
-                                &gt;&nbsp;系统开发&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;系统销售&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;监控安装&nbsp;&nbsp;&nbsp;&nbsp;
-                                &gt;&nbsp;电脑配质&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;产品摄影
-                                <br>
-                                公司目前已为数百家政府/公安/部队/学校/企事业单位提供了电子商务解决方案；</p>
-                            <p>
-                                <strong><font color="#000000">公司系统/软件产品有：</font></strong><br>
-                                ┠宁志政府网站管理系统&nbsp;&nbsp;&nbsp; ┠宁志学校网站管理系统&nbsp;&nbsp;&nbsp; ┠宁志部队网站管理系统<br>
-                                ┠宁志公安网站管理系统&nbsp;&nbsp;&nbsp; ┠宁志公安远程身份证办理管理系统<br>
-                                ┠宁志企业网站管理系统&nbsp;&nbsp;&nbsp; ┠宁志专题网站管理系统
-                                <br>
-                            </p>
-                            <p>
-                                以上产品拥有自主知识产权的互联网著名软件产品。并且产品均已历经上几十次的版本升级与技术更新，无论在成熟性、稳定性或是安全性、灵活性上均是市场上同类产品中的翘楚，获得超过上百家机关用户的一致认可和选择，占据了国内地方机构建站一定的市场份额。</p>
+                            <%=InfoContent%>
                         </td>
                     </tr>
                 </table>
