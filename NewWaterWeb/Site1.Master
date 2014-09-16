@@ -83,7 +83,7 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="Category.aspx?type=oneclass&sid=1" class="left" onmouseover="mopen('m656')"
+                                            <a href="Category.aspx?type=oneclass&sid=3" class="left" onmouseover="mopen('m656')"
                                                 onmouseout="mclosetime()">机构概况</a>
                                         </td>
                                     </tr>
