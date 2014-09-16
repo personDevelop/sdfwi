@@ -166,7 +166,14 @@ namespace sdfwi.Logic
             return Dal.From<news>().Where(news._.sid == classid).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
         }
 
+        /// <summary>
+        /// 根据where条件获取实体
+        /// </summary>
+        public ViewAllInfo GetViewAllInfo(WhereClip where)
+        {
+            return Dal.Find<ViewAllInfo>(where);
 
+        }
 
         /// <summary>
         /// 分页获取获取ViewAllInfodatatable
@@ -195,11 +202,11 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetViewAllInfoDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
         {
-
-
             return Dal.From<ViewAllInfo>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
+
+
     }
 
 

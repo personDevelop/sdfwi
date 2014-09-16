@@ -127,7 +127,7 @@
                 <table width="98%" border="0" cellpadding="0" cellspacing="0" background="images/list_news_bg.gif">
                     <tr>
                         <td width="190" height="33" align="center" class="title14b">
-                            单位简介
+                            <%=TitleName %>
                         </td>
                         <td align="right">
                             &nbsp;&nbsp;
@@ -149,6 +149,7 @@
                 <table width="97%" height="19" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="left" valign="top" class="z">
+                        <%=InfoContent%>
                             <p>
                                 <img border="0" hspace="10" alt="宁志" align="left" src="http://www.sdfwi.cn/images/about/201042713438421.jpg"
                                     loaded="true" original="/images/about/201042713438421.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金华市宁志网络科技有限公司——是中国领先的/政府机关/公安机关/部队机关/学校机构/企业公司/电子商务办公平台建设技术与服务提供商。至今已有5年的互联网服务经验，公司致力于：国内各种机关单位网站建设服务，电子商务办公平台研发，外贸企业公司上网平台建设，应用软件的开发与行业信息化全面解决方案。
