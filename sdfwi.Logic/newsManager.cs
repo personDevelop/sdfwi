@@ -210,9 +210,9 @@ namespace sdfwi.Logic
         /// <param name="pageCount">总页数</param>
         /// <param name="recordCount">总记录数</param>
         /// <returns></returns>
-        public DataTable GetViewAllInfoDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
+        public DataTable GetViewAllInfoDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount,WhereClip where)
         {
-            return Dal.From<ViewAllInfo>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<ViewAllInfo>().Where(where).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 

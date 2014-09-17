@@ -3,6 +3,7 @@
 <%@ Register Src="UserCtrl/SiteMapUserCtrl.ascx" TagName="SiteMapUserCtrl" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/LeftNavUserCtrl.ascx" TagName="LeftNavUserCtrl" TagPrefix="uc2" %>
 <%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc3" %>
+<%@ Register src="UserCtrl/NewsListUserCtrl.ascx" tagname="NewsListUserCtrl" tagprefix="uc4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -43,26 +44,13 @@
                 <table height="20" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td>
+                           
                         </td>
                     </tr>
                 </table>
                 <!--图片格式显示 -->
                 <!--内容显示 -->
-                 
-                <table border="0" align="center">
-                    <form onsubmit="document.location = 'http://www.sdfwi.cn/ga2/list_news.asp?id=634&amp;sort_id=631&amp;Page='+ this.page.value;return false;"
-                    method="get">
-                    <tbody>
-                        <tr>
-                            <td align="right">
-                                <p align="center">
-                                    首页 上一页 下一页 尾页 页次：1/1页 共有8条 转到<input value="1" maxlength="5" size="1" name="page"
-                                        tyep="TEXT">页
-                                    <input style="font-size: 9pt" class="b2" value="GO" type="submit"></p>
-                            </td>
-                        </tr>
-                    </form>
-                    </TBODY></table>
+                    <uc4:NewsListUserCtrl ID="NewsListUserCtrl1" runat="server" />
             </td>
         </tr>
         </TBODY></table>
