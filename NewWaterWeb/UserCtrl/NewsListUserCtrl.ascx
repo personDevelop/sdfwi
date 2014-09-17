@@ -1,1 +1,1 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NewsListUserCtrl.ascx.cs" Inherits="NewWaterWeb.UserCtrl.NewsListUserCtrl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="NewsListUserCtrl.ascx.cs" Inherits="UserCtrl_NewsListUserCtrl" %>

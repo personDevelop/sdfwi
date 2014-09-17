@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="link.aspx.cs" Inherits="NewWaterWeb.link" %>
+ï»¿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="link.aspx.cs" Inherits="link" %>
  <!-- IP-->
     <!-- DATA-->
     <!-- BOOK-->
@@ -13,7 +13,7 @@
 <style type="text/css">
 <!--
 body,td,th {
-	font-family: ËÎÌå;
+	font-family: å®‹ä½“;
 	font-size: 12px;
 	color: #666666;
 }
@@ -23,14 +23,14 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	
-	background-color:#FFFFFF; /*±³¾°*/
-	scrollbar-face-color: #F0F0F0;/*ÖĞ¼ä*/
-	scrollbar-highlight-color: #DFDFDF;/*×ó±ß*/
-	scrollbar-shadow-color: #FFFFFF;/*±³¾°*/
-	scrollbar-3dlight-color: #ffffff;/*±³¾°*/
-	scrollbar-arrow-color:  #C3C3C3;/*¼ıÍ·*/
-	scrollbar-track-color: #ffffff;/*±³¾°*/
-	scrollbar-darkshadow-color: #F2F2F2;/*ÓÒ±ß*/
+	background-color:#FFFFFF; /*èƒŒæ™¯*/
+	scrollbar-face-color: #F0F0F0;/*ä¸­é—´*/
+	scrollbar-highlight-color: #DFDFDF;/*å·¦è¾¹*/
+	scrollbar-shadow-color: #FFFFFF;/*èƒŒæ™¯*/
+	scrollbar-3dlight-color: #ffffff;/*èƒŒæ™¯*/
+	scrollbar-arrow-color:  #C3C3C3;/*ç®­å¤´*/
+	scrollbar-track-color: #ffffff;/*èƒŒæ™¯*/
+	scrollbar-darkshadow-color: #F2F2F2;/*å³è¾¹*/
 	
 	
 }
@@ -51,44 +51,44 @@ a:hover {
 <table border="0" cellpadding="0" cellspacing="5">
   <tr>
     
-    <td align="left" height="20">¡¤<a href="http://www.hao123.com/haoserver/showjicc.htm" target="_blank">ÊÖ»úºÅÂë²éÑ¯</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.hao123.com/haoserver/showjicc.htm" target="_blank">æ‰‹æœºå·ç æŸ¥è¯¢</a>&nbsp;&nbsp;</td>
     
-    <td align="left" height="20">¡¤<a href="http://www.ip138.com" target="_blank">IP²éÑ¯</a>&nbsp;&nbsp;</td>
-    
-  </tr>
-  <tr >
-    
-    <td align="left" height="20">¡¤<a href="http://www.ip138.com/" target="_blank">IP²éÑ¯</a>&nbsp;&nbsp;</td>
-    
-    <td align="left" height="20">¡¤<a href="http://weather.news.sina.com.cn/" target="_blank">¹úÄÚÌìÆøÔ¤±¨</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.ip138.com" target="_blank">IPæŸ¥è¯¢</a>&nbsp;&nbsp;</td>
     
   </tr>
   <tr >
     
-    <td align="left" height="20">¡¤<a href="http://www.ip138.com/post/" target="_blank">ÓÊ±àµç»°²éÑ¯</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.ip138.com/" target="_blank">IPæŸ¥è¯¢</a>&nbsp;&nbsp;</td>
     
-    <td align="left" height="20">¡¤<a href="http://www.hao123.com/ss/lccx.htm" target="_blank">ÁĞ³µÊ±¿Ì²éÑ¯</a>&nbsp;&nbsp;</td>
-    
-  </tr>
-  <tr >
-    
-    <td align="left" height="20">¡¤<a href="http://www.hao123.com/ss/fy.htm" target="_blank">ÔÚÏß·­Òë</a>&nbsp;&nbsp;</td>
-    
-    <td align="left" height="20">¡¤<a href="http://www.hao123.com/haoserver/wn.htm" target="_blank">ÍòÄêÀú</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://weather.news.sina.com.cn/" target="_blank">å›½å†…å¤©æ°”é¢„æŠ¥</a>&nbsp;&nbsp;</td>
     
   </tr>
   <tr >
     
-    <td align="left" height="20">¡¤<a href="http://wz.gocar.cn/changtu/" target="_blank">³¤Í¾Æû³µ¿ÍÔËÊ±¿Ì</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.ip138.com/post/" target="_blank">é‚®ç¼–ç”µè¯æŸ¥è¯¢</a>&nbsp;&nbsp;</td>
     
-    <td align="left" height="20">¡¤<a href="http://www.nz519.cn" target="_blank">ºÃÊÕ²ØÍøÕ¾Ö·</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.hao123.com/ss/lccx.htm" target="_blank">åˆ—è½¦æ—¶åˆ»æŸ¥è¯¢</a>&nbsp;&nbsp;</td>
     
   </tr>
   <tr >
     
-    <td align="left" height="20">¡¤<a href="http://www.hao123.com/haoserver/tefudh.htm" target="_blank">³£ÓÃµç»°</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.hao123.com/ss/fy.htm" target="_blank">åœ¨çº¿ç¿»è¯‘</a>&nbsp;&nbsp;</td>
     
-    <td align="left" height="20">¡¤<a href="http://www.gov.cn" target="_blank">ÖĞ¹úÕş¸®Íø</a>&nbsp;&nbsp;</td>
+    <td align="left" height="20">Â·<a href="http://www.hao123.com/haoserver/wn.htm" target="_blank">ä¸‡å¹´å†</a>&nbsp;&nbsp;</td>
+    
+  </tr>
+  <tr >
+    
+    <td align="left" height="20">Â·<a href="http://wz.gocar.cn/changtu/" target="_blank">é•¿é€”æ±½è½¦å®¢è¿æ—¶åˆ»</a>&nbsp;&nbsp;</td>
+    
+    <td align="left" height="20">Â·<a href="http://www.nz519.cn" target="_blank">å¥½æ”¶è—ç½‘ç«™å€</a>&nbsp;&nbsp;</td>
+    
+  </tr>
+  <tr >
+    
+    <td align="left" height="20">Â·<a href="http://www.hao123.com/haoserver/tefudh.htm" target="_blank">å¸¸ç”¨ç”µè¯</a>&nbsp;&nbsp;</td>
+    
+    <td align="left" height="20">Â·<a href="http://www.gov.cn" target="_blank">ä¸­å›½æ”¿åºœç½‘</a>&nbsp;&nbsp;</td>
     
   </tr>
 </table>

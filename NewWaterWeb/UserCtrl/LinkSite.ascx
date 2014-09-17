@@ -1,2 +1,2 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LinkSite.ascx.cs" Inherits="NewWaterWeb.UserCtrl.LinkSite" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LinkSite.ascx.cs" Inherits="UserCtrl_LinkSite" %>
 <%=OutStr %>

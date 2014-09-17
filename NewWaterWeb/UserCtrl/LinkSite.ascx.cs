@@ -4,19 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using sdfwi.Entity;
 using sdfwi.Logic;
-using Sharp.Common;
+using sdfwi.Entity;
 
-namespace NewWaterWeb.UserCtrl
+public partial class UserCtrl_LinkSite : System.Web.UI.UserControl
 {
-    public partial class LinkSite : System.Web.UI.UserControl
+    public string OutStr { get; set; }
+    protected void Page_Load(object sender, EventArgs e)
     {
-        public string OutStr { get; set; }
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
-            string tmpl = @"
+        string tmpl = @"
             <td align='center'>
                 <table border='0' cellpadding=0 cellspacing='0' bordercolor='#FFFFFF'>
                     <tbody>
@@ -34,25 +31,24 @@ namespace NewWaterWeb.UserCtrl
                                 </tr>
                             </tbody></table>
                         </td>";
-            if (!IsPostBack)
+        if (!IsPostBack)
+        {
+            List<links> lst = new List<links>();
+
+            linksManager mgr = new linksManager();
+            string result = string.Empty;
+            lst = mgr.GetList();
+            int i = 0;
+            foreach (links model in lst)
             {
-                List<links> lst = new List<links>();
 
-                linksManager mgr = new linksManager();
-                string result = string.Empty;
-                lst = mgr.GetList();
-                int i = 0;
-                foreach (links model in lst)
-                {
-                  
-                   
-                    result += string.Format(tmpl, model.siteurl, model.imgurl,model.sitename);
 
-                }
-                result = "<table border=0 cellpadding=0 cellspacing=0 bordercolor='#FFFFFF'><tr>" + result + " </tr></table>";
+                result += string.Format(tmpl, model.siteurl, model.imgurl, model.sitename);
 
-                OutStr = result.ToString();
             }
+            result = "<table border=0 cellpadding=0 cellspacing=0 bordercolor='#FFFFFF'><tr>" + result + " </tr></table>";
+
+            OutStr = result.ToString();
         }
     }
 }

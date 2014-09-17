@@ -1,5 +1,6 @@
-<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TopNews.ascx.cs" Inherits="NewWaterWeb.TopNews" %>
-<!-- ¶¥ÌõÐÂÎÅÀ¸-->
+ï»¿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="TopNews.ascx.cs" Inherits="TopNews" %>
+
+<!-- é¡¶æ¡æ–°é—»æ -->
 <table height="6" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td>
@@ -7,7 +8,7 @@
     </tr>
 </table>
 <table width="90%" border="0" cellspacing="0" cellpadding="0" id='topnews'>
-    <!-- ¶¥ÌõÐÂÎÅÀ¸-->
+    <!-- é¡¶æ¡æ–°é—»æ -->
     <tr>
         <td height="35" align="center">
            <div runat=server id='titlte_wrap'></div>
@@ -38,7 +39,7 @@
     </tr>
 </table>
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" id='topnews_list'>
-    <!-- ÐÂÎÅÁÐ±íÁùÌõ-->
+    <!-- æ–°é—»åˆ—è¡¨å…­æ¡-->
     <tr>
         <td width="6%" height="25" align="center" valign="top" background="images/123.gif">
             &nbsp;

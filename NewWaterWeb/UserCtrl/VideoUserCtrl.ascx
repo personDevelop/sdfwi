@@ -1,1 +1,1 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VideoUserCtrl.ascx.cs" Inherits="NewWaterWeb.UserCtrl.VideoUserCtrl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="VideoUserCtrl.ascx.cs" Inherits="UserCtrl_VideoUserCtrl" %>

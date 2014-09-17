@@ -8,17 +8,12 @@ using System.Data;
 using sdfwi.Entity;
 using sdfwi.Logic;
 using Sharp.Common;
-
-
-namespace NewWaterWeb.UserCtrl
+public partial class UserCtrl_NewsListUserCtrl : System.Web.UI.UserControl
 {
-    public partial class NewsListUserCtrl : System.Web.UI.UserControl
+    public string OutStr { get; set; }
+    protected void Page_Load(object sender, EventArgs e)
     {
-
-        public string OutStr { get; set; }
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            string tmpl = @"<table width='98%' border='0' align='center' cellpadding='0' cellspacing='0' class='dx'
+        string tmpl = @"<table width='98%' border='0' align='center' cellpadding='0' cellspacing='0' class='dx'
                     onmouseover='this.bgColor='#FFFF66';' onmouseout='this.bgColor='#FFFFFF';' bgcolor='#ffffff'>
                     <tr>
                         <td width='35' height='40' align='center'>
@@ -36,7 +31,7 @@ namespace NewWaterWeb.UserCtrl
                     </tr>
                 </table>";
 
-            string pagetmpl=@"
+        string pagetmpl = @"
             <table border='0' align='center'>
                     <form onsubmit='document.location = \'category.aspx?type={0}&keyword={1}&lb={2}&page='+ this.page.value;return false;'method='get'>
                     <tbody>
@@ -56,39 +51,35 @@ namespace NewWaterWeb.UserCtrl
                         </tr>
                     </form>
                     </TBODY></table>";
-              if (!IsPostBack)
+        if (!IsPostBack)
+        {
+            try
             {
-                try
+                string res = string.Empty;
+                string type = Request.QueryString.Get("type");
+                string page = Request.QueryString.Get("page");
+                if (string.IsNullOrEmpty(page))
                 {
-                    string res = string.Empty;
-                    string type = Request.QueryString.Get("type");
-                    string page=Request.QueryString.Get("page");
-                    if(string.IsNullOrEmpty(page))
-                    {
-                        page="0";
-                    }
-                    string keyword=Request.QueryString.Get("keyword");
-
-                    newsManager mgr=new newsManager();
-                    int pagecount=0;
-                    int allcount=0;
-                    DataTable dt=new DataTable();
-                    dt=mgr.GetViewAllInfoDataTable(int.Parse(page),20,"  order by addtime desc ",ref pagecount,ref allcount);
-
-                    foreach(DataRow row in dt.Rows)
-                    {
-                        res+=string.Format(tmpl,row["title"].ToString(),row["addtime"].ToString());
-                    }
-                    OutStr = string.Format(tmpl, res);
+                    page = "0";
                 }
-                catch (Exception)
+                string keyword = Request.QueryString.Get("keyword");
+
+                newsManager mgr = new newsManager();
+                int pagecount = 0;
+                int allcount = 0;
+                DataTable dt = new DataTable();
+                dt = mgr.GetViewAllInfoDataTable(int.Parse(page), 20, "  order by addtime desc ", ref pagecount, ref allcount);
+
+                foreach (DataRow row in dt.Rows)
                 {
-                    OutStr = string.Format(tmpl, "");
+                    res += string.Format(tmpl, row["title"].ToString(), row["addtime"].ToString());
                 }
- 
+                OutStr = string.Format(tmpl, res);
             }
-        }
-
+            catch (Exception)
+            {
+                OutStr = string.Format(tmpl, "");
+            }
 
         }
     }

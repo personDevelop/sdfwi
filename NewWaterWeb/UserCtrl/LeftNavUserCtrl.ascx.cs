@@ -8,10 +8,10 @@ using Sharp.Common;
 using sdfwi.Entity;
 using sdfwi.Logic;
 using System.Text;
-namespace NewWaterWeb.UserCtrl
+
+public partial class UserCtrl_LeftNavUserCtrl : System.Web.UI.UserControl
 {
-    public partial class LeftNavUserCtrl : System.Web.UI.UserControl
-    {
+    
         string temlateroot = @" <table width='100%' border='0' cellpadding='0' cellspacing='0' class='left_bg'>
                     <tr>
                         <td width='35' height='35' align='center'>
@@ -255,12 +255,5 @@ namespace NewWaterWeb.UserCtrl
                 sb.AppendFormat(temlate, tabletype, id, classname, 1);
             }
         }
-
-        class NaviClass
-        {
-
-            public string Name { get; set; }
-            public string ID { get; set; }
-        }
     }
-}
+ 

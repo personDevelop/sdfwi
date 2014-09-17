@@ -1,10 +1,10 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NewWaterWeb.Site1" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.Master.cs" Inherits="Site1" %>
 
 <%@ Register src="UserCtrl/DateContrl.ascx" tagname="DateContrl" tagprefix="uc1" %>
-
+<%@ Register src="UserCtrl/BaseUserCtrl.ascx" tagname="BaseUserCtrl" tagprefix="uc2" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
  <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -485,7 +485,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <marquee scrollamount="5" width="870" height="50" onmouseover="stop()" onmouseout="start()"><span style="font-family:Microsoft YaHei;color:#ffff00;font-size:24px;">山东省淡水渔业研究院五一放假通知:2014年5月1日至3日为法定节假日，5月1日正常上班，请大家做好工作安排，恭祝大家节日快乐！</span></marquee>
+                            <marquee scrollamount="5" width="870" height="50" onmouseover="stop()" onmouseout="start()"><span style="font-family:Microsoft YaHei;color:#ffff00;font-size:24px;"><uc2:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="OneNotice"  runat="server" /> </span></marquee>
                         </td>
                     </tr>
                 </table>

@@ -7,55 +7,70 @@ using System.Web.UI.WebControls;
 using sdfwi.Logic;
 using sdfwi.Entity;
 using System.Text;
-namespace NewWaterWeb.UserCtrl
+
+public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
 {
-    public partial class BaseUserCtrl : System.Web.UI.UserControl
+    public string Title { get; set; }
+    public string MoreUrl { get; set; }
+    public string CtrlType { get; set; }
+    public string ClassID { get; set; }
+    public string OutStr { get; set; }
+    protected void Page_Load(object sender, EventArgs e)
     {
-        public string Title { get; set; }
-        public string MoreUrl { get; set; }
-        public string CtrlType { get; set; }
-        public string ClassID { get; set; }
-        public string OutStr { get; set; }
-        protected void Page_Load(object sender, EventArgs e)
+        if (!IsPostBack)
         {
-            if (!IsPostBack)
-            {
-                GenerHtml();
-            }
+            GenerHtml();
         }
-        private void GenerHtml()
+    }
+    private void GenerHtml()
+    {
+        switch (CtrlType)
         {
-            switch (CtrlType)
-            {
-                case "notice":
-                    GenertNotice();
-                    break;
-                case "specil":
-                    GenerSpeciInfo();
-                    break;
-                case "experts":
-                    GenerExperts();
+            case "notice":
+                GenertNotice();
+                break;
+            case "OneNotice":
+                GenertOneNotice();
+                break;
 
-                    break;
-                case "video":
-                    GenerVideo();
-                    break;
-                case "hotnews":
-                    GenerHotNews();
-                    break;
-                case "leftnotice":
-                    GenertleftNotice();
-                    break;
+            case "specil":
+                GenerSpeciInfo();
+                break;
+            case "experts":
+                GenerExperts();
 
-                default:
-                    break;
-            }
+                break;
+            case "video":
+                GenerVideo();
+                break;
+            case "hotnews":
+                GenerHotNews();
+                break;
+            case "leftnotice":
+                GenertleftNotice();
+                break;
 
+            default:
+                break;
         }
 
-        private void GenertleftNotice()
+    }
+
+    private void GenertOneNotice()
+    {
+        List<notice> list = new noticeManager().GetTopList(1);
+        if (list.Count == 1)
         {
-            string temlate = @"
+            notice n = list[0];
+            OutStr = n.title + ":" + n.contents;
+        }
+
+
+    }
+
+    private void GenertleftNotice()
+    {
+        string temlate = @"
            <table width='96%' height='160' border='0' cellpadding='0' cellspacing='0' bordercolor='#FFFFFF'
                     background='images/bg/01.gif' class='kk22'>
                     <tr>
@@ -71,28 +86,28 @@ namespace NewWaterWeb.UserCtrl
                                 </tr>
                             </table>
                             <table width='98%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>";
-            string listTeml = @" <tr>
+        string listTeml = @" <tr>
                                     <td height='27' align='left' valign='middle'>
                                         &nbsp;<img src='images/HOT2.gif' width='7' height='7' />&nbsp;<a href='Info.aspx?type=notice&id={0}'
                                             target='_blank' title='标题：{1}'>{2}</a>
                                     </td>
                                 </tr> ";
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat(temlate, "通知公告");
-            List<notice> list = new noticeManager().GetTopList();
+        StringBuilder sb = new StringBuilder();
+        sb.AppendFormat(temlate, "通知公告");
+        List<notice> list = new noticeManager().GetTopList();
 
-            foreach (notice item in list)
+        foreach (notice item in list)
+        {
+            string title = item.title;
+            if (title.Length > 17)
             {
-                string title = item.title;
-                if (title.Length > 17)
-                {
-                    title = title.Substring(0, 17) + "...";
-                }
-                sb.AppendFormat(listTeml, item.id, item.title, title);
+                title = title.Substring(0, 17) + "...";
             }
+            sb.AppendFormat(listTeml, item.id, item.title, title);
+        }
 
 
-            sb.Append(@"</table>
+        sb.Append(@"</table>
                         </td>
                     </tr>
                 </table>
@@ -102,13 +117,13 @@ namespace NewWaterWeb.UserCtrl
                         </td>
                     </tr>
                 </table>");
-            OutStr = sb.ToString();
-        }
+        OutStr = sb.ToString();
+    }
 
-        private void GenerHotNews()
-        {
+    private void GenerHotNews()
+    {
 
-            string temlate = @"
+        string temlate = @"
            <table width='96%' height='250' border='0' cellpadding='0' cellspacing='0' bordercolor='#FFFFFF'
                     background='images/bg/01.gif' class='kk22'>
                     <tr>
@@ -124,27 +139,27 @@ namespace NewWaterWeb.UserCtrl
                                 </tr>
                             </table>
                             <table width='98%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>";
-            string listTeml = @" <tr>
+        string listTeml = @" <tr>
                                     <td height='27' align='left' valign='middle'>
                                         &nbsp;<img src='images/HOT2.gif' width='7' height='7' />&nbsp;<a href='Info.aspx?type=news&id={0}'
                                             target='_blank' title='标题：{1}'>{2}</a>
                                     </td>
                                 </tr> ";
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat(temlate, "热点文章");
-            List<news> list = new newsManager().GetHotNews();
-            foreach (news item in list)
+        StringBuilder sb = new StringBuilder();
+        sb.AppendFormat(temlate, "热点文章");
+        List<news> list = new newsManager().GetHotNews();
+        foreach (news item in list)
+        {
+            string title = item.title;
+            if (title.Length > 17)
             {
-                string title = item.title;
-                if (title.Length > 17)
-                {
-                    title = title.Substring(0, 17) + "...";
-                }
-                sb.AppendFormat(listTeml, item.id, item.title, title);
+                title = title.Substring(0, 17) + "...";
             }
+            sb.AppendFormat(listTeml, item.id, item.title, title);
+        }
 
 
-            sb.Append(@"</table>
+        sb.Append(@"</table>
                         </td>
                     </tr>
                 </table>
@@ -154,35 +169,35 @@ namespace NewWaterWeb.UserCtrl
                         </td>
                     </tr>
                 </table>");
-            OutStr = sb.ToString();
-        }
+        OutStr = sb.ToString();
+    }
 
-        private void GenertNotice()
+    private void GenertNotice()
+    {
+        //公告的模板标签
+
+
+        List<notice> list = new noticeManager().GetTopList();
+        StringBuilder sb = new StringBuilder("<table width='100%' border='0' align='center' cellpadding='0' cellspacing='0' id='marqueelist'>");
+        foreach (notice item in list)
         {
-            //公告的模板标签
-
-
-            List<notice> list = new noticeManager().GetTopList();
-            StringBuilder sb = new StringBuilder("<table width='100%' border='0' align='center' cellpadding='0' cellspacing='0' id='marqueelist'>");
-            foreach (notice item in list)
-            {
-                sb.AppendFormat(@"<tr>
+            sb.AppendFormat(@"<tr>
                             <td height='25' align='left' valign='middle'>
                                 &nbsp;<img src='images/biao.gif' /><a href='info.aspx?type=notice&id={0}' target='_blank'
                                     title='标题：{1}'>{1}</a> &nbsp;
                             </td>
                         </tr>", item.id, item.title);
-            }
-            sb.Append(" </table>");
-            OutStr = sb.ToString();
         }
+        sb.Append(" </table>");
+        OutStr = sb.ToString();
+    }
 
-        private void GenerSpeciInfo()
-        {
+    private void GenerSpeciInfo()
+    {
 
-            List<news> list = new newsManager().GetClassID(ClassID);
+        List<news> list = new newsManager().GetClassID(ClassID);
 
-            StringBuilder sb = new StringBuilder(string.Format(@"<table height='210' width='363' width='363' border='0' cellpadding='0' cellspacing='0'
+        StringBuilder sb = new StringBuilder(string.Format(@"<table height='210' width='363' width='363' border='0' cellpadding='0' cellspacing='0'
                                 class='kk'>
                                 <tr>
                                     <td align='center' valign='top'>
@@ -200,14 +215,14 @@ namespace NewWaterWeb.UserCtrl
                                             </tr>
                                         </table>
                                         <table width='99%' height='24' border='0' align='center' cellpadding='0' cellspacing='0'>", Title, "Category.aspx?type=news&sid=" + ClassID));
-            foreach (news item in list)
+        foreach (news item in list)
+        {
+            string temTitle = item.title;
+            if (item.title.Length > 20)
             {
-                string temTitle = item.title;
-                if (item.title.Length > 20)
-                {
-                    temTitle = item.title.Substring(0, 20) + "...";
-                }
-                sb.AppendFormat(@"<tr>
+                temTitle = item.title.Substring(0, 20) + "...";
+            }
+            sb.AppendFormat(@"<tr>
                                                 <td height='25' align='left' valign='middle'>
                                                     &nbsp;·&nbsp;<a href='Info.aspx?type=news&id={0}' target='_blank' title='标题：{1}'>{3}</a>
                                                     <font class='red'>★</font>
@@ -216,25 +231,25 @@ namespace NewWaterWeb.UserCtrl
                                                     {2}
                                                 </td>
                                             </tr>", item.id, item.title, item.addtime.Value.ToString("MM月:dd日"), temTitle);
-            }
-            sb.Append("</table> </td> </tr>  </table>");
-            OutStr = sb.ToString();
-
-
-
         }
+        sb.Append("</table> </td> </tr>  </table>");
+        OutStr = sb.ToString();
 
 
-        private void GenerExperts()
+
+    }
+
+
+    private void GenerExperts()
+    {
+
+        List<experts> list = new expertsManager().GetList();
+
+        StringBuilder sb = new StringBuilder("<table border='0' cellpadding='0' cellspacing='0'>  <tr>");
+        foreach (experts item in list)
         {
 
-            List<experts> list = new expertsManager().GetList();
-
-            StringBuilder sb = new StringBuilder("<table border='0' cellpadding='0' cellspacing='0'>  <tr>");
-            foreach (experts item in list)
-            {
-
-                sb.AppendFormat(@"<td align='center'>
+            sb.AppendFormat(@"<td align='center'>
                                                                     <table width='90' border='0' cellpadding='0' cellspacing='0'>
                                                                         <tr>
                                                                             <td align='center'>
@@ -257,30 +272,30 @@ namespace NewWaterWeb.UserCtrl
                                                                         </tr>
                                                                     </table>
                                                                 </td>", item.id, item.photo, item.name);
-            }
-            sb.Append("  </tr>  </table>");
-            OutStr = sb.ToString();
-
-
-
         }
+        sb.Append("  </tr>  </table>");
+        OutStr = sb.ToString();
 
-        private void GenerVideo()
-        {
 
-            List<video> list = new videoManager().GetvideoList();
 
-            StringBuilder sb = new StringBuilder(@"<table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/right_bg2.gif'>
+    }
+
+    private void GenerVideo()
+    {
+
+        List<video> list = new videoManager().GetvideoList();
+
+        StringBuilder sb = new StringBuilder(@"<table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/right_bg2.gif'>
                     <tr>
                         <td height='30' align='center' class='white12B'>
                             ::&nbsp;&nbsp;视频频道&nbsp;&nbsp;::
                         </td>
                     </tr>
                 </table>");
-            foreach (video item in list)
-            {
+        foreach (video item in list)
+        {
 
-                sb.AppendFormat(@" <a href='nzcms_show_news.asp?id={0}'><img src='{2}' style='  height: 160px;  width: 250px; '></a>
+            sb.AppendFormat(@" <a href='nzcms_show_news.asp?id={0}'><img src='{2}' style='  height: 160px;  width: 250px; '></a>
 
                 <table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/left2.gif'>
                     <tr>
@@ -289,12 +304,11 @@ namespace NewWaterWeb.UserCtrl
                         </td>
                     </tr>
                 </table>", item.id, item.title, item.vpic);
-            }
-            //sb.Append("  </tr>  </table>");
-            OutStr = sb.ToString();
-
-
-
         }
+        //sb.Append("  </tr>  </table>");
+        OutStr = sb.ToString();
+
+
+
     }
 }

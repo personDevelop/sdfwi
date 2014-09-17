@@ -1,5 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
-    CodeBehind="Category.aspx.cs" Inherits="NewWaterWeb.Category" %>
+Ôªø<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeFile="Category.aspx.cs" Inherits="Category" %>
 
 <%@ Register Src="UserCtrl/SiteMapUserCtrl.ascx" TagName="SiteMapUserCtrl" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/LeftNavUserCtrl.ascx" TagName="LeftNavUserCtrl" TagPrefix="uc2" %>
@@ -7,17 +6,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!--µº∫Ω -->
+    <!--ÂØºËà™ -->
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="8" bgcolor="#FFFFFF">
         <tr valign="top">
             <td width="260" align="center" valign="top" background="/images/left_bg.gif">
-                <!--◊Û≤‡¿∏ƒø -->
+                <!--Â∑¶‰æßÊ†èÁõÆ -->
                 <uc2:LeftNavUserCtrl ID="LeftNavUserCtrl1" runat="server" />
-                <!--◊Û≤‡¿∏ƒø -->
-                <!--◊Û≤‡Õ∆ºˆŒƒ’¬ -->
+                <!--Â∑¶‰æßÊ†èÁõÆ -->
+                <!--Â∑¶‰æßÊé®ËçêÊñáÁ´† -->
                 <uc3:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="leftnotice" runat="server" />
                 <uc3:BaseUserCtrl ID="BaseUserCtrl2" CtrlType="hotnews" runat="server" />
-                <!--◊Û≤‡Õ∆ºˆŒƒ’¬ -->
+                <!--Â∑¶‰æßÊé®ËçêÊñáÁ´† -->
             </td>
             <td align="center">
                 <uc1:SiteMapUserCtrl ID="SiteMapUserCtrl1" runat="server" />
@@ -27,11 +26,11 @@
                         </td>
                     </tr>
                 </table>
-                <!--Œƒ’¬œ‘ æ -->
+                <!--ÊñáÁ´†ÊòæÁ§∫ -->
                 <table width="98%" border="0" cellpadding="0" cellspacing="0" background="images/list_news_bg.gif">
                     <tr>
                         <td width="190" height="33" align="center" class="title14b">
-                            µ•ŒªºÚΩÈ
+                            Âçï‰ΩçÁÆÄ‰ªã
                         </td>
                         <td align="right">
                             &nbsp;&nbsp;
@@ -47,8 +46,8 @@
                         </td>
                     </tr>
                 </table>
-                <!--Õº∆¨∏Ò Ωœ‘ æ -->
-                <!--ƒ⁄»›œ‘ æ -->
+                <!--ÂõæÁâáÊ†ºÂºèÊòæÁ§∫ -->
+                <!--ÂÜÖÂÆπÊòæÁ§∫ -->
                  
                 <table border="0" align="center">
                     <form onsubmit="document.location = 'http://www.sdfwi.cn/ga2/list_news.asp?id=634&amp;sort_id=631&amp;Page='+ this.page.value;return false;"
@@ -57,8 +56,8 @@
                         <tr>
                             <td align="right">
                                 <p align="center">
-                                     ◊“≥ …œ“ª“≥ œ¬“ª“≥ Œ≤“≥ “≥¥Œ£∫1/1“≥ π≤”–8Ãı ◊™µΩ<input value="1" maxlength="5" size="1" name="page"
-                                        tyep="TEXT">“≥
+                                    È¶ñÈ°µ ‰∏ä‰∏ÄÈ°µ ‰∏ã‰∏ÄÈ°µ Â∞æÈ°µ È°µÊ¨°Ôºö1/1È°µ ÂÖ±Êúâ8Êù° ËΩ¨Âà∞<input value="1" maxlength="5" size="1" name="page"
+                                        tyep="TEXT">È°µ
                                     <input style="font-size: 9pt" class="b2" value="GO" type="submit"></p>
                             </td>
                         </tr>
@@ -73,5 +72,5 @@
             </td>
         </tr>
     </table>
-    <!--ƒ⁄»›œ‘ æ -->
+    <!--ÂÜÖÂÆπÊòæÁ§∫ -->
 </asp:Content>

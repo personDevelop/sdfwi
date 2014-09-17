@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mian.aspx.cs" Inherits="NewWaterWeb.mian" %>
+锘�<%@ Page Language="C#" AutoEventWireup="true" CodeFile="mian.aspx.cs" Inherits="mian" %>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <link href="css/css.css" rel="stylesheet" type="text/css">
 <link href="css/css_2.css" rel="stylesheet" type="text/css">
@@ -51,12 +51,12 @@
         padding: 0;
         margin-top: 50px;
         font-size: 18px;
-        font-family: "微软雅黑" ,Verdana;
+        font-family: "寰蒋闆呴粦" ,Verdana;
     }
     h3.title
     {
         font-size: 16px;
-        font-family: "微软雅黑" ,Verdana;
+        font-family: "寰蒋闆呴粦" ,Verdana;
     }
     .importInfo
     {

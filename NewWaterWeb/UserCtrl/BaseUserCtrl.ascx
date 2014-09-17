@@ -1,3 +1,2 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BaseUserCtrl.ascx.cs"
-    Inherits="NewWaterWeb.UserCtrl.BaseUserCtrl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="BaseUserCtrl.ascx.cs" Inherits="UserCtrl_BaseUserCtrl" %>
 <%=OutStr %>

@@ -1,2 +1,2 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LeftNavUserCtrl.ascx.cs" Inherits="NewWaterWeb.UserCtrl.LeftNavUserCtrl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LeftNavUserCtrl.ascx.cs" Inherits="UserCtrl_LeftNavUserCtrl" %>
 <%=OutStr %>

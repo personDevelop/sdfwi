@@ -7,11 +7,8 @@ using System.Web.UI.WebControls;
 using sdfwi.Logic;
 using sdfwi.Entity;
 
-namespace NewWaterWeb
-{
-    public partial class Info : System.Web.UI.Page
-    {
-        string tabTitle=@"<table width='98%' border='0' cellpadding='0' cellspacing='0' background='images/list_news_bg.gif'>
+public partial class Info : System.Web.UI.Page
+{  string tabTitle=@"<table width='98%' border='0' cellpadding='0' cellspacing='0' background='images/list_news_bg.gif'>
                     <tr>
                         <td width='190' height='33' align='center' class='title14b'>
                             <%={0} %>
@@ -53,4 +50,4 @@ namespace NewWaterWeb
             }
         }
     }
-}
+ 

@@ -8,14 +8,12 @@ using sdfwi.Entity;
 using sdfwi.Logic;
 using Sharp.Common;
 
-namespace NewWaterWeb.UserCtrl
+public partial class UserCtrl_ChildSiteUserCtrl : System.Web.UI.UserControl
 {
-    public partial class ChildSiteUserCtrl : System.Web.UI.UserControl
+    public string OutStr { get; set; }
+    protected void Page_Load(object sender, EventArgs e)
     {
-        public string OutStr { get; set; }
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            string tmpl = @"
+        string tmpl = @"
                 <td align='center'>
                     <table border='0' cellpadding='0' cellspacing='0' background='images/nzcms.39.gif'>
                         <tr>
@@ -26,39 +24,38 @@ namespace NewWaterWeb.UserCtrl
                       </table>
                       <table height='15' border='0' cellpadding='0' cellspacing='0'><tr><td></td></tr></table>
                  </td>";
-            if (!IsPostBack)
+        if (!IsPostBack)
+        {
+            List<website> lst = new List<website>();
+
+            siteManager mgr = new siteManager();
+            string result = string.Empty;
+            lst = mgr.GetLinkList();
+            int i = 0;
+            foreach (website model in lst)
             {
-                List<website> lst = new List<website>();
-
-                siteManager mgr = new siteManager();
-                string result = string.Empty;
-                lst = mgr.GetLinkList();
-                int i = 0;
-                foreach (website model in lst)
+                if (i % 3 == 0)
                 {
-                    if (i % 3 == 0)
-                    {
-                        result += "<tr>";
- 
-                    }
-                    //if (model.title.Length > 20)
-                    //{
-                    //    model.title = model.title.Substring(0, 20);
-                    //}
-                    result += string.Format(tmpl,model.id,model.sitename);
-                    if ((i+1) % 3 == 0)
-                    {
-                        result += "</tr>";
+                    result += "<tr>";
 
-                    }
-                    i++;
-                  
                 }
-                result = "<table width='96%' border=0 align='center' cellpadding='0' cellspacing='0'>" + result + " </table>";
+                //if (model.title.Length > 20)
+                //{
+                //    model.title = model.title.Substring(0, 20);
+                //}
+                result += string.Format(tmpl, model.id, model.sitename);
+                if ((i + 1) % 3 == 0)
+                {
+                    result += "</tr>";
 
-                OutStr = result.ToString();
+                }
+                i++;
+
             }
+            result = "<table width='96%' border=0 align='center' cellpadding='0' cellspacing='0'>" + result + " </table>";
 
+            OutStr = result.ToString();
         }
+
     }
 }

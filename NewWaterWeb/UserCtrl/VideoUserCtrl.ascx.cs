@@ -5,13 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace NewWaterWeb.UserCtrl
+public partial class UserCtrl_VideoUserCtrl : System.Web.UI.UserControl
 {
-    public partial class VideoUserCtrl : System.Web.UI.UserControl
+    protected void Page_Load(object sender, EventArgs e)
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
