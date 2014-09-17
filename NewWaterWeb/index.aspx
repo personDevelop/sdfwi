@@ -48,8 +48,8 @@
                         </td>
                     </tr>
                 </table>
-                <a href="book.asp">
-                    <img src="images/nzcms/nzcms.book.gif" border="0" /></a>
+              <%--  <a href="book.asp">
+                    <img src="images/nzcms/nzcms.book.gif" border="0" /></a>--%>
                 <!-- 这里结束通知通告栏-->
             </td>
         </tr>
@@ -211,7 +211,7 @@
                     class="kk">
                     <tr>
                         <td width="25" height="160" align="center" valign="middle" class="white">
-                            <a href="nzcms_poto.asp">
+                            <a href="Category.aspx?type=experts">
                                 <img src="images/nzcms/tu.jpg" border="0" /></a>
                         </td>
                         <td align="center" valign="middle" bgcolor="#FFFFFF">
