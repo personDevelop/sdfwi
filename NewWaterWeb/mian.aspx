@@ -51,12 +51,12 @@
         padding: 0;
         margin-top: 50px;
         font-size: 18px;
-        font-family: "å¾®è½¯é›…é»‘" ,Verdana;
+        font-family: "Î¢ÈíÑÅºÚ" ,Verdana;
     }
     h3.title
     {
         font-size: 16px;
-        font-family: "å¾®è½¯é›…é»‘" ,Verdana;
+        font-family: "Î¢ÈíÑÅºÚ" ,Verdana;
     }
     .importInfo
     {

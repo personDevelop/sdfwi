@@ -7,17 +7,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!--å¯¼èˆª -->
+    <!--µ¼º½ -->
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="8" bgcolor="#FFFFFF">
         <tr valign="top">
             <td width="260" align="center" valign="top" background="/images/left_bg.gif">
-                <!--å·¦ä¾§æ ç›® -->
+                <!--×ó²àÀ¸Ä¿ -->
                 <uc2:LeftNavUserCtrl ID="LeftNavUserCtrl1" runat="server" />
-                <!--å·¦ä¾§æ ç›® -->
-                <!--å·¦ä¾§æŽ¨èæ–‡ç«  -->
+                <!--×ó²àÀ¸Ä¿ -->
+                <!--×ó²àÍÆ¼öÎÄÕÂ -->
                 <uc3:baseuserctrl id="BaseUserCtrl1" ctrltype="leftnotice" runat="server" />
                 <uc3:baseuserctrl id="BaseUserCtrl2" ctrltype="hotnews" runat="server" />
-                <!--å·¦ä¾§æŽ¨èæ–‡ç«  -->
+                <!--×ó²àÍÆ¼öÎÄÕÂ -->
             </td>
             <td align="center">
                 <uc1:SiteMapUserCtrl ID="SiteMapUserCtrl1" runat="server" />
@@ -27,10 +27,10 @@
                         </td>
                     </tr>
                 </table>
-                <!--æ–‡ç« æ˜¾ç¤º -->
+                <!--ÎÄÕÂÏÔÊ¾ -->
                 <%=TitleName %>
-                <!--å›¾ç‰‡æ ¼å¼æ˜¾ç¤º -->
-                <!--å†…å®¹æ˜¾ç¤º -->
+                <!--Í¼Æ¬¸ñÊ½ÏÔÊ¾ -->
+                <!--ÄÚÈÝÏÔÊ¾ -->
                 <table width="97%" height="19" border="0" cellpadding="0" cellspacing="0" style="border-top: #7fadd1 dotted 1px">
                     <tr>
                         <td height="40" colspan="3" align="center" class="righth2">
@@ -49,7 +49,7 @@
                         </td>
                     </tr>
                 </table>
-                <!--å†…å®¹æ˜¾ç¤º -->
+                <!--ÄÚÈÝÏÔÊ¾ -->
             </td>
         </tr>
     </table>

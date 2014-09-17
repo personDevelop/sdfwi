@@ -1,16 +1,17 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
-    CodeBehind="index.aspx.cs" Inherits="NewWaterWeb.index" %>
-    <%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+
+
+<%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
-<%@ Register src="UserCtrl/ChildSiteUserCtrl.ascx" tagname="ChildSiteUserCtrl" tagprefix="uc3" %>
-<%@ Register src="UserCtrl/LinkSite.ascx" tagname="LinkSite" tagprefix="uc4" %>
+<%@ Register Src="UserCtrl/ChildSiteUserCtrl.ascx" TagName="ChildSiteUserCtrl" TagPrefix="uc3" %>
+<%@ Register Src="UserCtrl/LinkSite.ascx" TagName="LinkSite" TagPrefix="uc4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>研究院网站管理系统</title>
     <meta name="Keywords" content="研究院,蓝色模板,值班系统,签收系统" />
     <meta name="Description" content="" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <table width="1004" border="0" align="center" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF">
+    <table width="1004" border="0" align="center" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF">
         <tr>
             <td width="355" align="center" valign="top" bgcolor="#FFFFFF" class="kk">
                 <!-- 图片栏调用-->
@@ -625,7 +626,7 @@
         www_qpsh_com.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
         
     </script>
-    <script language="JavaScript">
+    <%-- <script language="JavaScript">
         suspendcode = "<DIV id=lovexin1 style='Z-INDEX: 10; LEFT: 6px; POSITION: absolute; TOP: 105px; width: 100; height: 300px;'><a href='http://www.sdfwi.cn' target='_blank'><img src='nzcms_nzweb/nzcms_up/nz_pic/ad_100x300.jpg' width='100' height='300' border='0' alt='对联左边'></a><br><img src='images/close.gif' style='FILTER: alpha(opacity=70)' onClick='javascript:window.hide()' width='100' height='14' border='0' vspace='3' alt='关闭对联广告' class='hand'></DIV>"
         document.write(suspendcode);
 
@@ -649,7 +650,7 @@
             lovexin2.style.visibility = "hidden";
         }
         window.setInterval("heartBeat()", 1);
-    </script>
+    </script>--%>
     <script language="JavaScript"> 
 <!--
         function openpopup() {
@@ -685,7 +686,7 @@
     </script>
     <!-- 弹窗栏-->
     <!-- 飘浮栏-->
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <%--<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <link href="../css/css.css" rel="stylesheet" type="text/css">
     <script language="JavaScript">
         function Display(ID) {
@@ -858,5 +859,5 @@
     <script type="text/javascript">
         var ad2 = new AdMove("2");
         ad2.Run();
-    </script>
+    </script>--%>
 </asp:Content>

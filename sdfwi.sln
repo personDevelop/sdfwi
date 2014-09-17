@@ -5,7 +5,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdfwi.Entity", "sdfwi.Entit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdfwi.Logic", "sdfwi.Logic\sdfwi.Logic.csproj", "{5DF84454-5B8E-46C6-89E8-12523E531E58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWaterWeb", "NewWaterWeb\NewWaterWeb.csproj", "{E1F4491A-C272-467A-BFED-CF77162153C8}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NewWaterWeb", "NewWaterWeb", "{925A0137-DAB9-44CA-A28F-C4866313651F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{407BFAD6-F026-4CCE-ABB2-80965BF6985D}|sdfwi.Entity.dll;{5DF84454-5B8E-46C6-89E8-12523E531E58}|sdfwi.Logic.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/NewWaterWeb"
+		Debug.AspNetCompiler.PhysicalPath = "NewWaterWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\NewWaterWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/NewWaterWeb"
+		Release.AspNetCompiler.PhysicalPath = "NewWaterWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\NewWaterWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "17087"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +41,10 @@ Global
 		{5DF84454-5B8E-46C6-89E8-12523E531E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DF84454-5B8E-46C6-89E8-12523E531E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DF84454-5B8E-46C6-89E8-12523E531E58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E1F4491A-C272-467A-BFED-CF77162153C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1F4491A-C272-467A-BFED-CF77162153C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1F4491A-C272-467A-BFED-CF77162153C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1F4491A-C272-467A-BFED-CF77162153C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925A0137-DAB9-44CA-A28F-C4866313651F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925A0137-DAB9-44CA-A28F-C4866313651F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925A0137-DAB9-44CA-A28F-C4866313651F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{925A0137-DAB9-44CA-A28F-C4866313651F}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

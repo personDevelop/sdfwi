@@ -1,16 +1,17 @@
-Ôªø<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NewWaterWeb.Site1" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NewWaterWeb.Site1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="shortcut icon" href="nz.ico" />
     <link href="css/css.css" rel="stylesheet" type="text/css">
     <link href="css/css_2.css" rel="stylesheet" type="text/css">
     <link href="css/nzcms_top.css" rel="stylesheet" type="text/css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script src="js/main.js" type="text/javascript"></script>
+   
+    <script src="js/main.js" type="text/javascript"></script> 
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,20 +19,20 @@
         bgcolor="#FFFFFF">
         <tr>
             <td height="28" valign="middle">
-                &nbsp;&nbsp;<img src="images/time.gif" width="12" height="12" />&nbsp; 2014Âπ¥04Êúà25Êó•ÊòüÊúü‰∫îÂÜúÂéÜÁî≤ÂçàÂπ¥(È©¨)‰∏âÊúàÂªøÂÖ≠
+                &nbsp;&nbsp;<img src="images/time.gif" width="12" height="12" />&nbsp; 2014ƒÍ04‘¬25»’–«∆⁄ŒÂ≈©¿˙º◊ŒÁƒÍ(¬Ì)»˝‘¬ÿ•¡˘
             </td>
             <td align="right" valign="middle">
                 <table border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <td>
-                            Áî®Êà∑ÂêçÔºö
+                            ”√ªß√˚£∫
                             <input name="username" type="text" class="index_dr" id="username" size="5" datatype="Require"
-                                style="height: 15px; width: 80px;" msg="ËØ∑Â°´ÂÜôÊ≠£Á°ÆÁöÑÁÆ°ÁêÜÂ∏êÂè∑ÔºÅ" />
-                            &nbsp;ÂØÜÁ†ÅÔºö
+                                style="height: 15px; width: 80px;" msg="«ÎÃÓ–¥’˝»∑µƒπ‹¿Ì’ ∫≈£°" />
+                            &nbsp;√‹¬Î£∫
                             <input name="userpassword" type="password" class="index_dr" id="userpassword" size="5"
-                                datatype="Require" style="height: 15px; width: 80px;" msg="ËØ∑Â°´ÂÜôÊ≠£Á°ÆÁöÑÁÆ°ÁêÜÂØÜÁ†ÅÔºÅ" />
+                                datatype="Require" style="height: 15px; width: 80px;" msg="«ÎÃÓ–¥’˝»∑µƒπ‹¿Ì√‹¬Î£°" />
                             &nbsp;
-                            <input name="Submit" type="submit" class="top-so" value="ÁôªÂΩï" />
+                            <input name="Submit" type="submit" class="top-so" value="µ«¬º" />
                             &nbsp;
                         </td>
                     </tr>
@@ -39,11 +40,11 @@
             </td>
             <td width="60" align="center">
                 <a href="javascript:" onclick="jscript:window.external.AddFavorite(document.location.href,document.title);">
-                    ËÆæ‰∏∫È¶ñÈ°µ</a>
+                    …ËŒ™ ◊“≥</a>
             </td>
             <td width="60" align="center">
                 <a href="javascript:" onclick="jscript:window.external.AddFavorite(document.location.href,document.title);">
-                    Êî∂ËóèÊú¨Á´ô</a>
+                     ’≤ÿ±æ’æ</a>
             </td>
         </tr>
     </table>
@@ -54,7 +55,7 @@
             </td>
         </tr>
     </table>
-    <!--ÂØºËà™ -->
+    <!--µº∫Ω -->
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms_top01.gif"
         bgcolor="#093887" class="top">
         <tr>
@@ -66,7 +67,7 @@
                                 <table width="111" border="0" cellpadding="0" cellspacing="0" background="images/nzcms/nzcms.07.gif">
                                     <tr>
                                         <td height="38" align="center">
-                                            <a href="index.aspx" class="left">È¶ñÈ°µ</a>
+                                            <a href="index.aspx" class="left"> ◊“≥</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -76,7 +77,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -84,7 +85,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=oneclass&sid=3" class="left" onmouseover="mopen('m656')"
-                                                onmouseout="mclosetime()">Êú∫ÊûÑÊ¶ÇÂÜµ</a>
+                                                onmouseout="mclosetime()">ª˙ππ∏≈øˆ</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -96,7 +97,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=oneclass&sid=3"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Âçï‰ΩçÁÆÄ‰ªã</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;µ•ŒªºÚΩÈ</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -106,7 +107,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=oneclass&sid=5"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Êú∫ÊûÑËÆæÁΩÆ</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;ª˙ππ…Ë÷√</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -116,7 +117,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=oneclass&sid=4"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;È¢ÜÂØºËá¥Ëæû</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;¡Ïµº÷¬¥«</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -127,7 +128,7 @@
                                                 <tr>
                                                     <td align="left">
                                                         <a href="Category.aspx?type=oneclass&sid=6"><font class="p14">
-                                                            <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Ëç£Ë™âËµÑË¥®</font></a>
+                                                            <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;»Ÿ”˛◊ ÷ </font></a>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -135,7 +136,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -143,7 +144,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=news&sid=1" class="left" onmouseover="mopen('m657')"
-                                                onmouseout="mclosetime()">Êñ∞ÈóªÂä®ÊÄÅ</a>
+                                                onmouseout="mclosetime()">–¬Œ≈∂ØÃ¨</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -155,7 +156,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=2"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ÊâÄÂÜÖÊñ∞Èóª</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;À˘ƒ⁄–¬Œ≈</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -165,7 +166,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=3"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Ë°å‰∏öÊñ∞Èóª</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;––“µ–¬Œ≈</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -174,7 +175,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -182,7 +183,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=news&sid=4" class="left" onmouseover="mopen('m658')"
-                                                onmouseout="mclosetime()">ÊàêÊûúÂ±ïÁ§∫</a>
+                                                onmouseout="mclosetime()">≥…π˚’π æ</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -194,7 +195,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=5"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Âçï‰ΩçÂª∫ËÆæ</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;µ•ŒªΩ®…Ë</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -204,7 +205,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=6"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ÁßëÁ†îÊàêÊûú</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;ø∆—–≥…π˚</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -213,7 +214,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -221,7 +222,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=oneclass&sid=2" class="left" onmouseover="mopen('m660')"
-                                                onmouseout="mclosetime()">Âü∫Âú∞Âª∫ËÆæ</a>
+                                                onmouseout="mclosetime()">ª˘µÿΩ®…Ë</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -233,7 +234,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=oneclass&sid=7"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Âü∫Âú∞Ê¶ÇÂÜµ</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;ª˘µÿ∏≈øˆ</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -243,7 +244,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=8"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Âü∫Âú∞Êñ∞Èóª</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;ª˘µÿ–¬Œ≈</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -252,7 +253,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -260,7 +261,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=news&sid=9" class="left" onmouseover="mopen('m660')"
-                                                onmouseout="mclosetime()">ÂØπÂ§ñÂêà‰Ωú</a>
+                                                onmouseout="mclosetime()">∂‘Õ‚∫œ◊˜</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -272,7 +273,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=10"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ÂõΩÂÜÖÂêà‰Ωú</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;π˙ƒ⁄∫œ◊˜</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -282,7 +283,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=news&sid=11"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ÂõΩÂ§ñÂêà‰Ωú</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;π˙Õ‚∫œ◊˜</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -291,7 +292,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -299,7 +300,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=download&sid=1" class="left" onmouseover="mopen('m661')"
-                                                onmouseout="mclosetime()">‰∏ãËΩΩ‰∏≠ÂøÉ</a>
+                                                onmouseout="mclosetime()">œ¬‘ÿ÷––ƒ</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -311,7 +312,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=download&sid=2"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ËΩØ‰ª∂‰∏ãËΩΩ</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;»Ìº˛œ¬‘ÿ</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -321,7 +322,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=download&sid=3"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Â≠¶‰π†ËµÑÊñô</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;—ßœ∞◊ ¡œ</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -333,7 +334,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=download&sid=4"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Ê®°Êùø‰∏ãËΩΩ</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;ƒ£∞Âœ¬‘ÿ</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -343,7 +344,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=download&sid=5"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ÊâÄÂÜÖË°®Ê†º</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;À˘ƒ⁄±Ì∏Ò</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -352,7 +353,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -360,7 +361,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="nzcms_list.asp?sort_id=662" class="left" onmouseover="mopen('m662')" onmouseout="mclosetime()">
-                                                Êñ∞ÈóªÊä•ÈÄÅ</a>
+                                                –¬Œ≈±®ÀÕ</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -372,7 +373,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="nzcms_list_news.asp?id=697&sort_id=662"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Ê†èÁõÆÂêçÁß∞</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;¿∏ƒø√˚≥∆</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -382,7 +383,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="nzcms_list_news.asp?id=698&sort_id=662"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;Ê†èÁõÆÂêçÁß∞</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;¿∏ƒø√˚≥∆</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -390,7 +391,7 @@
                                     </table>
                                 </div>
                             </li>
-                            <!--ÂØºËà™ -->
+                            <!--µº∫Ω -->
                         </td>
                         <td align="left">
                             <li>
@@ -398,7 +399,7 @@
                                     <tr>
                                         <td height="38" align="center">
                                             <a href="Category.aspx?type=oneclass&sid=34" class="left" onmouseover="mopen('m663')"
-                                                onmouseout="mclosetime()">ËÅîÁ≥ªÊàë‰ª¨</a>
+                                                onmouseout="mclosetime()">¡™œµŒ“√«</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -410,7 +411,7 @@
                                                     <tr>
                                                         <td align="left">
                                                             <a href="Category.aspx?type=oneclass&sid=35"><font class="p14">
-                                                                <img src="images/biao.gif" alt="ÂõæÊ†á" border="0">&nbsp;ËÅîÁ≥ªÊàë‰ª¨</font></a>
+                                                                <img src="images/biao.gif" alt="Õº±Í" border="0">&nbsp;¡™œµŒ“√«</font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -425,7 +426,7 @@
             </td>
         </tr>
     </table>
-    <!--ÊªöÂä®Ê†èÊèí‰ª∂ -->
+    <!--πˆ∂Ø¿∏≤Âº˛ -->
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
             <td>
@@ -453,15 +454,15 @@
                                     if (ww == 0) colorhead = "<font color=\"#FF5300\">";
                                     if (ww > 0 && ww < 6) colorhead = "<font color=\"#FF5300\">";
                                     if (ww == 6) colorhead = "<font color=\"#FF5300\">";
-                                    if (ww == 0) ww = "ÊòüÊúüÊó•";
-                                    if (ww == 1) ww = "ÊòüÊúü‰∏Ä";
-                                    if (ww == 2) ww = "ÊòüÊúü‰∫å";
-                                    if (ww == 3) ww = "ÊòüÊúü‰∏â";
-                                    if (ww == 4) ww = "ÊòüÊúüÂõõ";
-                                    if (ww == 5) ww = "ÊòüÊúü‰∫î";
-                                    if (ww == 6) ww = "ÊòüÊúüÂÖ≠";
+                                    if (ww == 0) ww = "–«∆⁄»’";
+                                    if (ww == 1) ww = "–«∆⁄“ª";
+                                    if (ww == 2) ww = "–«∆⁄∂˛";
+                                    if (ww == 3) ww = "–«∆⁄»˝";
+                                    if (ww == 4) ww = "–«∆⁄Àƒ";
+                                    if (ww == 5) ww = "–«∆⁄ŒÂ";
+                                    if (ww == 6) ww = "–«∆⁄¡˘";
                                     colorfoot = "</font>"
-                                    str = colorhead + hh + ":" + mm + ":" + ss + "<br><font style='font-size: 24px':font-family: 'ÂæÆËΩØÈõÖÈªë';>" + ww + colorfoot;
+                                    str = colorhead + hh + ":" + mm + ":" + ss + "<br><font style='font-size: 24px':font-family: 'Œ¢»Ì—≈∫⁄';>" + ww + colorfoot;
                                     return (str);
                                 }
                                 function tick() {
@@ -480,14 +481,14 @@
                                     </td>
                                 </tr>
                             </table>
-                            <marquee scrollamount="5" width="870" height="50" onmouseover="stop()" onmouseout="start()"><span style="font-family:Microsoft YaHei;color:#ffff00;font-size:24px;">Â±±‰∏úÁúÅÊ∑°Ê∞¥Ê∏î‰∏öÁ†îÁ©∂Èô¢‰∫î‰∏ÄÊîæÂÅáÈÄöÁü•:2014Âπ¥5Êúà1Êó•Ëá≥3Êó•‰∏∫Ê≥ïÂÆöËäÇÂÅáÊó•Ôºå5Êúà1Êó•Ê≠£Â∏∏‰∏äÁè≠ÔºåËØ∑Â§ßÂÆ∂ÂÅöÂ•ΩÂ∑•‰ΩúÂÆâÊéíÔºåÊÅ≠Á•ùÂ§ßÂÆ∂ËäÇÊó•Âø´‰πêÔºÅ</span></marquee>
+                            <marquee scrollamount="5" width="870" height="50" onmouseover="stop()" onmouseout="start()"><span style="font-family:Microsoft YaHei;color:#ffff00;font-size:24px;">…Ω∂´ °µ≠ÀÆ”Ê“µ—–æø‘∫ŒÂ“ª∑≈ºŸÕ®÷™:2014ƒÍ5‘¬1»’÷¡3»’Œ™∑®∂®Ω⁄ºŸ»’£¨5‘¬1»’’˝≥£…œ∞‡£¨«Î¥Ûº“◊ˆ∫√π§◊˜∞≤≈≈£¨πß◊£¥Ûº“Ω⁄»’øÏ¿÷£°</span></marquee>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
-    <!--ÊªöÂä®Ê†èÊèí‰ª∂ -->
+    <!--πˆ∂Ø¿∏≤Âº˛ -->
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
     <table width="1004" height="30" border="0" align="center" cellpadding="0" cellspacing="0"
@@ -500,7 +501,7 @@
                 &nbsp;
             </td>
             <td width="80" align="center">
-                <a href="#"><font class="white">ËøîÂõûÈ°∂ÈÉ®‚Üë</font></a>
+                <a href="#"><font class="white">∑µªÿ∂•≤ø°¸</font></a>
             </td>
         </tr>
     </table>
@@ -508,20 +509,20 @@
         bgcolor="#FFFFFF">
         <tr>
             <td align="center" valign="top" class="end">
-                ‰∏ªÂäûÂçï‰ΩçÔºöÂ±±‰∏úÁúÅÊ∑°Ê∞¥Ê∏î‰∏öÁ†îÁ©∂Èô¢‰∏ªÂäû&nbsp; ÈÇÆÁÆ±:mail@sdfwi.cn &nbsp;ÁΩëÂùÄ:www.sdfwi.cn&nbsp;&nbsp;&nbsp;ËÅîÁ≥ªÁîµËØùÔºö0531-87565645<br />
-                Êú¨Á´ôÊúÄ‰Ω≥ÊµèËßàÊïàÊûúÔºö1024*768ÂàÜËæ®Áéá/Âª∫ËÆÆ‰ΩøÁî®ÂæÆËΩØÂÖ¨Âè∏ÊµèËßàÂô®IE6.0‰ª•‰∏ä&nbsp;&nbsp;
+                ÷˜∞Ïµ•Œª£∫…Ω∂´ °µ≠ÀÆ”Ê“µ—–æø‘∫÷˜∞Ï&nbsp; ” œ‰:mail@sdfwi.cn &nbsp;Õ¯÷∑:www.sdfwi.cn&nbsp;&nbsp;&nbsp;¡™œµµÁª∞£∫0531-87565645<br />
+                ±æ’æ◊Óº—‰Ø¿¿–ßπ˚£∫1024*768∑÷±Ê¬ /Ω®“È π”√Œ¢»Ìπ´Àæ‰Ø¿¿∆˜IE6.0“‘…œ&nbsp;&nbsp;
                 <br />
-                <script language="JavaScript" src="count.asp" type="text/javascript"></script>
+              <%--  <script language="JavaScript" src="count.asp" type="text/javascript"></script>--%>
                 <br />
                 <table border="0" cellpadding="3" cellspacing="0">
                     <tr>
                         <td align="center" bgcolor="#009900">
                             &nbsp;&nbsp;&nbsp;<a href="http://www.sdfwi.cn" target="_blank"><font color="#FFFFFF"
-                                style='font-family: ÂæÆËΩØÈõÖÈªë;'> Êú¨Á´ôÁî±ÔºöXXXXÂª∫Á´ôÁ≥ªÁªüÊê≠Âª∫</font></a>&nbsp;&nbsp;&nbsp;
+                                style='font-family: Œ¢»Ì—≈∫⁄;'> ±æ’æ”…£∫XXXXΩ®’æœµÕ≥¥ÓΩ®</font></a>&nbsp;&nbsp;&nbsp;
                         </td>
                         <td align="center" bgcolor="#006600">
                             &nbsp;&nbsp;&nbsp;<a href="http://www.sdfwi.cn" target="_blank"><font color="#FFFFFF"
-                                style='font-family: ÂæÆËΩØÈõÖÈªë;'>ËøõÂÖ•ÂêéÂè∞ÁÆ°ÁêÜ</font></a>&nbsp;&nbsp;&nbsp;
+                                style='font-family: Œ¢»Ì—≈∫⁄;'>Ω¯»Î∫ÛÃ®π‹¿Ì</font></a>&nbsp;&nbsp;&nbsp;
                         </td>
                     </tr>
                 </table>
