@@ -78,6 +78,10 @@ public partial class UserCtrl_NewsListUserCtrl : System.Web.UI.UserControl
                     {
                         where = where && ViewAllInfo._.sid == lb;
                     }
+                    if (keyword != null)
+                    {
+                        where = where && ViewAllInfo._.title == keyword;
+                    }
                     dt = mgr.GetViewAllInfoDataTable(int.Parse(page), 20, " addtime desc ", ref pagecount, ref allcount, where);
 
                     foreach(DataRow row in dt.Rows)
