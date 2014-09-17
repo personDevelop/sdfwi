@@ -62,7 +62,8 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
         if (list.Count == 1)
         {
             notice n = list[0];
-            OutStr = n.title + ":" + n.contents;
+            OutStr = string.Format(@"  <a style='font-family:Microsoft YaHei;color:#ffff00;font-size:24px;' href='Info.aspx?type=notice&id={0}' target='_blank' title='标题：{1}'>{1}</a>", n.id, n.title);
+          
         }
 
 
@@ -256,7 +257,7 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
                                                                                 <table border='0' cellpadding='0' cellspacing='5' class='bg_qc'>
                                                                                     <tr>
                                                                                         <td align='center' valign='middle' class='product'>
-                                                                                            <a href='Info.aspx?type=experts&id={0}' target='_blank'>
+                                                                                            <a href='expertshow.aspx?type=experts&id={0}' target='_blank'>
                                                                                                 <img src='{1}' alt='{2}' width='70' height='100'
                                                                                                     border='0' />
                                                                                             </a>
@@ -267,7 +268,7 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
                                                                         </tr>
                                                                         <tr>
                                                                             <td height='25' align='center'>
-                                                                                <a href='nzcms_show_news.asp?id={0}' target='_blank' title='{2}'>{2} </a>
+                                                                                <a href='expertshow.aspx?type=experts&id={0}' target='_blank' title='{2}'>{2} </a>
                                                                             </td>
                                                                         </tr>
                                                                     </table>

@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
+    CodeFile="index.aspx.cs" Inherits="index" %>
 
 <%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
 <%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
@@ -57,13 +57,13 @@
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="4" bgcolor="#FFFFFF">
         <tr>
             <td height="50" colspan="2" align="right" background="images/nzcms/bannan2.gif">
-                便捷链接： &nbsp;|&nbsp; <a href="nzcms_list_news.asp?id=668&sort_id=657">山东省农业良种工程重大课题及项目</a>
-                &nbsp;|&nbsp; <a href="/">山东省科学技术发展计划项目</a> &nbsp;|&nbsp; <a href="nzcms_list_news.asp?id=670&sort_id=657">
-                    省财政支持农业重大应用技术创新资金项目</a>&nbsp;|&nbsp;<br />
-                <a href="nzcms_list_news.asp?id=671&sort_id=657">农业部公益性行业科研专项</a> &nbsp;|&nbsp;
-                <a href="nzcms_list.asp?sort_id=660">山东省突出贡献的青年专家</a> &nbsp;|&nbsp; <a href="nzcms_list.asp?sort_id=661">
-                    享受国务院特殊津贴</a> &nbsp;|&nbsp; <a href="nzcms_list.asp?sort_id=662">研究生培养</a> &nbsp;|&nbsp;
-                <a href="nzcms_list.asp?sort_id=663">国家海洋公益性行业科研专项</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                便捷链接： &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=85">山东省农业良种工程重大课题及项目</a>
+                &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=87">山东省科学技术发展计划项目</a> &nbsp;|&nbsp;
+                <a href="Category.aspx?type=news&sid=89">省财政支持农业重大应用技术创新资金项目</a>&nbsp;|&nbsp;<br />
+                <a href="Category.aspx?type=news&sid=91">农业部公益性行业科研专项</a> &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=93">
+                    山东省突出贡献的青年专家</a> &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=102">享受国务院特殊津贴</a>
+                &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=104">研究生培养</a> &nbsp;|&nbsp;
+                <a href="Category.aspx?type=news&sid=83">国家海洋公益性行业科研专项</a> &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
         </tr>
         <tr>
@@ -71,7 +71,7 @@
                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="center" valign="top">
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=85"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl2" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=85"
                                 ClassID="85" Title="山东省农业良种工程重大课题及项目" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
@@ -81,7 +81,7 @@
                             </table>
                         </td>
                         <td align="center" valign="top">
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl3" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=87"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl3" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=87"
                                 ClassID="87" Title="山东省科学技术发展计划项目" runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
@@ -93,7 +93,7 @@
                     </tr>
                     <tr>
                         <td align="center" valign="top">
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl4" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=89"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl4" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=89"
                                 ClassID="89" Title="省财政支持农业重大应用技术创新资金..." runat="server" />
                             <table height="5" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
@@ -103,7 +103,7 @@
                             </table>
                         </td>
                         <td align="center" valign="top">
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=91"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl1" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=91"
                                 ClassID="91" Title="农业部公益性行业科研专项..." runat="server" />
                         </td>
                     </tr>
@@ -122,7 +122,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl5" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=93"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl5" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=93"
                                 ClassID="93" Title="山东省突出贡献的青年专家" runat="server" />
                         </td>
                         <td align="center" valign="top">
@@ -132,7 +132,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl6" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=102"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl6" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=102"
                                 ClassID="102" Title="享受国务院特殊津贴" runat="server" />
                         </td>
                     </tr>
@@ -144,7 +144,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl7" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=104"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl7" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=104"
                                 ClassID="104" Title="研究生培养" runat="server" />
                         </td>
                         <td align="center" valign="top">
@@ -154,7 +154,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <uc2:BaseUserCtrl ID="BaseUserCtrl8" CtrlType="specil" MoreUrl="list_news.aspx?sort_id=83"
+                            <uc2:BaseUserCtrl ID="BaseUserCtrl8" CtrlType="specil" MoreUrl="Category.aspx?type=news&sid=83"
                                 ClassID="83" Title="国家海洋公益性行业科研专项" runat="server" />
                         </td>
                     </tr>
@@ -162,7 +162,7 @@
             </td>
             <!-- 这里左栏开始-->
             <td width="250" align="center" valign="top" class="kk">
-                <uc2:BaseUserCtrl ID="BaseUserCtrl10" CtrlType="video" MoreUrl="list_news.aspx?sort_id=93"
+                <uc2:BaseUserCtrl ID="BaseUserCtrl10" CtrlType="video" MoreUrl="Category.aspx?type=news&sid=93"
                     runat="server" />
                 <!-- 这里结束视频栏-->
                 <!-- 这里专题图片开始-->
@@ -298,7 +298,195 @@
                                     </td>
                                 </tr>
                             </table>
-                            <uc3:ChildSiteUserCtrl ID="ChildSiteUserCtrl1" runat="server" />
+                            <!--暂时静态-->
+                            <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                  <tr>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/sclzc/index.aspx" target="_blank">国家级水产良种场</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/dsyy/index.aspx" target="_blank">山东省淡水渔业监测中心</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/yjd/index.aspx" target="_blank">山东省盐碱地渔业工程技术研究中心</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+                                        <tr>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/scyz/index.aspx" target="_blank">山东省淡水水产遗传育种重点实验室</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="Category.aspx?type=news&sid=98" target="_blank">山东淡水水产遗传引种育种中心</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/yqjk/index.aspx" target="_blank">水生动物疫情监控研究中心</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+                                     <tr>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/jczx/index.aspx" target="_blank">山东省海洋经济监测与评估中心</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/zyhj/index.aspx" target="_blank">资源与环境室</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="210" height="25" align="center" valign="middle">
+                                                            <a href="http://www.sdfwi.cn/zhsys/index.aspx" target="_blank">综合实验室</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table height="15" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <!--暂时静态-->
+                            <%-- <uc3:ChildSiteUserCtrl ID="ChildSiteUserCtrl1" runat="server" />--%>
                         </td>
                     </tr>
                 </table>
