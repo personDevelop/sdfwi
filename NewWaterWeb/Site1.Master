@@ -1,5 +1,7 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NewWaterWeb.Site1" %>
 
+<%@ Register src="UserCtrl/DateContrl.ascx" tagname="DateContrl" tagprefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -19,7 +21,9 @@
         bgcolor="#FFFFFF">
         <tr>
             <td height="28" valign="middle">
-                &nbsp;&nbsp;<img src="images/time.gif" width="12" height="12" />&nbsp; 2014年04月25日星期五农历甲午年(马)三月廿六
+                &nbsp;&nbsp;<img src="images/time.gif" width="12" height="12" />&nbsp;  
+                <uc1:DateContrl ID="DateContrl1" runat="server" />
+                
             </td>
             <td align="right" valign="middle">
                 <table border="0" cellspacing="0" cellpadding="0">
