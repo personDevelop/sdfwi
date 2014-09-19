@@ -84,7 +84,7 @@ namespace sdfwi.Logic
         public List<video> GetvideoList(int top = 2)
         {
             List<video> tem = new List<video>();
-            tem = Dal.From<video>().OrderBy(video._.addtime.Desc).ToDataTable(top).ToList<video>();
+            tem = Dal.From<video>().Where(video._.passok == 1).OrderBy(video._.addtime.Desc).ToDataTable(top).ToList<video>();
             return tem;
         }
 
@@ -94,7 +94,7 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetvideoDataTable()
         {
-            return Dal.From<video>().ToDataTable();
+            return Dal.From<video>().Where(video._.passok == 1).ToDataTable();
         }
 
         /// <summary>
@@ -110,7 +110,7 @@ namespace sdfwi.Logic
         {
 
 
-            return Dal.From<video>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<video>().Where(video._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 
@@ -132,8 +132,8 @@ namespace sdfwi.Logic
 
 
         public List<videoclass> GetList(int parentid)
-        {
-            return Dal.From<videoclass>().Where(videoclass._.pid == parentid).OrderBy(videoclass._.id).List<videoclass>();
+        { 
+            return Dal.From<videoclass>().Where(video._.passok == 1&&videoclass._.pid == parentid).OrderBy(videoclass._.id).List<videoclass>();
     
         }
     }

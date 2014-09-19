@@ -97,7 +97,7 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetDownLoadDataTable()
         {
-            return Dal.From<download>().ToDataTable();
+            return Dal.From<download>().Where(download._.passok==1).ToDataTable();
         }
 
         /// <summary>
@@ -112,9 +112,9 @@ namespace sdfwi.Logic
         public DataTable GetDownLoadDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount)
         {
 
-           
 
-            return Dal.From<download>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+
+            return Dal.From<download>().Where(download._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 

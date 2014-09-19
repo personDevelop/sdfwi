@@ -89,7 +89,7 @@ namespace sdfwi.Logic
         public List<news> GetnewsList()
         {
             List<news> tem = new List<news>();
-            tem = Dal.From<news>().List<news>();
+            tem = Dal.From<news>().Where(news._.passok == 1).List<news>();
             return tem;
         }
         /// <summary>
@@ -101,7 +101,7 @@ namespace sdfwi.Logic
             List<news> tem = new List<news>();
             int pageCount = 0;
             //tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top, 10, ref pageCount, ref pageCount).ToList<news>();
-            tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
+            tem = Dal.From<news>().Where(news._.passok == 1 && news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
 
             return tem;
         }
@@ -112,7 +112,7 @@ namespace sdfwi.Logic
         public List<news> GetHotNews(int top = 10)
         {
             List<news> tem = new List<news>();
-            tem = Dal.From<news>().Where(news._.wtop == 1).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
+            tem = Dal.From<news>().Where(news._.passok == 1 && news._.wtop == 1).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
 
             return tem;
         }
@@ -124,7 +124,7 @@ namespace sdfwi.Logic
         public List<news> GetTopNews(int top = 1)
         {
             List<news> tem = new List<news>();
-            tem = Dal.From<news>().Where(news._.topz == "1").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
+            tem = Dal.From<news>().Where(news._.passok == 1 && news._.topz == "1").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
 
             return tem;
         }
@@ -135,7 +135,7 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetnewsDataTable()
         {
-            return Dal.From<news>().ToDataTable();
+            return Dal.From<news>().Where(news._.passok == 1).ToDataTable();
         }
 
         /// <summary>
@@ -151,7 +151,7 @@ namespace sdfwi.Logic
         {
 
 
-            return Dal.From<news>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<news>().Where(news._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 
@@ -174,7 +174,7 @@ namespace sdfwi.Logic
 
         public List<news> GetClassID(string classid, int top = 7)
         {
-            return Dal.From<news>().Where(news._.sid == classid).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
+            return Dal.From<news>().Where(news._.passok == 1 && news._.sid == classid).OrderBy(news._.addtime.Desc).ToDataTable(top).ToList<news>();
         }
 
         /// <summary>
@@ -199,7 +199,7 @@ namespace sdfwi.Logic
         {
 
 
-            return Dal.From<ViewAllInfo>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount).ToList<ViewAllInfo>();
+            return Dal.From<ViewAllInfo>().Where(ViewAllInfo._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount).ToList<ViewAllInfo>();
 
         }
         /// <summary>
@@ -211,9 +211,9 @@ namespace sdfwi.Logic
         /// <param name="pageCount">总页数</param>
         /// <param name="recordCount">总记录数</param>
         /// <returns></returns>
-        public DataTable GetViewAllInfoDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount,WhereClip where)
+        public DataTable GetViewAllInfoDataTable(int pageindex, int pagesize, string orderby, ref int pageCount, ref int recordCount, WhereClip where)
         {
-            return Dal.From<ViewAllInfo>().Where(where).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<ViewAllInfo>().Where(ViewAllInfo._.passok == 1 && where).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 

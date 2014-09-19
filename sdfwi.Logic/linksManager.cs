@@ -29,8 +29,9 @@ namespace sdfwi.Logic
         /// <returns></returns> 
         public List<links> GetList()
         {
+
             List<links> tem = new List<links>();
-            tem = Dal.From<links>().List<links>();
+            tem = Dal.From<links>().Where(links._.passok == 1).List<links>();
             return tem;
         }
 
@@ -40,7 +41,7 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetDataTable()
         {
-            return Dal.From<links>().ToDataTable();
+            return Dal.From<links>().Where(links._.passok == 1).ToDataTable();
         }
 
         /// <summary>
@@ -56,7 +57,7 @@ namespace sdfwi.Logic
         {
 
 
-            return Dal.From<links>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<links>().Where(links._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 
@@ -70,7 +71,7 @@ namespace sdfwi.Logic
         public List<links> GetLinkList()
         {
             List<links> tem = new List<links>();
-            tem = Dal.From<links>().Where(links._.sitename != "主站").ToDataTable().ToList<links>();
+            tem = Dal.From<links>().Where(links._.passok == 1 && links._.sitename != "主站").ToDataTable().ToList<links>();
             return tem;
         }
 

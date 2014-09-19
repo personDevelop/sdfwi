@@ -30,7 +30,7 @@ namespace sdfwi.Logic
         public List<special> GetList()
         {
             List<special> tem = new List<special>();
-            tem = Dal.From<special>().List<special>();
+            tem = Dal.From<special>().Where(special._.passok == 1).List<special>();
             return tem;
         }
 
@@ -40,7 +40,7 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetDataTable()
         {
-            return Dal.From<special>().ToDataTable();
+            return Dal.From<special>().Where(special._.passok == 1).ToDataTable();
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace sdfwi.Logic
         {
 
 
-            return Dal.From<special>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<special>().Where(special._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 

@@ -30,7 +30,7 @@ namespace sdfwi.Logic
         public List<notice> GetList()
         {
             List<notice> tem = new List<notice>();
-            tem = Dal.From<notice>().List<notice>();
+            tem = Dal.From<notice>().Where(notice._.passok == 1 ).List<notice>();
             return tem;
         }
         /// <summary>
@@ -40,7 +40,7 @@ namespace sdfwi.Logic
         public List<notice> GetTopList(int top = 5)
         {
             List<notice> tem = new List<notice>();
-            tem = Dal.From<notice>().OrderBy(notice._.addtime.Desc).ToDataTable(top).ToList<notice>();
+            tem = Dal.From<notice>().Where(notice._.passok == 1).OrderBy(notice._.addtime.Desc).ToDataTable(top).ToList<notice>();
             return tem;
         }
         /// <summary>
@@ -49,7 +49,7 @@ namespace sdfwi.Logic
         /// <returns></returns>
         public DataTable GetDataTable()
         {
-            return Dal.From<notice>().ToDataTable();
+            return Dal.From<notice>().Where(notice._.passok == 1).ToDataTable();
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace sdfwi.Logic
         {
 
 
-            return Dal.From<notice>().OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
+            return Dal.From<notice>().Where(notice._.passok == 1).OrderBy(new OrderByClip(orderby)).ToDataTable(pagesize, pageindex, ref pageCount, ref recordCount);
 
         }
 
