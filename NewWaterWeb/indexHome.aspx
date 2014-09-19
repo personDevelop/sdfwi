@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
-    CodeFile="index.aspx.cs" Inherits="index" %>
+    CodeFile="indexHome.aspx.cs" Inherits="index" %>
 
-<%@ Register Src="TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
-<%@ Register Src="UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
-<%@ Register Src="UserCtrl/ChildSiteUserCtrl.ascx" TagName="ChildSiteUserCtrl" TagPrefix="uc3" %>
-<%@ Register Src="UserCtrl/LinkSite.ascx" TagName="LinkSite" TagPrefix="uc4" %>
+<%@ Register Src="~/TopNews.ascx" TagName="TopNews" TagPrefix="uc1" %>
+<%@ Register Src="~/UserCtrl/BaseUserCtrl.ascx" TagName="BaseUserCtrl" TagPrefix="uc2" %>
+<%@ Register Src="~/UserCtrl/ChildSiteUserCtrl.ascx" TagName="ChildSiteUserCtrl" TagPrefix="uc3" %>
+<%@ Register Src="~/UserCtrl/LinkSite.ascx" TagName="LinkSite" TagPrefix="uc4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>研究院网站管理系统</title>
     <meta name="Keywords" content="研究院,蓝色模板,值班系统,签收系统" />
@@ -48,7 +48,7 @@
                         </td>
                     </tr>
                 </table>
-              <%--  <a href="book.asp">
+                <%--  <a href="book.asp">
                     <img src="images/nzcms/nzcms.book.gif" border="0" /></a>--%>
                 <!-- 这里结束通知通告栏-->
             </td>
@@ -57,13 +57,13 @@
     <table width="1004" border="0" align="center" cellpadding="0" cellspacing="4" bgcolor="#FFFFFF">
         <tr>
             <td height="50" colspan="2" align="right" background="images/nzcms/bannan2.gif">
-                便捷链接： &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=85">山东省农业良种工程重大课题及项目</a>
-                &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=87">山东省科学技术发展计划项目</a> &nbsp;|&nbsp;
-                <a href="Category.aspx?type=news&sid=89">省财政支持农业重大应用技术创新资金项目</a>&nbsp;|&nbsp;<br />
-                <a href="Category.aspx?type=news&sid=91">农业部公益性行业科研专项</a> &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=93">
-                    山东省突出贡献的青年专家</a> &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=102">享受国务院特殊津贴</a>
-                &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=104">研究生培养</a> &nbsp;|&nbsp;
-                <a href="Category.aspx?type=news&sid=83">国家海洋公益性行业科研专项</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                便捷链接： &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=85"  target="_blank">山东省农业良种工程重大课题及项目</a>
+                &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=87" target="_blank">山东省科学技术发展计划项目</a> &nbsp;|&nbsp;
+                <a href="Category.aspx?type=news&sid=89" target="_blank">省财政支持农业重大应用技术创新资金项目</a>&nbsp;|&nbsp;<br />
+                <a href="Category.aspx?type=news&sid=91" target="_blank">农业部公益性行业科研专项</a> &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=93" target="_blank">
+                    山东省突出贡献的青年专家</a> &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=102" target="_blank">享受国务院特殊津贴</a>
+                &nbsp;|&nbsp; <a href="Category.aspx?type=news&sid=104" target="_blank">研究生培养</a> &nbsp;|&nbsp;
+                <a href="Category.aspx?type=news&sid=83" target="_blank">国家海洋公益性行业科研专项</a> &nbsp;&nbsp;&nbsp;&nbsp;
             </td>
         </tr>
         <tr>
@@ -179,15 +179,15 @@
                         </td>
                     </tr>
                 </table>
-                <a href="/" target="_blank">
+                <a href="" target="_blank">
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/01.jpg" alt="1" width="250" height="50" border="0" /></a>
-                <a href="/" target="_blank">
+                <a href="" target="_blank">
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/03.jpg" alt="3" width="250" height="50" border="0" /></a>
-                <a href="/" target="_blank">
+                <a href="" target="_blank">
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/01.jpg" alt="1" width="250" height="50" border="0" /></a>
-                <a href="/" target="_blank">
+                <a href="" target="_blank">
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/02.jpg" alt="2" width="250" height="50" border="0" /></a>
-                <a href="/" target="_blank">
+                <a href="" target="_blank">
                     <img src="nzcms_nzweb/nzcms_up/nz_pic/03.jpg" alt="3" width="250" height="50" border="0" /></a>
                 <!-- 这里专题图片结束-->
                 <!-- 这里开始便民链接栏-->
@@ -211,7 +211,7 @@
                     class="kk">
                     <tr>
                         <td width="25" height="160" align="center" valign="middle" class="white">
-                            <a href="Category.aspx?type=experts">
+                            <a href="Category.aspx?type=experts" target="_blank">
                                 <img src="images/nzcms/tu.jpg" border="0" /></a>
                         </td>
                         <td align="center" valign="middle" bgcolor="#FFFFFF">
@@ -270,7 +270,23 @@
                             </label>
                             <label for="select">
                             </label>
-                            <input name="Submit2" type="submit" value="搜索一下" />
+                             <script type="text/javascript">
+                                 function search() {
+
+                                     var keyword = document.getElementById("keyword").value; 
+                                      
+                                     if (keyword) {
+
+                                         open("Category.aspx?keyword=" + keyword + "&searchtype=" + document.getElementById("so").value)
+                                          
+                                     }
+                                     else {
+                                         alert("关键字不能为空！");
+                                     }
+                                 }
+                            </script>
+                            <input name="Submit2" type="button" onclick="search();" value="搜索一下" />
+                           
                         </td>
                     </tr>
                     </form>
@@ -301,7 +317,7 @@
                             <!--暂时静态-->
                             <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
                                 <tbody>
-                                  <tr>
+                                    <tr>
                                         <td align="center">
                                             <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
                                                 <tbody>
@@ -360,9 +376,7 @@
                                             </table>
                                         </td>
                                     </tr>
-
-
-                                        <tr>
+                                    <tr>
                                         <td align="center">
                                             <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
                                                 <tbody>
@@ -421,9 +435,7 @@
                                             </table>
                                         </td>
                                     </tr>
-
-
-                                     <tr>
+                                    <tr>
                                         <td align="center">
                                             <table border="0" cellpadding="0" cellspacing="0" background="images/nzcms.39.gif">
                                                 <tbody>
@@ -484,7 +496,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        
                             <!--暂时静态-->
                             <%-- <uc3:ChildSiteUserCtrl ID="ChildSiteUserCtrl1" runat="server" />--%>
                         </td>
@@ -510,7 +521,7 @@
                     <tbody>
                         <tr>
                             <td align="center">
-                                <a href="/" target="_blank">
+                                <a href="Category.aspx?type=download&sid=2" target="_blank">
                                     <img src="nzcms_nzweb/nzcms_up/nz_pic/soft_01.gif" alt="测试" width="110" height="40"
                                         border="0"></a>
                                 <table height="3" border="0" cellpadding="0" cellspacing="0">

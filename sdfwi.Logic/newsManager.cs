@@ -100,7 +100,8 @@ namespace sdfwi.Logic
         {
             List<news> tem = new List<news>();
             int pageCount = 0;
-            tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top, 10, ref pageCount, ref pageCount).ToList<news>();
+            //tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top, 10, ref pageCount, ref pageCount).ToList<news>();
+            tem = Dal.From<news>().Where(news._.fimgurl != "").OrderBy(new OrderByClip("addtime desc")).ToDataTable(top).ToList<news>();
 
             return tem;
         }

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using sdfwi.Entity;
 using sdfwi.Logic;
 
-public partial class expertshow : System.Web.UI.Page
+public partial class expertshownew : System.Web.UI.Page
 {
     public string expertName { get; set; }
     public string expertNamePhot { get; set; }

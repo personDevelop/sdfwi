@@ -21,7 +21,7 @@ public partial class UserCtrl_SiteMapUserCtrl : System.Web.UI.UserControl
                         </td>
                         <td align='left' class='p12'>
                             您的位置：
-                            <a href='index.aspx'>首页</a>&nbsp;&gt;&nbsp;&nbsp;
+                            <a href='indexHome.aspx'>首页</a>&nbsp;&gt;&nbsp;&nbsp;
                            {0}
                         </td>
                     </tr>

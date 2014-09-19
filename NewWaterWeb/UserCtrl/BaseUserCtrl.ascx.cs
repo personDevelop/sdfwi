@@ -63,7 +63,7 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
         {
             notice n = list[0];
             OutStr = string.Format(@"  <a style='font-family:Microsoft YaHei;color:#ffff00;font-size:24px;' href='Info.aspx?type=notice&id={0}' target='_blank' title='标题：{1}'>{1}</a>", n.id, n.title);
-          
+
         }
 
 
@@ -211,7 +211,7 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
                                                     {0}
                                                 </td>
                                                 <td align='right' class='p12'>
-                                                    <a href='{1}'>更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
+                                                    <a href='{1}'  target='_blank'>更多&gt;&gt;&gt;</a>&nbsp;&nbsp;
                                                 </td>
                                             </tr>
                                         </table>
@@ -296,15 +296,15 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
         foreach (video item in list)
         {
 
-            sb.AppendFormat(@" <a href='nzcms_show_news.asp?id={0}'><img src='{2}' style='  height: 160px;  width: 250px; '></a>
+            sb.AppendFormat(@" <a href='viewShowNew.aspx?type=video&sid={3}&id={0}'  target='_blank' ><img src='{2}' style='  height: 160px;  width: 250px; '></a>
 
                 <table width='100%' border='0' cellpadding='0' cellspacing='0' background='images/nzcms/left2.gif'>
                     <tr>
                         <td height='30' align='center' class='white12b'>
-                            <a href='Info.aspx?type=video&id={0}'>{1}</a>
+                            <a href='viewShowNew.aspx?type=video&sid={3}&id={0}'  target='_blank' >{1}</a>
                         </td>
                     </tr>
-                </table>", item.id, item.title, item.vpic);
+                </table>", item.id, item.title, item.vpic,item.sid);
         }
         //sb.Append("  </tr>  </table>");
         OutStr = sb.ToString();
