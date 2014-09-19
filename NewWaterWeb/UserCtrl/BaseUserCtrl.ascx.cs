@@ -257,7 +257,7 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
                                                                                 <table border='0' cellpadding='0' cellspacing='5' class='bg_qc'>
                                                                                     <tr>
                                                                                         <td align='center' valign='middle' class='product'>
-                                                                                            <a href='expertshow.aspx?type=experts&id={0}' target='_blank'>
+                                                                                            <a href='expertshownew.aspx?type=experts&id={0}' target='_blank'>
                                                                                                 <img src='{1}' alt='{2}' width='70' height='100'
                                                                                                     border='0' />
                                                                                             </a>
@@ -268,7 +268,7 @@ public partial class UserCtrl_BaseUserCtrl : System.Web.UI.UserControl
                                                                         </tr>
                                                                         <tr>
                                                                             <td height='25' align='center'>
-                                                                                <a href='expertshow.aspx?type=experts&id={0}' target='_blank' title='{2}'>{2} </a>
+                                                                                <a href='expertshownew.aspx?type=experts&id={0}' target='_blank' title='{2}'>{2} </a>
                                                                             </td>
                                                                         </tr>
                                                                     </table>
