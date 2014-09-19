@@ -22,7 +22,7 @@ public partial class Info : System.Web.UI.Page
                         </td>
                     </tr>
                 </table>";
-    string imgtemp = @"<img id='imgurl' src='{0}' style='width:550px;border-width:0px;'>";
+    string imgtemp = @"<img id='imgurl' src='ImgUpload/{0}' style='width:550px;border-width:0px;'>";
     newsManager logic = new newsManager();
     public string TitleName { get; set; }
     public string InfoTitle { get; set; }
