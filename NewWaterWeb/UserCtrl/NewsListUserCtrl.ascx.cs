@@ -20,7 +20,7 @@ public partial class UserCtrl_NewsListUserCtrl : System.Web.UI.UserControl
                             <img src='images/txt.png' alt='图标' />
                         </td>
                         <td align='left' class='p14'>
-                            <a href='' target='_blank' title='{0}'><font class='p14'>{2}</font></a>
+                            <a href='{3}' target='_blank' title='{0}'><font class='p14'>{2}</font></a>
                         </td>
                         <td width='110' align='left'>
                             <!--浏览：次-->
@@ -91,7 +91,7 @@ public partial class UserCtrl_NewsListUserCtrl : System.Web.UI.UserControl
                         {
                             title = title.Substring(0, 28)+"...";
                         }
-                        res += string.Format(tmpl, row["title"].ToString(), row["addtime"].ToString(), title);
+                        res += string.Format(tmpl, row["title"].ToString(), row["addtime"].ToString(), title, "Info.aspx?id=" + row["id"].ToString() + "&type=" + type);
                     }
                     string urlprefix="Category.aspx?type="+type+"&sid="+lb+"&page=";
                     int cur=int.Parse(page);
